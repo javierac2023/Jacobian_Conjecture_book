@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <book>
+    <title>The plane Jacobian Conjecture from a geometric viewpoint</title>
+
+    <xi:include href="chapter1.ptx"/>
+    <xi:include href="chapter2.ptx"/>
+    <xi:include href="chapter3.ptx"/>
+
+  </book>
+</pretext>

@@ -1,0 +1,5 @@
+<string>:12:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element cite there
+<string>:6:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element p has extra content: m
+<string>:3:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element blockquote, got p
+<string>:3:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element p there
+<string>:3:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element sidebyside, got p
