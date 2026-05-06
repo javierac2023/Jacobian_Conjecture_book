@@ -1,0 +1,33 @@
+en cmd pegar
+
+cd C:\Users\Javier\Downloads\jacobianshape-master
+python -m http.server
+
+y en el navegador
+http://localhost:8000/
+
+
+o tmb python -m http.server 8000
+
+Ctrl + Shift + R para limpiar cache
+
+
+PARA PRETEXT SE HACE EN LA CARPETA DWEL POYECTO 
+D:\DOCUMENTOS\new-pretext-project
+
+
+pretext build web
+LUEGO
+pretext view web
+
+o directo
+
+
+pretext build web --clean
+pretext view web
+
+para actualziar web 
+git pull origin main --rebase
+git add .
+git commit -m "actualicé capítulo 1"
+git push

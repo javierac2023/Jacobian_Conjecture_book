@@ -1,0 +1,30 @@
+/* Forzar que cualquier contenedor de ecuaciones tenga scroll horizontal */
+.men, .me, .mjx-chtml {
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    display: block !important;
+}
+
+/* Para ecuaciones dentro de párrafos */
+p .men, p .me {
+    display: inline-block;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* Ajuste de fuente opcional */
+.mjx-chtml {
+    font-size: 100% !important;
+}
+
+/* Asegurar que las tablas también tengan scroll si es necesario */
+.table {
+    overflow-x: auto !important;
+    display: block !important;
+}
+
+/* Ajustar el cuerpo del libro para que no corte nada */
+body {
+    overflow-x: auto;
+}

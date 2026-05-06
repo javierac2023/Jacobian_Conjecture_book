@@ -84,6 +84,116 @@
       \quad \text{and} \quad
       Q = x^3 y,
     </me>
+    <p> then  </p>
+    <me>PQ=3x^6y+ 2x^5y +4x^4y^2+7x^3y^3 +2x^3y^2-8x^3y</me>,
+    <p>
+    and so <m>\operatorname{Supp}(PQ) = \operatorname{Supp}(P)+\operatorname{Supp}(Q)</m>. The supports of <m>P</m>, 
+    <m>Q</m> and <m>PQ</m> are shown in <xref ref="fig_3"/>.
+    </p>
+  
+  <figure xml:id="fig_3">
+    <caption>Example of Supports of <m>P</m>, <m>Q</m> and <m>PQ</m>, with <m>Q</m> a monomial</caption>
+    <group>
+      <figure xml:id="fig_3_subfig_1">
+        <image width="30%" source="img/img2.png"/>
+        <caption><m>\operatorname{Supp}(P)</m></caption>
+      </figure>
+      <figure xml:id="fig_3_subfig_2">
+        <image width="30%" source="img/img2.png"/>
+        <caption><m>\operatorname{Supp}(Q)</m></caption>
+      </figure>
+      <figure xml:id="fig_3_subfig_3">
+        <image width="30%" source="img/img2.png"/>
+        <caption><m>\operatorname{Supp}(PQ)=\operatorname{Supp}(P)+\operatorname{Supp}(Q)</m></caption>
+      </figure>
+    </group>
+  </figure>
+
+  <p>
+    In general, we only have
+    <men xml:id="soporte_de_PQ_incluido_en_soporte_de_P_mas_soporte_de_Q">
+      \operatorname{Supp}(PQ)\subseteq \operatorname{Supp}(P)+\operatorname{Supp}(Q)
+    </men>.
+    For example, take
+    <men xml:id="ejemplo1">
+      P=3xy-y^2+3y+3\quad\text{and}\quad Q=x^4y^2-3x^4y-2x^3y^2+2x^3y
+    </men>.
+    Then
+    <md>
+      <mrow>
+        \operatorname{Supp}(P)=\{(1,1),(0,2),(0,1),(0,0)\},\qquad 
+        \operatorname{Supp}(Q)=\{(4,2),(4,1), (3,2),(3,1)\},
+      </mrow>
+      <intertext>and so</intertext>
+      <mrow>
+        \operatorname{Supp}(P)+\operatorname{Supp}(Q)=\{(5,3),(4,4),(5,2),(4,3),(3,4),(4,2),(3,3),(4,1),(3,2),(3,1)\}.
+      </mrow>
+    </md>
+    But
+    <me>
+      PQ=3x^5y^3-x^4y^4-9x^5y^2+2x^3y^4-8x^3y^3-9x^4y+6x^3y
+    </me>,
+    and so
+    <me>
+      \operatorname{Supp}(PQ)=\{(5,3),(4,4),(5,2),(3,4),(3,3),(4,1),(3,1)\}
+    </me>,
+    which shows that <m>\operatorname{Supp}(PQ)\ne \operatorname{Supp}(P)+\operatorname{Supp}(Q)</m> (see <xref ref="newton_contenido"/>).
+  </p>
+
+  <figure xml:id="newton_contenido">
+    <caption>A case in which <m>\operatorname{Supp}(PQ)\subsetneq \operatorname{Supp}(P)+\operatorname{Supp}(Q)</m></caption>
+    <group>
+      <figure xml:id="fig_4_subfig_1">
+        <image width="30%" source="img/img2.png"/>
+        <caption><m>\operatorname{Supp}(P)</m></caption>
+      </figure>
+      <figure xml:id="fig_4_subfig_2">
+        <image width="30%" source="img/img2.png"/>
+        <caption><m>\operatorname{Supp}(Q)</m></caption>
+      </figure>
+      <figure xml:id="fig_4_subfig_3">
+        <image width="30%" source="img/img2.png"/>
+        <caption><m>\operatorname{Supp}(PQ)</m></caption>
+      </figure>
+      <figure xml:id="fig_4_subfig_4">
+        <image width="30%" source="img/img2.png"/>
+        <caption><m>\operatorname{Supp}(P)+\operatorname{Supp}(Q)</m></caption>
+      </figure>
+    </group>
+  </figure>
+
+    <definition xml:id="poligono_de_Newton">
+      <title>Newton Polygon</title>
+      <p>
+        The <term>Newton polygon</term> <idx>Newton polygon</idx> <m>\operatorname{H}(P)</m>, of a polynomial <m>P</m>, 
+        is the convex hull of the support of <m>P</m>.
+      </p>
+    </definition>
+    <p>
+      Since <m>\operatorname{HN}(P) + \operatorname{HN}(Q)</m> is a convex set, from 
+      <xref ref="soporte_de_PQ_incluido_en_soporte_de_P_mas_soporte_de_Q"/> it follows that 
+      <m>\operatorname{HN}(PQ) \subseteq \operatorname{HN}(P) + \operatorname{HN}(Q)</m>. 
+      We will see in <xref ref="soporte_de_PQ_incluido_en_soporte_de_P_mas_soporte_de_Q"/> that the equality holds, as it is illustrated in 
+      <xref ref="fig_5"/>, where <m>P</m> and <m>Q</m> are as in <xref ref="ejemplo1"/>.
+    </p>
+
+    <figure xml:id="fig_5">
+      <caption>Newton polygon of the product of two polynomials</caption>
+      <group>
+        <figure xml:id="fig_5_subfig_1">
+          <image width="30%" source="img/img2.png"/>
+          <caption><m>\operatorname{HN}(P)</m></caption>
+        </figure>
+        <figure xml:id="fig_5_subfig_2">
+          <image width="30%" source="img/img2.png"/>
+          <caption><m>\operatorname{HN}(Q)</m></caption>
+        </figure>
+        <figure xml:id="fig_5_subfig_3">
+          <image width="30%" source="img/img2.png"/>
+          <caption><m>\operatorname{HN}(PQ) = \operatorname{HN}(P) + \operatorname{HN}(Q)</m></caption>
+        </figure>
+      </group>
+    </figure>
 
   </section>
 
@@ -96,7 +206,283 @@
 
   <section xml:id="sec-1-2">
     <title>The Jacobian determinant and its support</title>
-    <p>Content...</p>
+    <definition xml:id="derivada_parcial_respecto_de_x">
+   
+    <p>
+      The (formal) partial derivative of <m>P=\sum_{i,j} a_{ij}x^i y^j</m> with respect to <m>x</m> 
+      <idx>partial derivative with respect to <m>x</m></idx> is
+      <me>
+        \partial_x(P)=P_x=\frac{\partial P}{\partial x} := \sum_{i,j} i a_{ij}x^{i-1} y^j.
+      </me>
+    </p>
+  </definition>
+
+  <p>
+    For example <m>\partial_x(x^3y)=3x^2y</m>, and so 
+    <m>\operatorname{Supp}(\partial_x(x^3y)) = \{(2,1)\} = \operatorname{Supp}(x^3y)-(1,0)</m> 
+    (see <xref ref="fig_6"/>).
+  </p>
+
+  <figure xml:id="fig_6">
+    <caption><m>\operatorname{Supp}(x^3y)</m> and <m>\operatorname{Supp}(\partial_x(x^3y))</m></caption>
+    <image width="40%" source="img/img2.png"/>
+  </figure>
+
+  <p>
+    We suspect that <m>\operatorname{Supp}(P_x) = \operatorname{Supp}(P)-(1,0)</m>. But, we have 
+    <m>\partial_x(y)=0</m>, and so,
+    <me>
+      \operatorname{Supp}(\partial_x(y)) = \emptyset \ne \operatorname{Supp}(y)-(1,0).
+    </me>
+    The correct formula is
+    <me>
+      \operatorname{Supp}(P_x) = \left(\operatorname{Supp}(P)-(1,0)\right) \cap \mathbb{N}_0^2.
+    </me>
+  </p>
+
+  <definition xml:id="derivada_parcial_respecto_de_y">
+   
+    <p>
+      The partial derivative of <m>P=\sum_{i,j} a_{ij}x^i y^j</m> with respect to <m>y</m>
+      <idx>partial derivative with respect to <m>y</m></idx> is
+      <me>
+        \partial_y(P)=P_y=\frac{\partial P}{\partial y} := \sum_{i,j} j a_{ij} x^i y^{j-1}.
+      </me>
+    </p>
+  </definition>
+
+  <p>
+    A similar discussion as above shows that the support of <m>P_y</m> is given by
+    <me>
+      \operatorname{Supp}(P_y) = \left(\operatorname{Supp}(P)-(0,1)\right) \cap \mathbb{N}_0^2.
+    </me>
+    For example, if <m>P = x^5(y^3+y^2) + x^4(y^4 + y^3 + y^2 + y) + x^3(y^4 + y^3 + y^2 + y + 1)</m>, then
+    <md>
+      <mrow>
+        P_x = 5x^4(y^3+y^2) + 4x^3(y^4 + y^3 + y^2 + y) + 3x^2(y^4 + y^3 + y^2 + y + 1)
+      </mrow>
+      <intertext>and</intertext>
+      <mrow>
+        P_y = x^5(3y^2+2y) + x^4(4y^3 + 3y^2 + 2y + 1) + x^3(4y^3 + 3y^2 + 2y + 1).
+      </mrow>
+    </md>
+    We show the supports of <m>P</m>, <m>P_x</m> and <m>P_y</m> in <xref ref="fig_7"/>.
+  </p>
+
+  <figure xml:id="fig_7">
+    <caption>Supports of a polynomial and its partial derivatives</caption>
+    <group>
+      <figure xml:id="fig_7_subfig_1">
+        <image width="30%" source="img/img2.png"/>
+        <caption><m>\operatorname{Supp}(P)</m></caption>
+      </figure>
+      <figure xml:id="fig_7_subfig_2">
+        <image width="30%" source="img/img2.png"/>
+        <caption><m>\operatorname{Supp}(P_x)</m></caption>
+      </figure>
+      <figure xml:id="fig_7_subfig_3">
+        <image width="30%" source="img/img2.png"/>
+        <caption><m>\operatorname{Supp}(P_y)</m></caption>
+      </figure>
+    </group>
+  </figure>
+
+  <definition xml:id="aplicaciones_polinomiales">
+    <title>Polynomial Maps</title>
+    <p>
+      A map <m>f\colon K^2 \to K^2</m> is called a <term>polynomial map</term> 
+      <idx>polynomial map</idx> if there exist <m>P,Q \in K[x,y]</m> such that 
+      <m>f(a,b) = (P(a,b), Q(a,b))</m>, for all <m>(a,b) \in K^2</m>. 
+      From now on we will name <m>f_{P,Q}</m> the polynomial map <m>f</m>.
+    </p>
+  </definition>
+
+  <definition xml:id="matriz_jacobiana">
+    <title>Jacobian Matrix</title>
+    <p>
+      The <term>Jacobian matrix</term> <idx>Jacobian matrix</idx> of <m>f = f_{P,Q}</m> is
+      <me>
+        \operatorname{D} f := \begin{pmatrix} P_x &amp; P_y \\ Q_x &amp; Q_y \end{pmatrix}.
+      </me>
+      We write
+      <me>
+        [P,Q] = \operatorname{J}(P,Q) := \det \operatorname{D} f = P_x Q_y - P_y Q_x,
+      </me>
+      and call it the <term>Jacobian determinant</term> or simply the <term>Jacobian</term> 
+      <idx>Jacobian</idx> of <m>(P,Q)</m>. Moreover, for <m>P,Q,R,S \in K[x,y]</m>, we set
+      <md>
+        <mrow>
+          \operatorname{D} f_{\,\vert (R,S)} := \begin{pmatrix} P_x(R,S) &amp; P_y(R,S) \\ Q_x(R,S) &amp; Q_y(R,S) \end{pmatrix}
+        </mrow>
+        <intertext>and</intertext>
+        <mrow>
+          \operatorname{J}(P,Q)_{\vert (R,S)} := \det(\operatorname{D} f)_{\vert (R,S)} = P_x(R,S) Q_y(R,S) - P_y(R,S) Q_x(R,S).
+        </mrow>
+      </md>
+      Note that <m>\operatorname{D} f_{\,\vert (x,y)} = \operatorname{D} f</m> and 
+      <m>\operatorname{J}(P,Q)_{\vert (x,y)} = \operatorname{J}(P,Q) = [P,Q]</m>.
+    </p>
+  </definition>
+
+  <p>
+    Since <m>\operatorname{Supp}(P_x) \subseteq \operatorname{Supp}(P)-(1,0)</m> and 
+    <m>\operatorname{Supp}(Q_y) \subseteq \operatorname{Supp}(Q)-(0,1)</m>, we have
+    <me>
+      \operatorname{Supp}(P_x Q_y) \subseteq \operatorname{Supp}(P) + \operatorname{Supp}(Q) - (1,1),
+    </me>
+    and similarly
+    <me>
+      \operatorname{Supp}(P_y Q_x) \subseteq \operatorname{Supp}(P) + \operatorname{Supp}(Q) - (1,1).
+    </me>
+  </p>
+    <p>
+    So,
+    <men xml:id="inclusion_de_supp_P_Q">
+      \operatorname{Supp}([P,Q]) \subseteq \operatorname{Supp}(P) + \operatorname{Supp}(Q) - (1,1).
+    </men>
+    Note that one could also use that
+    <men xml:id="determinante">
+      [x^i y^j, x^k y^l] = (il - jk) x^{i+k-1} y^{j+l-1},
+    </men>
+    in order to obtain the same conclusion. For example, if
+    <men xml:id="P_y_Q_particulares">
+    P = 3xy - y^2 + 3y + 3 \quad\text{and}\quad Q = x^4 y^2 - 3x^4 y - 2x^3 y^2 + 2x^3 y,
+    </men>
+    then
+    <me>
+      [P,Q] = -6x^4 y^2 + 8x^3 y^3 + 27x^4 y - 30x^3 y^2 - 12x^2 y^3 + 24x^3 y + 30x^2 y^2 - 18x^2 y.
+    </me>
+    So,
+    <md>
+      <mrow>
+        \operatorname{Supp}(P) = \{(1,1),(0,2),(0,1),(0,0)\},\quad 
+        \operatorname{Supp}(Q) = \{(4,2),(4,1),(3,2),(3,1)\}
+      </mrow>
+      <intertext>and</intertext>
+      <mrow>
+        \operatorname{Supp}([P,Q]) = \{(4,2),(3,3),(4,1),(3,2),(2,3),(3,1),(2,2),(2,1)\}.
+      </mrow>
+    </md>
+    As it is shown in <xref ref="fig_8"/>, in this example the inclusion 
+    <xref ref="inclusion_de_supp_P_Q"/> is strict.
+  </p>
+
+  <figure xml:id="fig_8">
+    <caption>A case in which the inclusion <xref ref="inclusion_de_supp_P_Q"/> is strict</caption>
+    <group>
+      <figure xml:id="fig_8_subfig_1">
+        <image width="40%" source="img/img2.png"/>
+        <caption><m>\operatorname{Supp}([P,Q])</m></caption>
+      </figure>
+      <figure xml:id="fig_8_subfig_2">
+        <image width="40%" source="img/img2.png"/>
+        <caption><m>\operatorname{Supp}(P) + \operatorname{Supp}(Q) - (1,1)</m></caption>
+      </figure>
+    </group>
+  </figure>
+
+  <proposition xml:id="H_P_Q_subset_H_P_plus_H_Q_minus_1">
+    <p>
+      For each <m>P,Q \in K[x,y]</m>, we have 
+      <m>\operatorname{HN}([P,Q]) \subseteq \operatorname{HN}(P) + \operatorname{HN}(Q) - (1,1)</m>.
+    </p>
+</proposition>
+
+  <proof>
+    <p>
+      By identity <xref ref="inclusion_de_supp_P_Q"/> and the fact that 
+      <m>\operatorname{Supp}(P) \subseteq \operatorname{HN}(P)</m> and 
+      <m>\operatorname{Supp}(Q) \subseteq \operatorname{HN}(Q)</m>, we know that
+      <me>
+        \operatorname{Supp}([P,Q]) \subseteq \operatorname{Supp}(P) + \operatorname{Supp}(Q) - (1,1)
+        \subseteq \operatorname{HN}(P) + \operatorname{HN}(Q) - (1,1).
+      </me>
+      The result follows immediately from this fact, since 
+      <m>\operatorname{HN}(P) + \operatorname{HN}(Q) - (1,1)</m> is a convex set.
+    </p>
+  </proof>
+
+  <p>
+    In <xref ref="fig_9"/>, we show that for <m>P</m> and <m>Q</m> as in 
+    <xref ref="P_y_Q_particulares"/>, the inclusion in 
+    <xref ref="H_P_Q_subset_H_P_plus_H_Q_minus_1"/> is strict.
+  </p>
+
+  <figure xml:id="fig_9">
+    <caption>A case in which the inclusion in 
+      <xref ref="H_P_Q_subset_H_P_plus_H_Q_minus_1"/> is strict</caption>
+    <group>
+      <figure xml:id="fig_9_subfig_1">
+        <image width="40%" source="img/img2.png"/>
+        <caption><m>\operatorname{HN}([P,Q])</m></caption>
+      </figure>
+      <figure xml:id="fig_9_subfig_2">
+        <image width="40%" source="img/img2.png"/>
+        <caption><m>\operatorname{HN}(P) + \operatorname{HN}(Q) - (1,1)</m></caption>
+      </figure>
+    </group>
+  </figure>
+
+  <lemma xml:id="propiedades_basicas_del_jacobiano">
+  <title>Basic Properties of the Jacobian</title>
+  <statement>
+    <p>For each <m>P,Q,H \in K[x,y]</m> the following facts hold:</p>
+    <ol>
+      <li><m>[-,-]</m> is a <m>K</m>-bilinear and alternate form.</li>
+      <li><m>[PQ,H] = [P,H]Q + P[Q,H]</m>.</li>
+      <li><m>[P^m, Q] = m P^{m-1} [P,Q]</m>, for all <m>m \in \mathbb{N}</m>.</li>
+      <li><m>[H, PQ] = [H,P]Q + P[H,Q]</m>.</li>
+      <li><m>[P, Q^n] = n Q^{n-1} [P,Q]</m>, for all <m>n \in \mathbb{N}</m>.</li>
+    </ol>
+  </statement>
+</lemma>
+    <proof>
+    <p>Item 1 is straightforward. Items 4 and 5 follow from items 1, 2 and 3. By the Leibniz rule for the partial derivative of a product, we have</p>
+    <me>
+        [PQ,H] = (PQ)_x H_y - (PQ)_y H_x = (P_x Q + P Q_x) H_y - (P_y Q + P Q_y) H_x = [P,H]Q + P[Q,H],
+    </me>
+    <p>which proves that item 2 is true. Item 3 follows by straightforward induction using item 2.</p>
+</proof>
+
+<remark xml:id="P_Pm_Qn">
+    <title></title>
+    <p>Let <m>P</m> and <m>Q</m> in <m>K[x,y]</m>. From items 1 and 5 of Lemma <xref ref="propiedades_basicas_del_jacobiano"/> it follow that</p>
+    <me>
+        [P, P^m] = m P^{m-1}[P,P] = 0 \quad\text{and}\quad [P, Q^n] = n Q^{n-1}[P,Q] \qquad\text{for all } m,n\in \mathbb{N}.
+    </me>
+    <p>Hence, by item 4 of Lemma <xref ref="propiedades_basicas_del_jacobiano"/>,</p>
+    <me>
+        [P, P^m Q^n] = [P,P^m] Q^n + P^m [P, Q^n] = P^m [P, Q^n] = \begin{cases} n P^m Q^{n-1}[P,Q] &amp; \text{if } n>0, \\ 0 &amp; \text{if } n=0. \end{cases}
+    </me>
+    <p>Using this it follows easily that if <m>[P,Q]\in K^{\times}</m>, then the set <m>\{P^i Q^j : i,j\in \mathbb{N}_0\}</m> is <m>K</m>-linearly independent.</p>
+</remark>
+
+<p>From now on we will use Lemma <xref ref="propiedades_basicas_del_jacobiano"/> without explicit mention.</p>
+
+<example>
+    <p>Let <m>P = x^4 y^2 + 2x^3 y^2 + x^2 y^2</m> and <m>Q = x^6 y^3 + 3x^5 y^3 + 3x^4 y^3 + x^3 y^3</m>. Then</p>
+    <me>
+        \begin{aligned}
+        P_x &amp;= 4x^3 y^2 + 6x^2 y^2 + 2x y^2, &amp;&amp; Q_x = 6x^5 y^3 + 15x^4 y^3 + 12x^3 y^3 + 3x^2 y^3,\\
+        P_y &amp;= 2x^4 y + 4x^3 y + 2x^2 y, &amp;&amp; Q_y = 3x^6 y^2 + 9x^5 y^2 + 9x^4 y^2 + 3x^3 y^2.
+        \end{aligned}
+    </me>
+    <p>A straightforward computation shows that <m>[P,Q] = P_x Q_y - P_y Q_x = 0</m>. We can verify this equality faster, 
+    if we note that for <m>R = xy(1+x)</m>, we have <m>P = R^2</m> and <m>Q = R^3</m>.
+     Then, <m>[P,Q] = [R^2, R^3] = 6 R^3[R,R] = 0</m>. In general, if there exist 
+     <m>R \in K[x,y]</m>, <m>\lambda_P, \lambda_Q \in K</m> and <m>m,n \in \mathbb{N}_0</m>,
+      such that <m>P = \lambda_P R^m</m> and <m>Q = \lambda_Q R^n</m>, then <m>[P,Q] = 0</m>. 
+      Under certain conditions the reciprocal is true, as we will see in Proposition <xref ref="propiedades_basicas_del_jacobiano"/>.</p>
+</example>  // P_y_Q_alineados 
+
+<exercises>
+    <exercise>
+        <p>Prove that if <m>[P,Q] \in K^{\times}</m>, then <m>P</m> and <m>Q</m> are algebraically independent,
+         or equivalently, that the set <m>\{P^i Q^j : i,j \in \mathbb{N}_0\}</m> is <m>K</m>-linearly independent.</p>
+    </exercise>
+</exercises>
+
+
   </section>
 
   <!-- ===================== -->
@@ -105,7 +491,276 @@
 
   <section xml:id="sec-1-3">
     <title>Plane Jacobian conjecture and small examples</title>
-    <p>Content...</p>
+    <p>Let <m>P,Q,R,S\in K[x,y]</m>. Since <m>f_{P,Q}\circ f_{R,S} = f_{P(R,S),Q(R,S)}</m>, the chain rule says that</p>
+
+    <men xml:id="regla_de_la_cadena">
+    \begin{pmatrix} P(R,S)_x &amp; P(R,S)_y \\ Q(R,S)_x &amp; Q(R,S)_y \end{pmatrix} = \begin{pmatrix} P_x(R,S) &amp;
+     P_y(R,S) \\ Q_x(R,S) &amp; Q_y(R,S) \end{pmatrix} \begin{pmatrix} R_x &amp; R_y \\ S_x &amp; S_y \end{pmatrix}.
+    </men>
+<p>Let <m>\varphi\colon K[x,y]\to K[x,y]</m> be an endomorphism of algebras and write <m>R := \varphi(x)</m> and <m>S :=
+ \varphi(y)</m>. Then equality <xref ref="regla_de_la_cadena"/> becomes</p>
+<me>
+    \begin{pmatrix} \varphi(P)_x &amp; \varphi(P)_y \\ \varphi(Q)_x &amp; \varphi(Q)_y \end{pmatrix} = \begin{pmatrix} 
+    \varphi(P_x) &amp; \varphi(P_y) \\ \varphi(Q_x) &amp; \varphi(Q_y) \end{pmatrix} \begin{pmatrix} \varphi(x)_x &amp; 
+    \varphi(x)_y \\ \varphi(y)_x &amp; \varphi(y)_y \end{pmatrix},
+</me>
+<p>since <m>\varphi(P) = P(R,S)</m>, etcetera. Consequently</p>
+<men xml:id="Jacobiano_de_una_composicion">
+    [\varphi(P),\varphi(Q)] = \varphi([P,Q])[\varphi(x),\varphi(y)]\quad\text{for all } P,Q\in K[x,y].
+</men>
+
+<definition xml:id="inversa_polinomial">
+    <title>Polynomial inverse</title>
+    <p>Let <m>f = f_{P,Q}</m> be a polynomial map. We say that <term>f has a polynomial inverse</term> if <m>f</m> is invertible and there exist <m>R,S\in K[x,y]</m> such that <m>f^{-1} = f_{R,S}</m>.</p>
+</definition>
+
+<remark xml:id="cuando_es_iso_f_P_Q">
+    <p>Clearly <m>f_{R,S}</m> is inverse of <m>f_{P,Q}</m> if and only if</p>
+    <men xml:id="f_R_S_es_inversa_de_f_P_Q">
+        R(P,Q) = P(R,S) = x \quad\text{and}\quad S(P,Q) = Q(R,S) = y
+    </men>
+</remark>
+
+<remark xml:id="condicion_necesaria">
+    <p>If <m>f = f_{P,Q}</m> has a polynomial inverse <m>f_{R,S}</m>, then, by <xref ref="regla_de_la_cadena"/></p>
+    <me>
+        \begin{pmatrix} R_x(P,Q) &amp; R_y(P,Q) \\ S_x(P,Q) &amp; S_y(P,Q) \end{pmatrix} \begin{pmatrix} P_x &amp; P_y \\ Q_x &amp; Q_y \end{pmatrix} = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix},
+    </me>
+    <p>and so</p>
+    <me>
+        \operatorname{J}(R,S)|_{(P,Q)} \operatorname{J}(P,Q) = 1.
+    </me>
+    <p>Consequently <m>[P,Q] = \operatorname{J}(P,Q) \in K^{\times}</m>, since the only invertible polynomials are the non zero constants.</p>
+</remark>
+
+<p><title>Plane Jacobian conjecture (version 1)</title></p>
+<p>The plane Jacobian conjecture states that if <m>[P,Q] \in K^{\times}</m>, then the polynomial map <m>f_{P,Q}\colon K^2 \to K^2</m> has a polynomial inverse. In other words, the Jacobian conjecture states that the necessary condition for the invertibility of <m>f_{P,Q}</m>, obtained above, is sufficient.</p>
+
+<definition xml:id="par_jacobiano">
+    <title>Jacobian pair</title>
+    <p>A <term>Jacobian pair</term> is a pair <m>(P,Q)</m>, of polynomials <m>P,Q\in K[x,y]</m>, such that <m>[P,Q] \in K^{\times}</m>.</p>
+</definition>
+
+<p>For a pair of polynomials <m>(P,Q)</m> in two variables with coefficients in <m>K</m>, we let <m>K[P,Q]</m> and <m>\varphi_{P,Q}</m> denote the <m>K</m>-subalgebra of <m>K[x,y]</m> generated by <m>P,Q</m> and the <m>K</m>-algebra endomorphism of <m>K[x,y]</m> defined by <m>\varphi_{P,Q}(R) = R(P,Q)</m>, respectively.</p>
+
+<proposition xml:id="equivalencia_de_que_f_PQ_sea_iso">
+    <title></title>
+    <p>Let <m>P,Q\in K[x,y]</m>. The following assertions are equivalent:</p>
+    <ol>
+        <li><m>f_{P,Q}</m> has a polynomial inverse.</li>
+        <li><m>\varphi_{P,Q}</m> is an automorphism.</li>
+        <li><m>K[P,Q] = K[x,y]</m>.</li>
+    </ol>
+</proposition>
+
+<proof>
+    <p>By definition</p>
+    <me>
+        \varphi_{R,S}\bigl(\varphi_{P,Q}(x)\bigr) = \varphi_{R,S}(P) = P(R,S) \quad\text{and}\quad \varphi_{R,S}\bigl(\varphi_{P,Q}(y)\bigr) = \varphi_{R,S}(Q) = Q(R,S).
+    </me>
+    <p>Therefore, <m>\varphi_{R,S} \circ \varphi_{P,Q} = \varphi_{P(R,S),Q(R,S)}</m>. Similarly <m>\varphi_{P,Q} \circ \varphi_{R,S} = \varphi_{R(P,Q),S(P,Q)}</m>, and so <m>\varphi_{R,S}</m> is the inverse of <m>\varphi_{P,Q}</m> if and only if identities <xref ref="f_R_S_es_inversa_de_f_P_Q"/> are fulfilled. This proves that items 1 and 2 are equivalent. Clearly, 2 implies 3. It remains to prove that 3 implies 2. But this is true, since 3 says that <m>\varphi_{P,Q}</m> is surjective, and each surjective algebra endomorphism of <m>K[x,y]</m> is an isomorphism, because <m>K[x,y]</m> is Noetherian.</p>
+</proof>
+
+
+    <p>
+    By <xref ref="equivalencia_de_que_f_PQ_sea_iso"/>, version 1 of the Jacobian conjecture is equivalent to the following ones:
+  </p>
+
+  <p>
+    <term>Plane Jacobian conjecture (version 2).</term> 
+    If <m>[P,Q]\in K^{\times}</m>, then <m>\varphi_{P,Q}</m> is an automorphism of <m>K[x,y]</m>.
+  </p>
+
+  <p>
+    <term>Plane Jacobian conjecture (version 3).</term> 
+    If <m>[P,Q]\in K^{\times}</m>, then <m>K[P,Q] = K[x,y]</m>.
+  </p>
+
+  <remark xml:id="automorfismos_elementales">
+    <p>
+      Clearly, for each polynomial in one variable <m>p</m> with coefficients in <m>K</m>, the maps 
+      <m>\varphi_{x,y+p(x)}</m> and <m>\varphi_{x+p(y),y}</m> are invertible (with inverses 
+      <m>\varphi_{x,y-p(x)}</m> and <m>\varphi_{x-p(y),y}</m>, respectively). These maps are called 
+      <term>elementary automorphisms</term> <idx>elementary automorphisms</idx>.
+    </p>
+  </remark>
+
+  <example xml:id="un_ejemplo_de_varphi_inversible">
+    <p>
+      Let <m>P := x^4 + 2x^2y + y^2 + x</m> and <m>Q := x^2 + y</m>. Notice that
+      <md>
+        <mrow>
+          [P,Q] &amp;= [x^4,x^2] + [2x^2y,x^2] + [y^2,x^2] + [x,x^2] + [x^4,y] + [2x^2y,y] + [y^2,y] + [x,y]
+        </mrow>
+        <mrow>
+          &amp;= 2x^2[y,x^2] + [y^2,x^2] + [x^4,y] + y[2x^2,y] + [x,y]
+        </mrow>
+        <mrow>
+          &amp;= -4x^3[x,y] - 4xy[x,y] + 4x^3[x,y] + 4xy[x,y] + [x,y]
+        </mrow>
+        <mrow>
+          &amp;= 1.
+        </mrow>
+      </md>
+      As <m>\varphi_{P,Q} = \varphi_{x,x^2+y} \circ \varphi_{y^2+x,y}</m>, 
+      <xref ref="automorfismos_elementales"/> implies that <m>\varphi_{P,Q}</m> is an automorphism.
+    </p>
+  </example>
+
+  <proposition xml:id="P_Q_jac_pair_implica_varphi_P_varphi_Q_jac_pair">
+    <statement>
+      <p>
+        <title>Jacobian pair under automorphism.</title>
+        If <m>(P,Q)</m> is a Jacobian pair and <m>\varphi \in \operatorname{Aut}(K[x,y])</m>, then 
+        <m>(\varphi(P),\varphi(Q))</m> also is a Jacobian pair.
+      </p>
+    </statement>
+  </proposition>
+
+  <proof>
+    <p>
+      By the equivalence between items 1 and 2 of <xref ref="equivalencia_de_que_f_PQ_sea_iso"/> and 
+      <xref ref="condicion_necesaria"/>, we know that <m>[\varphi(x),\varphi(y)] \in K^{\times}</m>. 
+      Hence, from <xref ref="Jacobiano_de_una_composicion"/>, we obtain 
+      <m>[\varphi(P),\varphi(Q)] \in K^{\times}</m>.
+    </p>
+  </proof>
+
+  <proposition xml:id="P_Q_contra_implica_varphi_P_varphi_Q_contra">
+    <statement>
+      <p>
+        <title>Counterexample under automorphism.</title>
+        If <m>(P,Q)</m> is a counterexample to the Jacobian Conjecture and 
+        <m>\varphi \in \operatorname{Aut}(K[x,y])</m>, then <m>(\varphi(P),\varphi(Q))</m> also is a 
+        counterexample to the Jacobian Conjecture.
+      </p>
+    </statement>
+  </proposition>
+
+  <proof>
+    <p>
+      By the previous proposition, <m>[\varphi(P),\varphi(Q)] \in K^{\times}</m>. Set 
+      <m>R := \varphi(x)</m> and <m>S := \varphi(y)</m>, so that <m>\varphi = \varphi_{R,S}</m>. 
+      Since <m>\varphi(P) = P(R,S)</m> and <m>\varphi(Q) = Q(R,S)</m>, we have
+      <me>
+        f_{\varphi(P),\varphi(Q)} = f_{P(R,S),Q(R,S)} = f_{P,Q} \circ f_{R,S}.
+      </me>
+      Moreover, again by <xref ref="equivalencia_de_que_f_PQ_sea_iso"/>, we know that <m>f_{R,S}</m> 
+      has a polynomial inverse. Consequently <m>f_{\varphi(P),\varphi(Q)}</m> has a polynomial inverse 
+      if and only if <m>f_{P,Q}</m> does.
+    </p>
+  </proof>
+
+  <p>
+    From now on we will use <xref ref="P_Q_contra_implica_varphi_P_varphi_Q_contra"/> without explicit mention.
+  </p>
+
+  <proposition xml:id="casos_pequenhos">
+    <statement>
+      <p>
+        <title>Small degree cases.</title>
+        Let <m>(P,Q)</m> be a Jacobian pair. If
+        <me>
+          P \in K[x],\quad P \in K[y],\quad Q \in K[x],\quad Q \in K[y]\quad\text{or}\quad \deg(P) + \deg(Q) \le 2,
+        </me>
+        then <m>\varphi_{P,Q}</m> is an automorphism.
+      </p>
+    </statement>
+  </proposition>
+
+  <proof>
+    <p>
+      Assume that <m>P \in K[x]</m>, which implies <m>P_y = 0</m>. Hence 
+      <m>P_x Q_y = [P,Q] \in K^{\times}</m>. So, <m>P_x, Q_y \in K^{\times}</m> and consequently, 
+      there exist <m>a \in K</m> and <m>b,c \in K^{\times}</m> such that 
+      <m>P = a + bx</m> and <m>Q = cy + Q_0(x)</m>. Then, the polynomials
+      <me>
+        R := \frac{x - a}{b}\quad\text{and}\quad S := \frac{1}{c}\left(y - Q_0\!\left(\frac{x-a}{b}\right)\right)
+      </me>
+      satisfy the conditions <m>R(P,Q) = x</m>, <m>S(P,Q) = y</m>, <m>P(R,S) = x</m> and 
+      <m>Q(R,S) = y</m>; and consequently, <m>\varphi_{P,Q}</m> is an automorphism. A similar argument shows 
+      that a Jacobian pair with <m>P \in K[y]</m>, <m>Q \in K[x]</m> or <m>Q \in K[y]</m> defines an automorphism. 
+      It remains to prove that if <m>\deg(P) + \deg(Q) \le 2</m>, then <m>\varphi_{P,Q}</m> is also an automorphism. 
+      If <m>\deg(P) = 0</m> or <m>\deg(Q) = 0</m>, then <m>[P,Q] = 0</m>, which contradicts the fact that 
+      <m>(P,Q)</m> is a Jacobian pair. Thus, necessarily <m>\deg(P) = \deg(Q) = 1</m>, and so there exist 
+      <m>a,b,c,d,e,f \in K</m> such that <m>(b,c) \ne (0,0)</m>, <m>(e,f) \ne (0,0)</m>,
+      <me>
+        P = a + bx + cy\quad\text{and}\quad Q = d + ex + fy.
+      </me>
+      Moreover, <m>bf - ec = \bigl| \begin{smallmatrix}b &amp; c \\ e &amp; f \end{smallmatrix}\bigr| = [P,Q] \ne 0</m>. Let
+      <me>
+        R := \frac{1}{[P,Q]}(cd - af + fx - cy)\quad\text{and}\quad 
+        S := \frac{1}{[P,Q]}(ae - bd - ex + by).
+      </me>
+      A straightforward computation shows that <m>R(P,Q) = x</m>, <m>S(P,Q) = y</m>, <m>P(R,S) = x</m> and 
+      <m>Q(R,S) = y</m>, and thus <m>\varphi_{P,Q}</m> is an automorphism.
+    </p>
+  </proof>
+
+  <p>
+    A technique we will frequently use in these notes is the <q>reduction</q> of the support. Given a pair 
+    <m>(P,Q)</m> of polynomials in <m>K[x,y]</m> and a problem involving <m>(P,Q)</m>, the idea is to apply an 
+    automorphism <m>\varphi</m> of <m>K[x,y]</m> such that:
+  </p>
+  <ul>
+    <li>Solving the problem for <m>(\varphi(P),\varphi(Q))</m> implies solving it for <m>(P,Q)</m>,</li>
+    <li>the supports of <m>\varphi(P)</m> and <m>\varphi(Q)</m> make the problem easier to solve for these polynomials.</li>
+  </ul>
+  <p>
+    Many times the modification of the support involves a true reduction of the size of the supports of 
+    <m>P</m> and <m>Q</m> in some sense (cardinal, area, etc.). For instance, suppose that 
+    <m>\varphi_{P,Q}</m> is invertible and that we want to find <m>\varphi_{P,Q}^{-1}</m>. Since
+    <me>
+      \varphi_{P,Q}^{-1}(P) = x\quad\text{and}\quad \varphi_{P,Q}^{-1}(Q) = y,
+    </me>
+    an idea is to take an automorphism <m>\varphi_1</m> that reduces the supports of <m>P</m> and <m>Q</m>; 
+    then, an automorphism <m>\varphi_2</m> that reduces the supports of <m>\varphi_1(P)</m> and 
+    <m>\varphi_1(Q)</m>; and so on. Let us see how this technique works in a concrete case: take 
+    <m>P := x^4 + 2x^2y + y^2 + x</m> and <m>Q := x^2 + y</m>. We saw in 
+    <xref ref="un_ejemplo_de_varphi_inversible"/> that <m>\varphi_{P,Q}</m> is invertible. In order to find 
+    <m>\varphi_{P,Q}^{-1}</m>, we first apply the elementary automorphism 
+    <m>\varphi_1 := \varphi_{x,y-x^2}</m>, and we obtain <m>\varphi_1(P) = x + y^2</m> and 
+    <m>\varphi_1(Q) = y</m> (see <xref ref="fig_10"/>).
+  </p>
+
+  <figure xml:id="fig_10">
+    <caption>Reduction of the support of <m>P</m> and <m>Q</m> by <m>\varphi_1</m></caption>
+    <image width="60%" source="img/img2.png"/>
+  </figure>
+  <p>
+  Then, we apply the elementary automorphism <m>\varphi_2 := \varphi_{x-y^2,y}</m>. Clearly
+  <me>
+    \varphi_2(\varphi_1(P)) = x \quad\text{and}\quad \varphi_2(\varphi_1(Q)) = y,
+  </me>
+  and so <m>\varphi_2 \circ \varphi_1 = \varphi_{P,Q}^{-1}</m>. By the way, it is also possible to find 
+  <m>\varphi_{P,Q}^{-1}</m> using <xref ref="automorfismos_elementales"/> and 
+  <xref ref="un_ejemplo_de_varphi_inversible"/>.
+</p>
+
+<p>
+  Later we will also use the support reduction technique in some extensions of the polynomial ring in two variables.
+</p>
+
+<subsection xml:id="ejercicios">
+  <title>Exercises</title>
+
+  <exercise xml:id="ejercicio_1">
+    <statement>
+      <p>
+        Prove that if <m>A</m> is a Noetherian ring, then every surjective endomorphism of <m>A</m> is an automorphism.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="ejercicio_2">
+    <statement>
+      <p>
+        Prove that if <m>Q_y \in K</m>, then there exist <m>c \in K</m> and <m>Q_0 \in K[x]</m> such that 
+        <m>Q = cy + Q_0(x)</m>.
+      </p>
+    </statement>
+  </exercise>
+</subsection>
   </section>
 
   <!-- ===================== -->
@@ -114,12 +769,1207 @@
 
   <section xml:id="sec-1-4">
     <title>Directions, leading terms, starting points and end points</title>
+   <p>
+    We denote by <m>\mathfrak{V}</m> the set of all <term>directions</term> <idx>directions</idx> in <m>\mathbb{Z}^2</m>, 
+    which by definition is the set of all <m>(\rho,\sigma)\in \mathbb{Z}^2\setminus \{(0,0)\}</m> such that 
+    <m>\gcd(\rho,\sigma) = 1</m>. We also denote by <m>\mathfrak{V}_{\ge 0}</m> and <m>\mathfrak{V}_{&gt;0}</m>, the sets
+    <me>
+      \mathfrak{V}_{\ge 0} := \{(\rho,\sigma)\in \mathfrak{V} : \rho+\sigma \ge 0\}
+      \quad\text{and}\quad
+      \mathfrak{V}_{&gt;0} := \{(\rho,\sigma)\in \mathfrak{V} : \rho+\sigma &gt; 0\},
+    </me>
+    of <term>non negative</term> <idx>directions!non negative</idx> and <term>positive</term> 
+    <idx>directions!positive</idx> directions, respectively.
+  </p>
+
+  <definition xml:id="definicion_de_v">
+    <statement>
+      <p>
+        <title>Valuation of a monomial.</title>
+        For all <m>(\rho,\sigma)\in \mathfrak{V}</m> and <m>(i,j)\in \mathbb{N}_0 \times \mathbb{N}_0</m>, we write 
+        <m>v_{\rho\sigma}(i,j) := \rho i + \sigma j</m>.
+      </p>
+    </statement>
+  </definition>
+
+  <definition xml:id="valuaciones_para_polinomios">
+    <statement>
+      <p>
+        <title>Valuation of a polynomial.</title>
+        Let <m>(\rho,\sigma)\in \mathfrak{V}</m>. For <m>P := \sum a_{ij} x^i y^j \in K[x,y]\setminus\{0\}</m>, we define:
+      </p>
+      <ul>
+        <li>
+          <p>
+            The <term><m>(\rho,\sigma)</m>-degree</term> 
+            <idx><m>(\rho,\sigma)</m>-degree</idx> of <m>P</m> as 
+            <m>v_{\rho\sigma}(P) := \max\{ v_{\rho\sigma}(i,j) : a_{ij} \ne 0\}</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The <term><m>(\rho,\sigma)</m>-leading term</term> 
+            <idx><m>(\rho,\sigma)</m>-leading term</idx> of <m>P</m> as 
+            <m>\ell_{\rho\sigma}(P) := \displaystyle \sum_{\rho i+\sigma j = v_{\rho\sigma}(P)} a_{ij} x^i y^j</m>.
+          </p>
+        </li>
+      </ul>
+      <p>
+        Note that the usual <term>total degree</term> <idx>total degree</idx> of <m>P</m> is 
+        <m>\deg(P) := v_{11}(P)</m>.
+      </p>
+    </statement>
+  </definition>
+
+  <note xml:id="valuacion_de_cero">
+    <p>
+      To abbreviate expressions we set <m>v_{\rho\sigma}(0) := -\infty</m> and <m>\ell_{\rho\sigma}(0) := 0</m>, 
+      for all <m>(\rho,\sigma)\in \mathfrak{V}</m>.
+    </p>
+  </note>
+
+  <p>
+    In <xref ref="fig_11"/> are drawn <m>\ell_{\rho\sigma}(P)</m>, <m>\ell_{\rho\sigma}(Q)</m> and 
+    <m>\ell_{\rho\sigma}(PQ)</m> for some directions <m>(\rho,\sigma)</m> and
+    <me>
+      (P,Q) = (x^3y + x^2y^2 + xy^2 + x^2 + y + 2,\; 4xy^2 - y^2 + 2x - 1).
+    </me>
+    The representation of <m>\ell_{\rho\sigma}(PQ)</m> illustrates 
+    <xref ref="pr_v_de_un_producto1"/> (1).
+  </p>
+
+  <figure xml:id="fig_11">
+    <caption>Examples of <m>\ell_{\rho\sigma}</m></caption>
+    <group>
+      <figure xml:id="fig_11_subfig_1">
+        <image width="45%" source="img/img2.png"/>
+        <caption><m>\ell_{-1,1}(P)</m>, <m>\ell_{-1,1}(Q)</m> and <m>\ell_{-1,1}(PQ)</m></caption>
+      </figure>
+      <figure xml:id="fig_11_subfig_2">
+        <image width="45%" source="img/img2.png"/>
+        <caption><m>\ell_{01}(P)</m>, <m>\ell_{01}(Q)</m> and <m>\ell_{01}(PQ)</m></caption>
+      </figure>
+    </group>
+  </figure>
+
+  <definition xml:id="elementos_rho_sigma_homogeneos">
+    <statement>
+      <p>
+        <title><m>(\rho,\sigma)</m>-homogeneous polynomial.</title>
+        We say that <m>P \in K[x,y]</m> is <term><m>(\rho,\sigma)</m>-homogeneous</term> 
+        <idx><m>(\rho,\sigma)</m>-homogeneous</idx> if <m>P = \ell_{\rho\sigma}(P)</m>.
+      </p>
+    </statement>
+  </definition>
+
+  <remark xml:id="euler">
+    <p>
+      Since
+      <me>
+        \rho x \frac{\partial x^i y^j}{\partial x} + \sigma y \frac{\partial x^i y^j}{\partial y} 
+        = (\rho i + \sigma j) x^i y^j = v_{\rho\sigma}(x^i y^j) x^i y^j,
+      </me>
+      a polynomial <m>P \ne 0</m> is <m>(\rho,\sigma)</m>-homogeneous with <m>v_{\rho\sigma}(P) = \tau</m> 
+      if and only if <m>\rho x P_x + \sigma y P_y = \tau P</m>.
+    </p>
+  </remark>
+
+  <p>
+    For all <m>P \in K[x,y] \setminus \{0\}</m>, each one of the edges of <m>\operatorname{HN}(P)</m> is the convex hull 
+    of the support of <m>\ell_{\rho\sigma}(P)</m>, where <m>(\rho,\sigma)</m> is orthogonal to the given edge and 
+    points outside of <m>\operatorname{HN}(P)</m>.
+  </p>
+
+  <remark xml:id="pr_v_de_un_producto1">
+    <p>
+      Let <m>P,Q \in K[x,y]\setminus\{0\}</m> and <m>(\rho,\sigma) \in \mathfrak{V}</m>. The following assertions hold:
+    </p>
+    <ol>
+      <li><m>\ell_{\rho\sigma}(PQ) = \ell_{\rho\sigma}(P) \ell_{\rho\sigma}(Q)</m>.</li>
+      <li>
+        <p>
+          Let <m>P = \sum_i P_i</m>. If there exists <m>\tau \in \mathbb{Z}</m> such that 
+          <m>v_{\rho\sigma}(P_i) = \tau</m>, for all <m>i</m>, and <m>\sum_i \ell_{\rho\sigma}(P_i) \ne 0</m>, then
+          <me>
+            \ell_{\rho\sigma}(P) = \sum_i \ell_{\rho\sigma}(P_i) \quad\text{and}\quad v_{\rho\sigma}(P) = \tau.
+          </me>
+        </p>
+      </li>
+      <li>
+        <p>
+          If <m>P = P_1 + P_2 + \cdots + P_r</m> and <m>v_{\rho\sigma}(P_1) &gt; v_{\rho\sigma}(P_2) &gt; \cdots</m>, 
+          then <m>\ell_{\rho\sigma}(P) = \ell_{\rho\sigma}(P_1)</m>.
+        </p>
+      </li>
+      <li><m>v_{\rho\sigma}(PQ) = v_{\rho\sigma}(P) + v_{\rho\sigma}(Q)</m>.</li>
+      <li><m>-v_{-\rho,-\sigma}(P) \le v_{\rho\sigma}(P)</m>.</li>
+    </ol>
+    <p>
+      Frequently, we will use these facts throughout the book without explicit mention.
+    </p>
+  </remark> 
+  <proposition xml:id="suma_de_Hs">
+  <statement>
+    <p>
+      <title>Newton polygon of a product.</title>
+      The identity <m>\operatorname{HN}(PQ) = \operatorname{HN}(P) + \operatorname{HN}(Q)</m> holds for each 
+      <m>P,Q \in K[x,y]\setminus\{0\}</m>.
+    </p>
+  </statement>
+</proposition>
+
+<proof>
+  <p>
+    For each direction <m>(\rho,\sigma)</m>, let 
+    <m>s_{\rho\sigma}(PQ) := \{(i,j) \in \mathbb{Z}^2 : v_{\rho\sigma}(i,j) \le v_{\rho\sigma}(PQ)\}</m>. 
+    By the discussion below <xref ref="poligono_de_Newton"/>, we know that 
+    <m>\operatorname{HN}(PQ) \subseteq \operatorname{HN}(P) + \operatorname{HN}(Q)</m>. The opposite inclusion 
+    follows from the fact that <m>\operatorname{HN}(PQ) = \bigcap_{(\rho,\sigma)\in \mathfrak{V}} s_{\rho\sigma}(PQ)</m> 
+    and <m>\operatorname{HN}(P) + \operatorname{HN}(Q) \subseteq s_{\rho\sigma}(PQ)</m> by 
+    <xref ref="pr_v_de_un_producto1"/>(4).
+  </p>
+</proof>
+
+<p>
+  Let <m>P \in K[x,y]</m> and let <m>(\rho,\sigma) \in \mathfrak{V}</m>. We say that <m>P = \sum_i P_i</m> is the 
+  <term><m>(\rho,\sigma)</m>-homogeneous decomposition of <m>P</m></term> 
+  <idx><m>(\rho,\sigma)</m>-homogeneous decomposition</idx> if <m>v_{\rho\sigma}(P_i) = i</m>, for all <m>P_i \ne 0</m>.
+</p>
+
+<remark xml:id="re_v_de_un_conmutador">
+  <p>
+    Let <m>P,Q \in K[x,y]\setminus\{0\}</m> and let <m>(\rho,\sigma) \in \mathfrak{V}</m>. We have:
+  </p>
+  <ol>
+    <li>
+      <p>
+        If <m>P</m> and <m>Q</m> are <m>(\rho,\sigma)</m>-homogeneous, then <m>[P,Q]</m> is also. Moreover, 
+        if <m>[P,Q] \ne 0</m>, then
+        <me>
+          v_{\rho\sigma}([P,Q]) = v_{\rho\sigma}(P) + v_{\rho\sigma}(Q) - (\rho+\sigma).
+        </me>
+      </p>
+    </li>
+    <li>
+      <p>
+        If <m>P = \sum_i P_i</m> and <m>Q = \sum_j Q_j</m> are the <m>(\rho,\sigma)</m>-homogeneous decompositions 
+        of <m>P</m> and <m>Q</m>, then the <m>(\rho,\sigma)</m>-homogeneous decomposition 
+        <m>[P,Q] = \sum_k [P,Q]_k</m> is given by
+        <men xml:id="descomposicion">
+          [P,Q]_k = \sum_{i+j = k + \rho + \sigma} [P_i, Q_j].
+        </men>
+      </p>
+    </li>
+    <li>
+      <p>If <m>[P,Q] = 0</m>, then <m>[\ell_{\rho\sigma}(P), \ell_{\rho\sigma}(Q)] = 0</m>.</p>
+    </li>
+  </ol>
+</remark>
+
+<proposition xml:id="pr_v_de_un_conmutador">
+  <statement>
+    <p>
+      <title>Valuation of the Jacobian.</title>
+      Let <m>P,Q \in K[x,y]\setminus \{0\}</m>. Then
+      <me xml:id="dfpvc">
+        v_{\rho\sigma}([P,Q]) \le v_{\rho\sigma}(P) + v_{\rho\sigma}(Q) - (\rho+\sigma),
+      </me>
+      for each <m>(\rho,\sigma) \in \mathfrak{V}</m>. Moreover,
+      <me>
+        v_{\rho\sigma}([P,Q]) = v_{\rho\sigma}(P) + v_{\rho\sigma}(Q) - (\rho+\sigma) 
+        \iff [\ell_{\rho\sigma}(P), \ell_{\rho\sigma}(Q)] \ne 0,
+      </me>
+      and, in this case, <m>[\ell_{\rho\sigma}(P), \ell_{\rho\sigma}(Q)] = \ell_{\rho\sigma}([P,Q])</m>.
+    </p>
+  </statement>
+</proposition>
+
+<proof>
+  <p>It follows directly from the decomposition <xref ref="descomposicion"/>.</p>
+</proof>
+
+<note  xml:id="Comienzo_y_Fin_de_un_elemento_de_W">
+  <p>
+    Let <m>(\rho,\sigma) \in \mathfrak{V}</m> arbitrary and let <m>P \in K[x,y]\setminus \{0\}</m>. We let 
+    <m>\operatorname{stn}_{\rho\sigma}(P)</m> and <m>\operatorname{en}_{\rho\sigma}(P)</m> denote the first and the last point that we find on 
+    <m>H(\ell_{\rho\sigma}(P))</m> when we run counterclockwise along the boundary of <m>H(P)</m>. The identities in 
+    <xref ref="eq_st_y_en"/> can be taken as a formal definition of the <term>starting point 
+    <m>\operatorname{stn}_{\rho\sigma}(P)</m></term> <idx>starting point</idx> and the <term>end point 
+    <m>\operatorname{en}_{\rho\sigma}(P)</m></term> <idx>end point</idx> of <m>\ell_{\rho\sigma}(P)</m>. Note that these points 
+    coincide if and only if <m>\ell_{\rho\sigma}(P)</m> is a monomial.
+  </p>
+</note >
+
+<remark xml:id="st_y_en">
+  <p>
+    The identities
+    <me>
+      \operatorname{stn}_{\rho\sigma}(PQ) = \operatorname{stn}_{\rho\sigma}(P) + \operatorname{stn}_{\rho\sigma}(Q)
+      \quad\text{and}\quad
+      \operatorname{en}_{\rho\sigma}(PQ) = \operatorname{en}_{\rho\sigma}(P) + \operatorname{en}_{\rho\sigma}(Q)
+    </me>
+    hold for each <m>P,Q \in K[x,y]\setminus\{0\}</m> and <m>(\rho,\sigma) \in \mathfrak{V}</m>. Moreover, we have
+    <men xml:id="eq_st_y_en">
+      \operatorname{stn}_{\rho\sigma}(P) = \operatorname{Supp}(\ell_{\sigma,-\rho}(\ell_{\rho\sigma}(P)))
+      \quad\text{and}\quad
+      \operatorname{en}_{\rho\sigma}(P) = \operatorname{Supp}(\ell_{-\sigma,\rho}(\ell_{\rho\sigma}(P))),
+    </men>
+    as is illustrated in <xref ref="fig_12"/>.
+  </p>
+</remark>
+
+<figure xml:id="fig_12">
+  <caption>The starting and end point of <m>\ell_{\rho\sigma}(P)</m></caption>
+  <image width="60%" source="img/img2.png"/>
+</figure>
+
+<remark xml:id="acerca_del_flip">
+  <p>
+    Let <m>P \in K[x,y]</m>, <m>(\rho,\sigma) \in \mathfrak{V}</m> and let <m>\tau := \varphi_{y,x}</m> be the 
+    automorphism of <m>K[x,y]</m> that interchanges <m>x</m> and <m>y</m>. A direct computation shows that 
+    <m>\ell_{\rho\sigma}(\tau(P)) = \tau(\ell_{\sigma\rho}(P))</m>. From this and equalities 
+    <xref ref="eq_st_y_en"/> it follows that <m>\operatorname{stn}_{\rho\sigma}(\tau(P)) = \overline{\tau}(\operatorname{en}_{\sigma\rho}(P))</m> 
+    and <m>\operatorname{en}_{\rho\sigma}(\tau(P)) = \overline{\tau}(\operatorname{stn}_{\sigma\rho}(P))</m>, where <m>\overline{\tau}</m> 
+    denotes the flip of <m>\mathbb{R}^2</m>.
+  </p>
+</remark>
+
+<p>
+  The <term>cross product</term> <idx>cross product</idx> of two vectors <m>A = (a_1,a_2)</m> and 
+  <m>B = (b_1,b_2)</m> in <m>\mathbb{R}^2</m> is 
+  <m>A \times B := \det\begin{pmatrix} a_1 &amp; a_2 \\ b_1 &amp; b_2 \end{pmatrix}</m>.
+</p>
+
+<remark xml:id="starting_and_end_with_cross">
+  <p>
+    If <m>\ell_{\rho\sigma}(P)</m> is not a monomial, then 
+    <m>(\rho,\sigma) \times (\operatorname{en}_{\rho\sigma}(P) - \operatorname{stn}_{\rho\sigma}(P)) &gt; 0</m>.
+  </p>
+</remark>
+
+<remark xml:id="polinomio_asociado_f">
+  <p>
+    Let <m>P \in K[x,y]\setminus\{0\}</m> and <m>(\rho,\sigma) \in \mathfrak{V}</m>. Set 
+    <m>z := x^{-\sigma} y^{\rho} \in K[x,y,x^{-1},y^{-1}]</m> and write
+    <me>
+      \ell_{\rho\sigma}(P) = x^r y^s p(z),
+    </me>
+    where <m>p := \sum_{i=0}^{\gamma} a_i z^i \in K[z]</m> with <m>a_0 \ne 0</m> and <m>a_{\gamma} \ne 0</m>. Since 
+    <m>v_{\sigma,-\rho}(z) = -\rho^2 - \sigma^2 &lt; 0</m>, by <xref ref="eq_st_y_en"/> we have
+    <men xml:id="calculo_de_st_y_en">
+      \operatorname{stn}_{\rho\sigma}(P) = (r,s) \quad\text{and}\quad
+      \operatorname{en}_{\rho\sigma}(P) = (r - \gamma\sigma,\; s + \gamma\rho).
+    </men>
+  </p>
+</remark>
+
+<definition xml:id="def_vectors_alineados">
+  <statement>
+    <p>
+      <title>Aligned vectors.</title>
+      For two vectors <m>A,B</m> in any <m>K</m>-vector space, we write <m>A \sim B</m>, if there exists 
+      <m>\lambda \in K^{\times}</m> such that <m>A = \lambda B</m>. In this case we say that <m>A</m> and <m>B</m> 
+      <term>are aligned</term> <idx>aligned vectors</idx>.
+    </p>
+  </statement>
+</definition>
+
+<remark>
+  <p>
+    Note that, for <m>A,B \in \mathbb{R}^2</m>,
+    <me>
+      A \times B = 0 \iff A = 0,\; B = 0 \text{ or } A \sim B.
+    </me>
+    So,
+    <me>
+      A \sim B \iff A = B = 0,\; \text{or } A \ne 0,\; B \ne 0 \text{ and } A \times B = 0.
+    </me>
+  </p>
+</remark>
+
+<remark xml:id="Jacobian_pair_como_alineados">
+  <p>
+    If <m>P,Q \in K[x,y]</m>, then <m>[P,Q] \sim 1</m> means that <m>[P,Q] \in K^{\times}</m>, and so 
+    <m>(P,Q)</m> is a Jacobian pair.
+  </p>
+</remark>
+
+<proposition xml:id="extremos_alineados">
+  <statement>
+    <p>
+      <title>Extremal points of aligned Jacobian.</title>
+      Let <m>P,Q \in K[x,y]\setminus \{0\}</m> and <m>(\rho,\sigma) \in \mathfrak{V}</m>. If 
+      <m>[\ell_{\rho\sigma}(P), \ell_{\rho\sigma}(Q)] = 0</m>, then
+      <me>
+        \operatorname{stn}_{\rho\sigma}(P) \times \operatorname{stn}_{\rho\sigma}(Q) = 0
+        \quad\text{and}\quad
+        \operatorname{en}_{\rho\sigma}(P) \times \operatorname{en}_{\rho\sigma}(Q) = 0.
+      </me>
+    </p>
+  </statement>
+</proposition>
+
+<proof>
+  <p>
+    Write <m>(r,s) := \operatorname{stn}_{\rho\sigma}(P)</m> and <m>(u,v) := \operatorname{stn}_{\rho\sigma}(Q)</m>. By identities 
+    <xref ref="eq_st_y_en"/> there exist <m>\lambda_p, \lambda_q \in K^{\times}</m> such that
+    <me>
+      \ell_{\sigma,-\rho}(\ell_{\rho\sigma}(P)) = \lambda_p x^r y^s
+      \quad\text{and}\quad
+      \ell_{\sigma,-\rho}(\ell_{\rho\sigma}(Q)) = \lambda_q x^u y^v.
+    </me>
+    Hence, by <xref ref="re_v_de_un_conmutador"/>(3),
+    <me>
+      (rv - su) \lambda_p \lambda_q x^{r+u-1} y^{s+v-1}
+      = \bigl[\lambda_p x^r y^s, \lambda_q x^u y^v\bigr]
+      = \bigl[\ell_{\sigma,-\rho}(\ell_{\rho\sigma}(P)), \ell_{\sigma,-\rho}(\ell_{\rho\sigma}(Q))\bigr] = 0.
+    </me>
+    Thus, <m>\operatorname{stn}_{\rho\sigma}(P) \times \operatorname{stn}_{\rho\sigma}(Q) = rv - su = 0</m>. A similar argument shows that 
+    <m>\operatorname{en}_{\rho\sigma}(P) \times \operatorname{en}_{\rho\sigma}(Q) = 0</m>.
+  </p>
+</proof>
+
+<proposition xml:id="extremos_no_alineados">
+  <statement>
+    <p>
+      <title>Non-aligned extremal points.</title>
+      Let <m>(\rho,\sigma) \in \mathfrak{V}</m> and let <m>P,Q,R \in K[x,y]\setminus \{0\}</m> be such that
+      <me>
+        [\ell_{\rho\sigma}(P), \ell_{\rho\sigma}(Q)] = \ell_{\rho\sigma}(R).
+      </me>
+      The following assertions hold:
+    </p>
+    <ol>
+      <li>
+        <p>
+          <m>\operatorname{stn}_{\rho\sigma}(P) \times \operatorname{stn}_{\rho\sigma}(Q) \ne 0</m> if and only if 
+          <m>\operatorname{stn}_{\rho\sigma}(P) + \operatorname{stn}_{\rho\sigma}(Q) - (1,1) = \operatorname{stn}_{\rho\sigma}(R)</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\operatorname{en}_{\rho\sigma}(P) \times \operatorname{en}_{\rho\sigma}(Q) \ne 0</m> if and only if 
+          <m>\operatorname{en}_{\rho\sigma}(P) + \operatorname{en}_{\rho\sigma}(Q) - (1,1) = \operatorname{en}_{\rho\sigma}(R)</m>.
+        </p>
+      </li>
+    </ol>
+  </statement>
+</proposition>
+    
+<proof>
+  <p>
+    We only prove item 1, since item 2 is similar. By replacing <m>P</m>, <m>Q</m> and <m>R</m> by 
+    <m>\ell_{\rho\sigma}(P)</m>, <m>\ell_{\rho\sigma}(Q)</m> and <m>\ell_{\rho\sigma}(R)</m> respectively, 
+    we can assume that <m>P</m>, <m>Q</m> and <m>R</m> are <m>(\rho,\sigma)</m>-homogeneous, and we do it. 
+    Let <m>(r,s) := \operatorname{stn}_{\rho\sigma}(P)</m>, <m>(u,v) := \operatorname{stn}_{\rho\sigma}(Q)</m> and 
+    <m>(m,n) := \operatorname{stn}_{\rho\sigma}(R)</m>. By identity <xref ref="eq_st_y_en"/> there exist 
+    <m>\lambda_P, \lambda_Q, \lambda_R \in K^{\times}</m> such that
+    <men xml:id="starting">
+      \ell_{\sigma,-\rho}(P) = \lambda_P x^r y^s,\quad
+      \ell_{\sigma,-\rho}(Q) = \lambda_Q x^u y^v \quad\text{and}\quad
+      \ell_{\sigma,-\rho}(R) = \lambda_R x^m y^n.
+    </men>
+    Clearly
+    <me>
+      [\ell_{\sigma,-\rho}(P), \ell_{\sigma,-\rho}(Q)] = (rv - su) \lambda_P \lambda_Q x^{r+u-1} y^{s+v-1},
+    </me>
+    and hence,
+    <men xml:id="chvh4">
+      \operatorname{stn}_{\rho\sigma}(P) \times \operatorname{stn}_{\rho\sigma}(Q) \ne 0 \iff 
+      [\ell_{\sigma,-\rho}(P), \ell_{\sigma,-\rho}(Q)] \ne 0.
+    </men>
+    Consequently, by <xref ref="pr_v_de_un_conmutador"/>, if 
+    <m>\operatorname{stn}_{\rho\sigma}(P) \times \operatorname{stn}_{\rho\sigma}(Q) \ne 0</m>, then
+    <me>
+      \lambda_R x^m y^n = \ell_{\sigma,-\rho}(R) 
+      = [\ell_{\sigma,-\rho}(P), \ell_{\sigma,-\rho}(Q)]
+      = (rv - su) \lambda_P \lambda_Q x^{r+u-1} y^{s+v-1},
+    </me>
+    which implies that
+    <me>
+      \operatorname{stn}_{\rho\sigma}(P) + \operatorname{stn}_{\rho\sigma}(Q) - (1,1) = \operatorname{stn}_{\rho\sigma}(R),
+    </me>
+    as desired. Conversely, if the last equality holds, then, by the first identity in 
+    <xref ref="eq_st_y_en"/>,
+    <me>
+      v_{\sigma,-\rho}(P) + v_{\sigma,-\rho}(Q) - (\sigma - \rho) = v_{\sigma,-\rho}(R),
+    </me>
+    and so, again by <xref ref="pr_v_de_un_conmutador"/>,
+    <me>
+      [\ell_{\sigma,-\rho}(P), \ell_{\sigma,-\rho}(Q)] \ne 0,
+    </me>
+    which by <xref ref="chvh4"/> implies that 
+    <m>\operatorname{stn}_{\rho\sigma}(P) \times \operatorname{stn}_{\rho\sigma}(Q) \ne 0</m>.
+  </p>
+</proof>
+
+<definition xml:id="homogeneous_endomorphism">
+  <statement>
+    <p>
+      <title><m>(\rho,\sigma)</m>-homogeneous endomorphism.</title>
+      Let <m>\varphi</m> be an injective endomorphism of <m>K[x,y]</m> and let <m>(\rho,\sigma) \in \mathfrak{V}</m>. 
+      We say that <m>\varphi</m> is <term><m>(\rho,\sigma)</m>-homogeneous</term> 
+      <idx><m>(\rho,\sigma)</m>-homogeneous injective endomorphism</idx> if, for all 
+      <m>(\rho,\sigma)</m>-homogeneous polynomial <m>P</m>,
+      <me>
+        \varphi(P) \text{ is } (\rho,\sigma)\text{-homogeneous and } 
+        v_{\rho\sigma}(\varphi(P)) = v_{\rho\sigma}(P).
+      </me>
+    </p>
+  </statement>
+</definition>
+
+<remark>
+  <p>
+    By <xref ref="pr_v_de_un_producto1"/>, an injective endomorphism <m>\varphi</m> of <m>K[x,y]</m> is 
+    <m>(\rho,\sigma)</m>-homogeneous if and only if <m>\varphi(x)</m> and <m>\varphi(y)</m> are 
+    <m>(\rho,\sigma)</m>-homogeneous, <m>v_{\rho\sigma}(\varphi(x)) = \rho</m> and 
+    <m>v_{\rho\sigma}(\varphi(y)) = \sigma</m>. From this it follows immediately that <m>\varphi</m> is 
+    <m>(\rho,\sigma)</m>-homogeneous if and only if it is <m>(-\rho,-\sigma)</m>-homogeneous.
+  </p>
+</remark>
+
+<example xml:id="ejemplo_de_auto_homo">
+  <p>
+    For all <m>k \in \mathbb{N}_0</m> and <m>\lambda \in K</m>, the elementary automorphism 
+    <m>\varphi_{x,y+\lambda x^k}</m> is <m>(1,k)</m>-homogeneous.
+  </p>
+</example>
+
+<subsection xml:id="ejercicios_capitulo1">
+  <title>Exercises</title>
+
+  <exercise xml:id="ejercicio_pr_v_de_un_producto1">
+    <statement>
+      <p>Prove <xref ref="pr_v_de_un_producto1"/>.</p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="ejercicio_re_v_de_un_conmutador">
+    <statement>
+      <p>Prove <xref ref="re_v_de_un_conmutador"/>.</p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="ejercicio_st_y_en">
+    <statement>
+      <p>Prove <xref ref="st_y_en"/>.</p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="ejercicio_starting_and_end_with_cross">
+    <statement>
+      <p>Prove <xref ref="starting_and_end_with_cross"/>.</p>
+    </statement>
+  </exercise>
+
+</subsection>
+    
+  </section>
+
+  <!-- ===================== -->
+  <!-- SECTION 1.5 -->
+  <!-- ===================== -->
+
+  <section xml:id="sec-1-5">
+    <title>The element F</title>
+    
+    <proposition xml:id="P_y_Q_alineados">
+  <statement>
+    <p>
+      <title>Homogeneous Jacobian pair.</title>
+      Let <m>(\rho,\sigma)\in \mathfrak{V}</m> and let <m>P,Q\in K[x,y]\setminus\{0\}</m> be two 
+      <m>(\rho,\sigma)</m>-homogeneous elements. Set <m>\tau := v_{\rho\sigma}(P)</m> and <m>\mu := v_{\rho\sigma}(Q)</m>.
+    </p>
+    <ol>
+      <li>
+        <p>If <m>\tau = \mu = 0</m>, then <m>[P,Q] = 0</m>.</p>
+      </li>
+      <li>
+        <p>
+          Assume that <m>(\mu,\tau) \ne (0,0)</m> and let <m>m,n \in \mathbb{Z}</m> coprime such that 
+          <m>n\tau = m\mu</m>. If <m>[P,Q] = 0</m>, then <m>\mu\tau \ge 0</m>, we can take <m>n,m \ge 0</m> 
+          and the following facts hold:
+        </p>
+        <ol>
+          <li>
+            <p>There exists <m>\alpha \in K^{\times}</m> such that <m>P^n = \alpha Q^m</m>.</p>
+          </li>
+          <li>
+            <p>
+              There exists a <m>(\rho,\sigma)</m>-homogeneous polynomial <m>R</m>, such that 
+              <m>P \sim R^m</m> and <m>Q \sim R^n</m>.
+            </p>
+          </li>
+        </ol>
+      </li>
+    </ol>
+  </statement>
+</proposition>
+
+<proof>
+  <p>
+    <bold>1.</bold> For <m>(i,j) \in \mathbb{N}_0^2</m>, set 
+    <m>\mathbb{N}_0(i,j) := \{\lambda (i,j) : \lambda \in \mathbb{N}_0\}</m>. Since <m>P</m> and <m>Q</m> are 
+    <m>(\rho,\sigma)</m>-homogeneous and <m>\tau = \mu = 0</m>, there exists <m>(i,j) \ne (0,0)</m>, such that 
+    <m>\operatorname{Supp}(P) \cup \operatorname{Supp}(Q) \subseteq \mathbb{N}_0(i,j)</m>. So 
+    <m>P,Q \in K[z]</m>, where <m>z := x^i y^j</m>. From this and 
+    <xref ref="propiedades_basicas_del_jacobiano"/>(1) it follows that <m>[P,Q] = 0</m>.
+  </p>
+  <p>
+    <bold>2.</bold> To prove that <m>\mu\tau \ge 0</m>, we can assume that <m>\mu \ne 0</m> and <m>\tau \ne 0</m>, 
+    which implies that <m>\operatorname{stn}_{\rho\sigma}(P) \ne (0,0)</m> and 
+    <m>\operatorname{stn}_{\rho\sigma}(Q) \ne (0,0)</m>. By <xref ref="extremos_alineados"/>, we know that 
+    <m>\operatorname{stn}_{\rho\sigma}(P) \times \operatorname{stn}_{\rho\sigma}(Q) = 0</m>. So, there exists 
+    <m>\lambda \ne 0</m> such that <m>\operatorname{stn}_{\rho\sigma}(Q) = \lambda \operatorname{stn}_{\rho\sigma}(P)</m>. 
+    Since both, <m>\operatorname{stn}_{\rho\sigma}(P)</m> and <m>\operatorname{stn}_{\rho\sigma}(Q)</m> are in 
+    <m>\mathbb{N}_0^2</m>, necessarily <m>\lambda &gt; 0</m>. Therefore, 
+    <m>\mu\tau = \lambda\tau^2 &gt; 0</m> and we can take <m>n,m \ge 0</m>.
+  </p>
+  <p>
+    <bold>2a)</bold> By <xref ref="euler"/>, we have
+    <me>
+      \tau P Q_y - \mu Q P_y = (\rho x P_x + \sigma y P_y) Q_y - (\rho x Q_x + \sigma y Q_y) P_y
+      = \rho x (P_x Q_y - P_y Q_x) = \rho x [P,Q] = 0.
+    </me>
+    Consequently <m>n Q P_y - m P Q_y = 0</m>. Thus,
+    <me>
+      \frac{\partial}{\partial y}\left(\frac{P^n}{Q^m}\right)
+      = \frac{n P^{n-1} P_y Q^m - m Q^{m-1} Q_y P^n}{Q^{2m}}
+      = \frac{P^{n-1} Q^{m-1}}{Q^{2m}} (n Q P_y - m P Q_y) = 0,
+    </me>
+    and similarly, <m>\frac{\partial}{\partial x}\bigl(\frac{P^n}{Q^m}\bigr) = 0</m>. Hence, 
+    <m>\frac{P^n}{Q^m} = \alpha \in K^{\times}</m>, from which <m>P^n = \alpha Q^m</m> follows.
+  </p>
+  <p>
+    <bold>2b)</bold> Set <m>(r,s) := \operatorname{stn}_{\rho\sigma}(P)</m>, 
+    <m>(u,v) := \operatorname{stn}_{\rho\sigma}(Q)</m> and <m>z := x^{-\sigma} y^{\rho}</m>. Since <m>P</m> and <m>Q</m> 
+    are <m>(\rho,\sigma)</m>-homogeneous and <m>v_{-\sigma,\rho}(z) = -\rho^2 - \sigma^2 &lt; 0</m>, it follows from 
+    <xref ref="eq_st_y_en"/>, that
+    <men xml:id="P_Q_y_z">
+      P = x^r y^s f(z) \quad\text{and}\quad Q = x^u y^v g(z),
+    </men>
+    for some <m>f(z), g(z) \in K[z]</m> such that <m>f(0) \ne 0</m> and <m>g(0) \ne 0</m>. By statement 2a), there exists 
+    <m>\alpha \in K^{\times}</m> such that
+    <me>
+      x^{nr} y^{ns} f^n(z) = P^n = \alpha Q^m = \alpha x^{mu} y^{mv} g^m(z),
+    </me>
+    which implies
+    <men xml:id="nr_ns_mu_mv">
+      (nr, ns) = (mu, mv) \quad\text{and}\quad f^n = \alpha g^m.
+    </men>
+    Since <m>\gcd(m,n) = 1</m>, by the second equality there exists <m>h \in K[z]</m> such that
+    <men xml:id="chvh1">
+      f \sim h^m \quad\text{and}\quad g \sim h^n.
+    </men>
+    Take <m>c,d \in \mathbb{Z}</m> such that <m>cm + dn = 1</m> and define 
+    <m>R(x,y) := x^a y^b h(z)</m>, where <m>(a,b) := c(r,s) + d(u,v)</m>. Since, by the first identity in 
+    <xref ref="nr_ns_mu_mv"/>,
+    <men xml:id="ejercicio_mdc">
+      m(a,b) = (r,s) \quad\text{and}\quad n(a,b) = (u,v),
+    </men>
+    from <xref ref="P_Q_y_z"/> and <xref ref="chvh1"/>, it follows that <m>P \sim R^m</m> and <m>Q \sim R^n</m>.
+  </p>
+</proof>
+
+<remark xml:id="R_reducido">
+  <p>
+    A polynomial <m>R \in K[x,y]\setminus K</m> is said to be <term>not a proper power</term> 
+    <idx>polynomial that is not a proper power</idx> if <m>R \sim S^i</m> implies <m>i = 1</m>. For every polynomial 
+    <m>P \in K[x,y]\setminus K</m>, there exists a polynomial <m>R</m>, which is not a proper power, and a natural 
+    number <m>n</m> such that <m>P \sim R^n</m>. Furthermore, if <m>P \sim S^m</m> for some <m>S</m>, then 
+    <m>m \mid n</m>; and the following conditions are equivalent:
+  </p>
+  <ol>
+    <li><m>S</m> is not a proper power,</li>
+    <li><m>R \sim S</m>,</li>
+    <li><m>m = n</m>,</li>
+    <li>
+      <m>m</m> is the largest integer for which there exists <m>S \in K[x,y]</m> such that <m>P \sim S^m</m>.
+    </li>
+  </ol>
+  <p>
+    Clearly, in <xref ref="P_y_Q_alineados"/>(2b) we can take <m>R</m> not a proper power, but then we lose the 
+    property that <m>\gcd(m,n) = 1</m>.
+  </p>
+</remark>
+
+<lemma xml:id="Lema_Joseph">
+  <statement>
+    <p>
+      <title>Joseph's Lemma.</title>
+      Let <m>(\rho,\sigma) \in \mathfrak{V}</m> and let <m>(P,Q)</m> be a Jacobian pair. If 
+      <m>v_{\rho\sigma}(P) \ne 0</m>, then there exists <m>G_0 \in K[P,Q]</m> such that
+      <me>
+        [\ell_{\rho\sigma}(G_0), \ell_{\rho\sigma}(P)] \ne 0
+        \quad\text{and}\quad
+        [[\ell_{\rho\sigma}(G_0), \ell_{\rho\sigma}(P)], \ell_{\rho\sigma}(P)] = 0.
+      </me>
+      Moreover, if we define recursively <m>G_i := [G_{i-1}, P]</m>, then 
+      <m>[\ell_{\rho\sigma}(G_i), \ell_{\rho\sigma}(P)] = 0</m>, for <m>i \ge 1</m>.
+    </p>
+  </statement>
+</lemma>
+
+<proof>
+  <p>
+    For <m>t \in \mathbb{N}</m>, set
+    <me>
+      \mathfrak{M}(t) := \operatorname{linspan} \{P^i Q^j : 0 \le i,j \le t\}.
+    </me>
+    Since <m>\{P^i Q^j : 0 \le i,j \le t\}</m> is linearly independent (by <xref ref="P_Pm_Qn"/>), we have
+    <men xml:id="chvh2">
+      \dim \mathfrak{M}(t) = (t+1)^2.
+    </men>
+    On the other hand, by items 4 and 5 of <xref ref="pr_v_de_un_producto1"/>, we know that
+    <me>
+      mt \le -v_{-\rho,-\sigma}(z) \le v_{\rho\sigma}(z) \le Mt \quad\text{for each } z \in \mathfrak{M}(t) \setminus \{0\},
+    </me>
+    where
+    <md>
+      <mrow>
+        m &amp;:= \min\{0, -v_{-\rho,-\sigma}(P), -v_{-\rho,-\sigma}(Q), -v_{-\rho,-\sigma}(P) - v_{-\rho,-\sigma}(Q)\}
+      </mrow>
+      <intertext>and</intertext>
+      <mrow>
+        M &amp;:= \max\{0, v_{\rho\sigma}(P), v_{\rho\sigma}(Q), v_{\rho\sigma}(P) + v_{\rho\sigma}(Q)\}.
+      </mrow>
+    </md>
+    In other words,
+    <me>
+      J_t := v_{\rho\sigma}(\mathfrak{M}(t) \setminus \{0\}) \subseteq \mathbb{Z} \cap [mt, Mt].
+    </me>
+    For each <m>\beta \in J_t</m>, we take a <m>z_{\beta} \in \mathfrak{M}(t)</m> with <m>v_{\rho\sigma}(z_{\beta}) = \beta</m>. 
+    We next prove that, for some <m>t \in \mathbb{N}</m> sufficiently large, there exists <m>H \in \mathfrak{M}(t)</m> such that
+    <men xml:id="chvh3">
+      [\ell_{\rho\sigma}(P), \ell_{\rho\sigma}(H)] \ne 0.
+    </men>
+    Assume by contradiction that
+    <me>
+      [\ell_{\rho\sigma}(P), \ell_{\rho\sigma}(H)] = 0 \qquad\text{for all } t \in \mathbb{N} \text{ and all } H \in \mathfrak{M}(t).
+    </me>
+    We claim that then
+    <men xml:id="M_t_es_linspan">
+      \mathfrak{M}(t) = \operatorname{linspan}\{z_{\beta} : \beta \in J_t\} \quad \text{for all } t \in \mathbb{N}.
+    </men>
+    In fact, suppose this equality is false for some <m>t</m>, and choose 
+    <m>z \in \mathfrak{M}(t) \setminus \operatorname{linspan} \{z_{\beta} : \beta \in J_t\}</m> such that the number 
+    <m>\gamma := v_{\rho\sigma}(z)</m> is minimum. By assumption,
+    <me>
+      [\ell_{\rho\sigma}(P), \ell_{\rho\sigma}(z)] = [\ell_{\rho\sigma}(P), \ell_{\rho\sigma}(z_{\gamma})] = 0.
+    </me>
+    Since <m>v_{\rho\sigma}(P) \ne 0</m>, by <xref ref="P_y_Q_alineados"/>(2b) and <xref ref="R_reducido"/>, there exist 
+    <m>\lambda, \lambda_{\gamma} \in K^{\times}</m>, <m>n, n_{\gamma} \in \mathbb{N}_0</m> and a polynomial <m>R</m>, 
+    which is not a proper power, such that
+    <me>
+      \ell_{\rho\sigma}(z) = \lambda R^n \quad\text{and}\quad \ell_{\rho\sigma}(z_{\gamma}) = \lambda_{\gamma} R^{n_{\gamma}}.
+    </me>
+    But, since <m>v_{\rho\sigma}(z) = v_{\rho\sigma}(z_{\gamma})</m> and <m>v_{\rho\sigma}(R) \ne 0</m>, by 
+    <xref ref="pr_v_de_un_producto1"/>(4), we have <m>n = n_{\gamma}</m>. Hence,
+    <me>
+      v_{\rho\sigma}(z - \lambda \lambda_{\gamma}^{-1} z_{\gamma}) &lt; v_{\rho\sigma}(z)
+      \quad\text{and}\quad
+      z - \lambda \lambda_{\gamma}^{-1} z_{\gamma} \in \mathfrak{M}(t) \setminus \operatorname{linspan}\{z_{\beta} : \beta \in J_t\},
+    </me>
+    which contradicts the choice of <m>z</m> and thus proves <xref ref="M_t_es_linspan"/>, finishing the proof of the claim. 
+    But <xref ref="M_t_es_linspan"/> implies <m>\dim \mathfrak{M}(t) \le |J_t| \le (M - m)t</m>, for all <m>t</m>, 
+    which contradicts <xref ref="chvh2"/> if we take <m>t \ge M - m</m>. Thus, we can find <m>H \in K[P,Q]</m> such that 
+    <xref ref="chvh3"/> is satisfied. We now define recursively <m>(H_j)_{j\ge 0}</m>, by setting
+    <me>
+      H_0 := H \quad\text{and}\quad H_{j+1} := [H_j, P].
+    </me>
+    Since <m>H_0 \in K[P,Q]</m> and <m>[P,Q] \in K^{\times}</m>, from <xref ref="P_Pm_Qn"/> it follows that eventually 
+    <m>H_l = 0</m>. Let <m>k</m> be the largest index for which <m>H_k \ne 0</m>. By 
+    <xref ref="re_v_de_un_conmutador"/>(3), we know that <m>[\ell_{\rho\sigma}(H_k), \ell_{\rho\sigma}(P)] = 0</m>. 
+    But we also have <m>[\ell_{\rho\sigma}(H_0), \ell_{\rho\sigma}(P)] \ne 0</m> and so there exists a largest <m>j</m> 
+    such that <m>[\ell_{\rho\sigma}(H_j), \ell_{\rho\sigma}(P)] \ne 0</m>. Hence, by 
+    <xref ref="pr_v_de_un_conmutador"/>, we have 
+    <m>[\ell_{\rho\sigma}(H_j), \ell_{\rho\sigma}(P)] = \ell_{\rho\sigma}(H_{j+1})</m>. Thus
+    <me>
+      [[\ell_{\rho\sigma}(H_j), \ell_{\rho\sigma}(P)], \ell_{\rho\sigma}(P)] = [\ell_{\rho\sigma}(H_{j+1}), \ell_{\rho\sigma}(P)] = 0,
+    </me>
+    and so <m>G_0 := H_j</m> satisfies the required conditions.
+  </p>
+</proof>
+
+<proposition xml:id="prop_F0">
+  <statement>
+    <p>
+      <title>Existence of F_0.</title>
+      Let <m>(\rho,\sigma) \in \mathfrak{V}</m>, let <m>(P,Q)</m> be a Jacobian pair and let <m>R \in K[x,y]</m> be a 
+      polynomial such that <m>\ell_{\rho\sigma}(P) \sim R^t</m> with <m>t &gt; 0</m> as large as possible. If 
+      <m>v_{\rho\sigma}(P) \ne 0</m>, then there exists <m>k \ge 0</m> and a <m>(\rho,\sigma)</m>-homogeneous element 
+      <m>F_0 \in K[x,y]</m> such that <m>[R, F_0] \sim R^k</m>.
+    </p>
+  </statement>
+</proposition>
+
+<proof>
+  <p>
+    Let <m>G_0</m> be as in <xref ref="Lema_Joseph"/> and set <m>F_0 := \ell_{\rho\sigma}(G_0) \ne 0</m> and 
+    <m>F_1 := [F_0, R]</m>. Since
+    <me>
+      [\ell_{\rho\sigma}(G_0), \ell_{\rho\sigma}(P)] \sim [F_0, R^t] = t R^{t-1} [F_0, R] \sim R^{t-1} F_1
+    </me>
+    and
+    <me>
+      [[\ell_{\rho\sigma}(G_0), \ell_{\rho\sigma}(P)], \ell_{\rho\sigma}(P)] \sim [R^{t-1} F_1, R^t]
+      = t R^{2t-2} [F_1, R],
+    </me>
+    by <xref ref="Lema_Joseph"/>, we have <m>F_1 \ne 0</m> and <m>[F_1, R] = 0</m>. Thus, since 
+    <m>v_{\rho\sigma}(R) = \frac{1}{t} v_{\rho\sigma}(P) \ne 0</m>, we can apply 
+    <xref ref="P_y_Q_alineados"/>(2b), and we obtain that <m>F_1 \sim S^k</m> and <m>R \sim S^i</m>, for some 
+    <m>i,k \ge 0</m> and some <m>(\rho,\sigma)</m>-homogeneous element <m>S \in K[x,y]</m>. Note that 
+    <m>i &gt; 0</m> because <m>v_{\rho\sigma}(R) \ne 0</m>. But, since <m>t</m> is maximal, we must have 
+    <m>i = 1</m>, and so <m>S \sim R</m>. Hence <m>F_1 \sim R^k</m>, as desired.
+  </p>
+</proof>
+
+<proposition xml:id="central_2">
+  <statement>
+    <p>
+      <title>Centralizer computation.</title>
+      Let <m>(\rho,\sigma) \in \mathfrak{V}_{&gt;0}</m> and let <m>R,F \in K[x,y]\setminus\{0\}</m> be 
+      <m>(\rho,\sigma)</m>-homogeneous elements. Assume that <m>v_{\rho\sigma}(R) \ge 0</m> and that there exists 
+      <m>k \ge 1</m> such that
+      <men xml:id="jacobiano_es_R__k">
+        [R,F] = R^k.
+      </men>
+      Define <m>z := x^{-\sigma} y^{\rho} \in K[x,y,x^{-1},y^{-1}]</m>, and write
+      <men xml:id="escritura_de_R">
+        R = x^i y^j r(z) \quad\text{and}\quad F = x^u y^v f(z), \quad \text{with } r(z), f(z) \in K[z],\; f(0) \ne 0,\; r(0) \ne 0.
+      </men>
+      Then
+    </p>
+    <ol>
+      <li><m>v_{\rho\sigma}(F) = (k-1) v_{\rho\sigma}(R) + \rho + \sigma</m>.</li>
+      <li>Every irreducible factor of <m>r(z)</m> divides <m>f(z)</m>.</li>
+      <li>
+        If <m>f(z)</m> is a constant (i.e., <m>F</m> is a monomial), then <m>r(z)</m> is also a constant 
+        (i.e., <m>R</m> is a monomial).
+      </li>
+      <li>
+        If <m>\deg(f(z)) = 1</m>, then <m>r(z) \sim (z - \lambda)^{\ell}</m>, for some 
+        <m>\lambda \in K^{\times}</m> and <m>\ell \in \mathbb{N}_0</m>.
+      </li>
+      <li>
+        <men xml:id="Desarrollo_de_R__k">
+          R^k = x^{i+u-1} y^{j+v-1} \left( v_{\rho\sigma}(R) z r(z) f'(z) - v_{\rho\sigma}(F) z f(z) r'(z) + (iv - ju) r(z) f(z) \right).
+        </men>
+      </li>
+    </ol>
+  </statement>
+</proposition>
+ <proof>
+  <p>
+    Since <m>F</m> and <m>R</m> are <m>(\rho,\sigma)</m>-homogeneous, by 
+    <xref ref="re_v_de_un_conmutador"/>(1) and <xref ref="pr_v_de_un_producto1"/>(4) we have
+    <me>
+      v_{\rho\sigma}(R) + v_{\rho\sigma}(F) - (\rho+\sigma) = k v_{\rho\sigma}(R),
+    </me>
+    which yields item 1. By <xref ref="jacobiano_es_R__k"/>, <xref ref="escritura_de_R"/> and 
+    <xref ref="propiedades_basicas_del_jacobiano"/>, we obtain that
+    <men xml:id="R__k_primero">
+      <md>
+        <mrow>
+          R^k &amp;= [x^i y^j r(z), x^u y^v f(z)]
+        </mrow>
+        <mrow>
+          &amp;= x^u y^v r(z)[x^i y^j, f(z)] + x^i y^j f(z)[r(z), x^u y^v] + r(z) f(z)[x^i y^j, x^u y^v]
+        </mrow>
+        <mrow>
+          &amp;= x^u y^v r(z) f'(z)[x^i y^j, z] + x^i y^j f(z) r'(z)[z, x^u y^v] + r(z) f(z)[x^i y^j, x^u y^v].
+        </mrow>
+      </md>
+    </men>
+    On the other hand, by <xref ref="calculo_de_st_y_en"/> we have
+    <me>
+      \operatorname{stn}_{\rho\sigma}(R) = (i,j) \quad\text{and}\quad \operatorname{stn}_{\rho\sigma}(F) = (u,v).
+    </me>
+    Hence
+    <me>
+      v_{\rho\sigma}(R) = v_{\rho\sigma}(\operatorname{stn}_{\rho\sigma}(R)) = v_{\rho\sigma}(i,j) = \rho i + \sigma j
+      \quad\text{and}\quad
+      v_{\rho\sigma}(F) = \rho u + \sigma v,
+    </me>
+    and so, by <xref ref="determinante"/> we have
+    <md>
+      <mrow>
+        [x^i y^j, x^u y^v] = (iv - ju) x^{i+u-1} y^{j+v-1},
+      </mrow>
+      <mrow>
+        [x^i y^j, z] = [x^i y^j, x^{-\sigma} y^{\rho}] = (i\rho + j\sigma) x^{i-\sigma-1} y^{j+\rho-1}
+        = v_{\rho\sigma}(R) z x^{i-1} y^{j-1},
+      </mrow>
+      <mrow>
+        [z, x^u y^v] = [x^{-\sigma} y^{\rho}, x^u y^v] = -(\sigma v + \rho u) x^{u-\sigma-1} y^{v+\rho-1}
+        = -v_{\rho\sigma}(F) z x^{u-1} y^{v-1}.
+      </mrow>
+    </md>
+    Inserting these values into <xref ref="R__k_primero"/>, we obtain
+    <me>
+      R^k = x^{i+u-1} y^{j+v-1} \left( v_{\rho\sigma}(R) z r(z) f'(z) - v_{\rho\sigma}(F) z f(z) r'(z) + (iv - ju) r(z) f(z) \right),
+    </me>
+    which is item 5. Let <m>h(z)</m> be an irreducible factor of <m>r(z)</m> and let <m>m</m> and <m>n</m> be the multiplicity 
+    of <m>h(z)</m> in <m>r(z)</m> and <m>f(z)</m>, respectively. Note that <m>h(z) \ne z</m>, since <m>r(0) \ne 0</m>. 
+    We claim that <m>n &gt; 0</m>. In fact, since <m>k \ge 1</m>, by item 1 we have <m>v_{\rho\sigma}(F) \ne 0</m>. 
+    Consequently, if <m>n = 0</m>, then computing the multiplicity of <m>h(z)</m> in each side of 
+    <xref ref="Desarrollo_de_R__k"/>, we obtain that <m>k m = m - 1</m>, which is impossible. This proves item 2. 
+    Items 3 and 4 follow directly from item 2, which concludes the proof.
+  </p>
+</proof>
+
+<theorem xml:id="central">
+  <statement>
+    <p>
+      <title>Centralizer theorem.</title>
+      Let <m>(\rho,\sigma) \in \mathfrak{V}_{&gt;0}</m> and let <m>(P,Q)</m> be a Jacobian pair. If 
+      <m>v_{\rho\sigma}(P) &gt; 0</m>, then there exists a <m>(\rho,\sigma)</m>-homogeneous element 
+      <m>F \in K[x,y]</m> such that
+      <men xml:id="eq_central">
+        [\ell_{\rho\sigma}(P), F] \sim \ell_{\rho\sigma}(P).
+      </men>
+      Moreover
+    </p>
+    <ol>
+      <li><m>v_{\rho\sigma}(F) = \rho + \sigma</m>,</li>
+      <li>
+        <p>
+          <m>\operatorname{stn}_{\rho\sigma}(P) \times \operatorname{stn}_{\rho\sigma}(F) \ne 0</m> if and only if 
+          <m>\operatorname{stn}_{\rho\sigma}(F) = (1,1)</m>,
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\operatorname{en}_{\rho\sigma}(P) \times \operatorname{en}_{\rho\sigma}(F) \ne 0</m> if and only if 
+          <m>\operatorname{en}_{\rho\sigma}(F) = (1,1)</m>,
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\operatorname{stn}_{\rho\sigma}(P) \times (1,1) \ne 0</m> and 
+          <m>\operatorname{en}_{\rho\sigma}(P) \times (1,1) \ne 0</m>,
+        </p>
+      </li>
+    </ol>
+  </statement>
+</theorem>
+
+<proof>
+  <p>
+    Let <m>R \in K[x,y]</m> be such that <m>\ell_{\rho\sigma}(P) \sim R^t</m> with <m>t &gt; 0</m> as large as possible. 
+    Clearly <m>R</m> is <m>(\rho,\sigma)</m>-homogeneous. Moreover, by <xref ref="prop_F0"/>, there exist a 
+    <m>(\rho,\sigma)</m>-homogeneous element <m>F_0 \in K[x,y]</m> and <m>k \ge 0</m> such that 
+    <m>[R, F_0] \sim R^k</m>. We can and will assume that
+    <men xml:id="ecuacion_para_F0">
+      [R, F_0] = R^k.
+    </men>
+    Note that
+    <men xml:id="desigualdad_para_v_R">
+      v_{\rho\sigma}(R) = \frac{1}{t} v_{\rho\sigma}(P) &gt; 0
+    </men>
+    and that, by <xref ref="central_2"/>(1) and <xref ref="pr_v_de_un_producto1"/>(4),
+    <me>
+      v_{\rho\sigma}(F_0) = (k-1) v_{\rho\sigma}(R) + \rho + \sigma &gt; 0.
+    </me>
+    Hence <m>(0,0) \notin \{\operatorname{stn}_{\rho\sigma}(F_0),\, \operatorname{en}_{\rho\sigma}(F_0),\, \operatorname{stn}_{\rho\sigma}(P),\, \operatorname{en}_{\rho\sigma}(P)\}</m>. 
+    Next, we will prove that there exists a <m>(\rho,\sigma)</m>-homogeneous element <m>F \in K[x,y]</m> such that
+    <men xml:id="ecuacion_para_F">
+      [R, F] = R.
+    </men>
+    If <m>k = 0</m>, we can take <m>F := F_0 R</m>. So, we can assume that <m>k \ge 1</m>. In this case, we will prove 
+    that there exists a <m>(\rho,\sigma)</m>-homogeneous element <m>F \in K[x,y]</m> such that
+    <men xml:id="eq3">
+      F_0 = F R^{k-1}.
+    </men>
+    This will finish the proof of <xref ref="ecuacion_para_F"/>, because it implies that
+    <me>
+      R^{k-1}[R, F] = [R, F R^{k-1}] = [R, F_0] = R^k,
+    </me>
+    and, since <m>K[x,y]</m> is a domain, we obtain <m>[R, F] = R</m>. Set <m>z := x^{-\sigma} y^{\rho}</m> and write
+    <men xml:id="pepe1">
+      R = x^i y^j r(z) \quad\text{and}\quad F_0 = x^u y^v f(z), \quad \text{with } r(z), f(z) \in K[z],\; f(0) \ne 0,\; r(0) \ne 0.
+    </men>
+    By <xref ref="central_2"/>(5), we have
+    <men xml:id="LHS_2">
+      R^k = x^{i+u-1} y^{j+v-1} \left( v_{\rho\sigma}(R) z r(z) f'(z) - v_{\rho\sigma}(F_0) z f(z) r'(z) + (iv - ju) r(z) f(z) \right).
+    </men>
+    Let <m>h(z)</m> be an irreducible factor of <m>r(z)</m> and let <m>m</m> and <m>n</m> be the multiplicity of 
+    <m>h(z)</m> in <m>r(z)</m> and <m>f(z)</m>, respectively. By <xref ref="central_2"/>(2) we know that <m>n &gt; 0</m>. 
+    Next we will prove that <m>n &gt; (k-1)m</m>. For this, we write <m>r(z) = h(z)^m \overline{r}(z)</m> and 
+    <m>f(z) = h(z)^n \overline{f}(z)</m>. Then
+    <me>
+      r'(z) = h(z)^m \overline{r}'(z) + m h(z)^{m-1} h'(z) \overline{r}(z)
+      \quad\text{and}\quad
+      f'(z) = h(z)^n \overline{f}'(z) + n h(z)^{n-1} h'(z) \overline{f}(z),
+    </me>
+    and so <xref ref="LHS_2"/> yields
+    <md>
+      <mrow>
+        R^k &amp;= x^{u+i-1} y^{v+j-1} \Biggl( v_{\rho\sigma}(R) z h(z)^m \overline{r}(z) 
+        \left( h(z)^n \overline{f}'(z) + n h(z)^{n-1} h'(z) \overline{f}(z) \right)
+      </mrow>
+      <mrow>
+        &amp;\qquad - v_{\rho\sigma}(F_0) z h(z)^n \overline{f}(z)
+        \left( h(z)^m \overline{r}'(z) + m h(z)^{m-1} h'(z) \overline{r}(z) \right)
+        + (iv - ju) h(z)^{m+n} \overline{r}(z) \overline{f}(z) \Biggr)
+      </mrow>
+      <mrow>
+        &amp;= x^{u+i-1} y^{v+j-1} \Biggl( h(z)^{n+m-1} \overline{f}(z) \overline{r}(z) h'(z) z
+        \left( v_{\rho\sigma}(R) n - v_{\rho\sigma}(F_0) m \right)
+      </mrow>
+      <mrow>
+        &amp;\qquad + h(z)^{m+n} \Bigl( v_{\rho\sigma}(R) z \overline{r}(z) \overline{f}'(z)
+        - v_{\rho\sigma}(F_0) z \overline{r}'(z) \overline{f}(z) + (iv - ju) \overline{r}(z) \overline{f}(z) \Bigr) \Biggr).
+      </mrow>
+    </md>
+    The multiplicity of <m>h(z)</m> on the left hand side is <m>mk</m>. If 
+    <m>v_{\rho\sigma}(R) n - v_{\rho\sigma}(F_0) m \ne 0</m>, then the multiplicity of <m>h(z)</m> on the 
+    right hand side is <m>m + n - 1</m>, and so <m>mk = m + n - 1</m>, which implies 
+    <m>n = m(k-1) + 1 &gt; m(k-1)</m>, as desired. If 
+    <m>v_{\rho\sigma}(R) n - v_{\rho\sigma}(F_0) m = 0</m>, then, using item 1 of <xref ref="central_2"/> and 
+    that <m>\rho+\sigma &gt; 0</m>, we obtain
+    <me>
+      v_{\rho\sigma}(R) n = v_{\rho\sigma}(F_0) m = m(k-1) v_{\rho\sigma}(R) + m(\rho+\sigma) &gt; m(k-1) v_{\rho\sigma}(R).
+    </me>
+    Since <m>v_{\rho\sigma}(R) &gt; 0</m>, this implies that <m>n &gt; m(k-1)</m>, also in this case. Since this is 
+    true for each irreducible factor of <m>r(z)</m>, there exists <m>g(z) \in K[z]</m>, such that 
+    <m>f(z) = r(z)^{k-1} g(z)</m>. But then
+    <me>
+      x^{i(k-1)} y^{j(k-1)} F_0 = x^{i(k-1)+u} y^{j(k-1)+v} f(z)
+      = x^{i(k-1)+u} y^{j(k-1)+v} r(z)^{k-1} g(z) = x^u y^v g(z) R^{k-1},
+    </me>
+    and so
+    <me>
+      F := x^{u - i(k-1)} y^{v - j(k-1)} g(z) \in K[x,y,x^{-1},y^{-1}]
+    </me>
+    satisfies <xref ref="eq3"/>. We claim that <m>F \in K[x,y]</m>. Write 
+    <m>g(z) = \sum_{\ell=0}^{\gamma} b_{\ell} z^{\ell}</m> with <m>b_{\gamma} \ne 0</m>. Since
+    <me>
+      F = x^{u - i(k-1)} y^{v - j(k-1)} \sum_{\ell=0}^{\gamma} b_{\ell} z^{\ell}
+      = x^{u - i(k-1)} y^{v - j(k-1)} \sum_{\ell=0}^{\gamma} b_{\ell} x^{-\sigma \ell} y^{\rho \ell},
+    </me>
+    in order to prove the claim, we must show that
+    <men xml:id="para_el_claim">
+      u - i(k-1) - \sigma \ell \ge 0 \quad\text{and}\quad v - j(k-1) + \rho \ell \ge 0, \qquad \text{for } 0 \le \ell \le \gamma.
+    </men>
+    Clearly, for this will be sufficient to prove the cases <m>\ell = 0</m> and <m>\ell = \gamma</m>. We first show 
+    that <m>u - i(k-1) \ge 0</m> and <m>v - j(k-1) \ge 0</m>. If 
+    <m>\operatorname{stn}_{\rho\sigma}(R) \times \operatorname{stn}_{\rho\sigma}(F_0) \ne 0</m>, then, by equality 
+    <xref ref="ecuacion_para_F0"/>, <xref ref="extremos_no_alineados"/>(1) and <xref ref="st_y_en"/>, we have
+    <me>
+      \operatorname{stn}_{\rho\sigma}(R) + \operatorname{stn}_{\rho\sigma}(F_0) - (1,1) = k \operatorname{stn}_{\rho\sigma}(R).
+    </me>
+    Since, by <xref ref="pepe1"/> and <xref ref="calculo_de_st_y_en"/> we know that 
+    <m>\operatorname{stn}_{\rho\sigma}(F_0) = (u,v)</m> and <m>\operatorname{stn}_{\rho\sigma}(R) = (i,j)</m>, 
+    this equation is equivalent to
+    <me>
+      \bigl( u - (k-1)i,\; v - (k-1)j \bigr) = (1,1).
+    </me>
+    Consequently,
+    <me>
+      u - i(k-1) = 1 \ge 0 \quad\text{and}\quad v - j(k-1) = 1 \ge 0,
+    </me>
+    as desired. On the other hand, if 
+    <m>\operatorname{stn}_{\rho\sigma}(R) \times \operatorname{stn}_{\rho\sigma}(F_0) = 0</m>, then
+    <men xml:id="eq2">
+      \operatorname{stn}_{\rho\sigma}(F_0) = \lambda \operatorname{stn}_{\rho\sigma}(R), \quad \text{for some } \lambda \in \mathbb{Q}^{\times},
+    </men>
+    and so,
+    <me>
+      \bigl( u - (k-1)i,\; v - (k-1)j \bigr) = \operatorname{stn}_{\rho\sigma}(F_0) - (k-1) \operatorname{stn}_{\rho\sigma}(R)
+      = (\lambda - k + 1) \operatorname{stn}_{\rho\sigma}(R).
+    </me>
+    Moreover, by <xref ref="eq2"/>, we have <m>v_{\rho\sigma}(F_0) = \lambda v_{\rho\sigma}(R)</m>, which combined with 
+    <xref ref="desigualdad_para_v_R"/> and <xref ref="central_2"/>(1), gives
+    <me>
+      \lambda = \frac{v_{\rho\sigma}(F_0)}{v_{\rho\sigma}(R)} = k-1 + \frac{\rho+\sigma}{v_{\rho\sigma}(R)} &gt; k-1.
+    </me>
+    Hence <m>u - (k-1)i = (\lambda - (k-1)) i \ge 0</m> and 
+    <m>v - (k-1)j = (\lambda - (k-1)) j \ge 0</m>, as desired. We now prove that
+    <me>
+      u - i(k-1) - \gamma \sigma \ge 0 \quad\text{and}\quad v - j(k-1) + \gamma \rho \ge 0.
+    </me>
+    Let <m>\alpha := \deg(f)</m> and <m>\beta := \deg(r)</m>. By <xref ref="pepe1"/>, 
+    <xref ref="calculo_de_st_y_en"/> and the fact that <m>f(z) = r(z)^{k-1} g(z)</m>, we have
+    <me>
+      \operatorname{en}_{\rho\sigma}(F_0) = (u,v) + \alpha(-\sigma,\rho), \quad
+      \operatorname{en}_{\rho\sigma}(R) = (i,j) + \beta(-\sigma,\rho) \quad\text{and}\quad
+      \gamma = \alpha - (k-1)\beta.
+    </me>
+    Hence
+    <men xml:id="pepe2">
+      \bigl( u - (k-1)i - \gamma\sigma,\; v - (k-1)j + \gamma\rho \bigr)
+      = \operatorname{en}_{\rho\sigma}(F_0) - (k-1) \operatorname{en}_{\rho\sigma}(R).
+    </men>
+    If <m>\operatorname{en}_{\rho\sigma}(R) \times \operatorname{en}_{\rho\sigma}(F_0) \ne 0</m>, then, by equality 
+    <xref ref="ecuacion_para_F0"/>, <xref ref="extremos_no_alineados"/>(2) and <xref ref="st_y_en"/>, we have
+    <me>
+      \operatorname{en}_{\rho\sigma}(R) + \operatorname{en}_{\rho\sigma}(F_0) - (1,1) = k \operatorname{en}_{\rho\sigma}(R)
+      \iff \bigl( u - (k-1)i - \gamma\sigma,\; v - (k-1)j + \gamma\rho \bigr) = (1,1),
+    </me>
+    where, for the equivalence, we use <xref ref="pepe2"/>. Thus
+    <me>
+      u - i(k-1) - \gamma\sigma = 1 \ge 0 \quad\text{and}\quad v - j(k-1) + \gamma\rho = 1 \ge 0,
+    </me>
+    as desired. On the other hand, if 
+    <m>\operatorname{en}_{\rho\sigma}(R) \times \operatorname{en}_{\rho\sigma}(F_0) = 0</m>, then
+    <men xml:id="eq2_prime">
+      \operatorname{en}_{\rho\sigma}(F_0) = \lambda \operatorname{en}_{\rho\sigma}(R), \quad \text{for some } \lambda \in \mathbb{Q}^{\times},
+    </men>
+    and so, again by <xref ref="pepe2"/>,
+    <me>
+      \bigl( u - (k-1)i - \gamma\sigma,\; v - (k-1)j + \gamma\rho \bigr)
+      = \operatorname{en}_{\rho\sigma}(F_0) - (k-1) \operatorname{en}_{\rho\sigma}(R)
+      = (\lambda - k + 1) \operatorname{en}_{\rho\sigma}(R).
+    </me>
+    Moreover, by <xref ref="eq2_prime"/>, we have <m>v_{\rho\sigma}(F_0) = \lambda v_{\rho\sigma}(R)</m>, which combined with 
+    <xref ref="desigualdad_para_v_R"/> and <xref ref="central_2"/>(1), gives
+    <me>
+      \lambda = \frac{v_{\rho\sigma}(F_0)}{v_{\rho\sigma}(R)} = k-1 + \frac{\rho+\sigma}{v_{\rho\sigma}(R)} &gt; k-1.
+    </me>
+    Since <m>(i - \beta\sigma,\; j + \beta\rho) = \operatorname{en}_{\rho\sigma}(R) \in \mathbb{N}_0 \times \mathbb{N}_0</m>, 
+    this implies that
+    <me>
+      u - (k-1)i - \gamma\sigma = (\lambda - k + 1)(i - \beta\sigma) \ge 0
+      \quad\text{and}\quad
+      v - (k-1)j + \gamma\rho = (\lambda - k + 1)(j + \beta\rho) \ge 0,
+    </me>
+    as desired. This finishes the proof of <xref ref="para_el_claim"/>, and concludes the proof of 
+    <xref ref="ecuacion_para_F"/>. But then
+    <me>
+      [\ell_{\rho\sigma}(P), F] \sim [R^t, F] = t R^{t-1}[R, F] = t R^t \sim \ell_{\rho\sigma}(P),
+    </me>
+    and so <xref ref="eq_central"/> is true. Finally we prove the additional statements. By 
+    <xref ref="re_v_de_un_conmutador"/>(1),
+    <me>
+      [F, \ell_{\rho\sigma}(P)] \sim \ell_{\rho\sigma}(P) \Longrightarrow v_{\rho\sigma}(F) = \rho + \sigma,
+    </me>
+    which is statement 1. Statements 2 and 3 follow from <xref ref="extremos_no_alineados"/>. In order to prove 
+    statement 4, we assume by contradiction that <m>\operatorname{stn}_{\rho\sigma}(P) \times (1,1) = 0</m>. 
+    By statement 2, necessarily
+    <men xml:id="pepe3">
+      \operatorname{stn}_{\rho\sigma}(F) \ne (1,1),
+    </men>
+    and so, again by statement 2, we have <m>\operatorname{stn}_{\rho\sigma}(P) \times \operatorname{stn}_{\rho\sigma}(F) = 0</m>. 
+    Since <m>\operatorname{stn}_{\rho\sigma}(F) \ne (0,0)</m> and <m>\operatorname{stn}_{\rho\sigma}(P) \ne (0,0)</m> 
+    (because <m>v_{\rho\sigma}(F) &gt; 0</m> and <m>v_{\rho\sigma}(P) &gt; 0</m>),
+    <me>
+      \operatorname{stn}_{\rho\sigma}(P) \times \operatorname{stn}_{\rho\sigma}(F) = 0
+      \quad\text{and}\quad
+      \operatorname{stn}_{\rho\sigma}(P) \times (1,1) = 0
+      \Longrightarrow \operatorname{stn}_{\rho\sigma}(F) \sim \operatorname{stn}_{\rho\sigma}(P) \sim (1,1).
+    </me>
+    Hence, there exists <m>\lambda \in \mathbb{Q}</m> such that <m>\operatorname{stn}_{\rho\sigma}(F) = \lambda (1,1)</m>. 
+    But then <m>\lambda = 1</m>, because
+    <me>
+      \lambda (\rho + \sigma) = v_{\rho\sigma}(\lambda (1,1)) = v_{\rho\sigma}(\operatorname{stn}_{\rho\sigma}(F)) = v_{\rho\sigma}(F) = \rho + \sigma.
+    </me>
+    So <m>\operatorname{stn}_{\rho\sigma}(F) = (1,1)</m>, which contradicts <xref ref="pepe3"/> and proves that 
+    <m>\operatorname{stn}_{\rho\sigma}(P) \times (1,1) \ne 0</m>. By a similar argument we obtain 
+    <m>\operatorname{en}_{\rho\sigma}(P) \times (1,1) \ne 0</m>, which concludes the proof of item 4 and of the theorem.
+  </p>
+</proof>
+<remark xml:id="sobre_central">
+  <p>
+    Assume that <m>(\rho,\sigma)</m>, <m>P</m> and <m>F</m> are as in <xref ref="central"/>. Since
+    <me>
+      v_{\rho\sigma}(P) &gt; 0 \quad\text{and}\quad v_{\rho\sigma}(F) = \rho + \sigma &gt; 0,
+    </me>
+    we know that <m>(0,0) \notin \{\operatorname{stn}_{\rho\sigma}(F),\, \operatorname{en}_{\rho\sigma}(F), \operatorname{stn}_{\rho\sigma}(P),\, \operatorname{en}_{\rho\sigma}(P)\}</m>. 
+    Hence, items 2 and 3 of <xref ref="central"/> are equivalent to
+    <md>
+      <mrow>
+        \operatorname{stn}_{\rho\sigma}(P) \sim \operatorname{stn}_{\rho\sigma}(F) \text{ if and only if } \operatorname{stn}_{\rho\sigma}(F) \ne (1,1)
+      </mrow>
+      <intertext>and</intertext>
+      <mrow>
+        \operatorname{en}_{\rho\sigma}(P) \sim \operatorname{en}_{\rho\sigma}(F) \text{ if and only if } \operatorname{en}_{\rho\sigma}(F) \ne (1,1),
+      </mrow>
+    </md>
+    respectively.
+  </p>
+</remark>
+
+<subsection xml:id="ejercicios_capitulo5">
+  <title>Exercises</title>
+
+  <exercise xml:id="ejercicio_5_1">
+    <statement>
+      <p>
+        Let <m>\frac{P}{Q} \in K(x,y)</m> be a rational function. Use that <m>K(x,y)</m> is naturally included in 
+        the field <m>K((x,y,x^{-1},y^{-1}))</m> of Laurent series, in order to prove that if 
+        <m>\frac{\partial}{\partial x}\left(\frac{P}{Q}\right) = \frac{\partial}{\partial y}\left(\frac{P}{Q}\right) = 0</m>, 
+        then <m>\frac{P}{Q} \in K</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="ejercicio_5_5">
+    <statement>
+      <p>Prove equality <xref ref="ejercicio_mdc"/>.</p>
+    </statement>
+  </exercise>
+
+  <!-- 
+    Comentario: Solución del Ejercicio 5.5
+    We have
+    m(a,b) = mc(r,s) + md(u,v) = (mcr + dmu, mcs + mdv) = (mcr + dnr, mcs + dns) = (r,s)
+    and
+    n(a,b) = nc(r,s) + nd(u,v) = (ncr + dnu, ncs + ndv) = (mcu + dnu, mcv + dnv) = (u,v)
+  -->
+
+  <exercise xml:id="ejercicio_5_2">
+    <statement>
+      <p>
+        Let <m>R = x + 2x^2 y^3 + x^3 y^6</m> and <m>F_0 = x^2 y + 3x^3 y^4 + 3x^4 y^7 + x^5 y^{10}</m>. 
+        Verify that <m>[R, F_0] = R^2</m> and find <m>F</m> with <m>[R, F] = R</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <figure xml:id="fig_13">
+    <caption>Hint for <xref ref="ejercicio_5_2"/></caption>
+    <image width="60%" source="img/img2.png"/>
+  </figure>
+
+</subsection>
+
+    
+  </section>
+  <!-- ===================== -->
+  <!-- SECTION 1.6 -->
+  <!-- ===================== -->
+
+  <section xml:id="sec-1-6">
+    <title>Order on directions and shaping the support</title>
+    
+    <definition xml:id="defino6_1">
+      <title>Valuaciones para polinomios</title>
+      <p>...</p>
+    </definition>
+
+    
+  </section>
+  <section xml:id="sec-1-7">
+    <title>The shape of counterexamples and (m,n)-pairs</title>
+    
+    <definition xml:id="defino7_1">
+      <title>Valuaciones para polinomios</title>
+      <p>...</p>
+    </definition>
+
+    
+
+  </section>
+
+  <section xml:id="sec-1-8">
+    <title>The elements R and F</title>
     
     <definition xml:id="defino1_1">
       <title>Valuaciones para polinomios</title>
       <p>...</p>
     </definition>
-
     <definition xml:id="defino1_2">
       <title>Valuaciones para polinomios</title>
       <p>...</p>
@@ -136,6 +1986,8 @@
       <title>Valuaciones para polinomios</title>
       <p>...</p>
     </definition>
-  </section>
 
+
+    
+  </section>
 </chapter>
