@@ -880,16 +880,133 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.6",
   "title": "Order on directions and shaping the support",
-  "body": " Order on directions and shaping the support   Valuaciones para polinomios  ...   "
+  "body": " Order on directions and shaping the support    We assign to each direction its corresponding unit vector in (that is ), and we define an interval in  interval in as the preimage under this map of an arc of that is not the whole circle. We consider each interval endowed with the order that increases counterclockwise. For example, given , we let denote the preimage of the arc from to in the counterclockwise direction, that contains both endpoints. This interval is the set where the order is the one mentioned above. In a similar way we can define the open and semiopen intervals , and .      Let . We define the set of directions of  directions of a polynomial , as      An example of      Let which is not a monomial and . We define the successor  successor  of to be the first element of that one encounters starting from and running counterclockwise, and the predecessor  predecessor  , to be the first one, if we run clockwise.     Note that if is a monomial, then and that if is -homogeneous, but is not a monomial, then . In this case Furthermore, if is not homogeneous, then any two consecutive directions of are separated by less than , and so .    Let and let and be two consecutive directions of . For any direction with , we have     If is an interval in , smaller than a closed half circle, which means there is no with , then, for , we have      For and , consider the automorphism of defined by and , and set . For all and each direction such that , we have Moreover , and so .     Illustration of     Since is -homogeneous (see ), for all , we have We next prove that . To begin note that, by , and so . Consequently, , which implies that where we use (1). We claim that In fact, let be a -homogeneous polynomial. Write , where the sum runs on the support of . By , Since, moreover, , by (2), we obtain . Now write Since, by  using again and (3), we obtain as desired. Now, since , it follows from the first and last equality in , that Thus, by the second equality in , we have , which concludes the proof.     For and , consider the automorphism , defined by and , and set . For all and each direction such that , we have Moreover , and so .     Let , where is as in . It is clear that and . Hence we can apply the previous proposition in order to obtain for all . Using , we obtain and that . For example We leave the remaining equalities as an exercise for the reader.    Let be an automorphism of . To streamline the exposition from this point onward, we will occasionally refer to the expression more informally. Instead of writing it explicitly each time, we may say that we apply to or we transform by . Furthermore, when the context is clear and no ambiguity arises, we may continue to denote the transformed polynomial simply as . This convention will be adopted throughout the remainder of the text.    When we apply of , we will sometimes say that  cuts , extends or erases the edge , or creates the edge . This has a precise meaning that we will explain. Write   Assume that . Since is algebraically closed, Note that, by the first equality in and the fact that , and Note also that and implies (we can extend in a unique way to an automorphism of , which contains ), and so We consider the following cases:    and , for some with . By equality applied to , we have Since , we say that  cuts the edge . cuts the edge   In , we illustrate this case with Thus We take (so and ). A direct computation, using that , gives and so and .   Case a     b)  , and or for some with . By equality applied to , we have Since , we say that extends the edge . extends the edge   In , we illustrate this case with Thus We take (so and ). A direct computation, using that , gives and so and .   Case b     c)  , and . By equalities and applied to , we have Hence erases the edge . erases the edge   In , we illustrate this case with Thus . We take (so and ). A direct computation, using that , gives and so and .   Case c     d)  , and . By equalities and applied to , we have Since is a monomial, we say that creates the edge . creates the edge   In , we illustrate this case with Thus , where . We take (so and ). A direct computation, using that , gives and so and .   Case d     "
 },
 {
-  "id": "defino6_1",
+  "id": "intervalos_en_direcciones",
   "level": "2",
-  "url": "sec-1-6.html#defino6_1",
+  "url": "sec-1-6.html#intervalos_en_direcciones",
   "type": "Definition",
   "number": "1.6.1",
-  "title": "Valuaciones para polinomios.",
-  "body": " Valuaciones para polinomios  ...  "
+  "title": "",
+  "body": "  We assign to each direction its corresponding unit vector in (that is ), and we define an interval in  interval in as the preimage under this map of an arc of that is not the whole circle. We consider each interval endowed with the order that increases counterclockwise. For example, given , we let denote the preimage of the arc from to in the counterclockwise direction, that contains both endpoints. This interval is the set where the order is the one mentioned above. In a similar way we can define the open and semiopen intervals , and .   "
+},
+{
+  "id": "forma_debil",
+  "level": "2",
+  "url": "sec-1-6.html#forma_debil",
+  "type": "Definition",
+  "number": "1.6.2",
+  "title": "",
+  "body": "  Let . We define the set of directions of  directions of a polynomial , as    "
+},
+{
+  "id": "fig_14",
+  "level": "2",
+  "url": "sec-1-6.html#fig_14",
+  "type": "Figure",
+  "number": "1.6.3",
+  "title": "",
+  "body": " An example of   "
+},
+{
+  "id": "Sucesor_y_predecesor",
+  "level": "2",
+  "url": "sec-1-6.html#Sucesor_y_predecesor",
+  "type": "Definition",
+  "number": "1.6.4",
+  "title": "",
+  "body": "  Let which is not a monomial and . We define the successor  successor  of to be the first element of that one encounters starting from and running counterclockwise, and the predecessor  predecessor  , to be the first one, if we run clockwise.   "
+},
+{
+  "id": "a_180_grados",
+  "level": "2",
+  "url": "sec-1-6.html#a_180_grados",
+  "type": "Remark",
+  "number": "1.6.5",
+  "title": "",
+  "body": " Note that if is a monomial, then and that if is -homogeneous, but is not a monomial, then . In this case Furthermore, if is not homogeneous, then any two consecutive directions of are separated by less than , and so .  "
+},
+{
+  "id": "direcciones_consecutivas",
+  "level": "2",
+  "url": "sec-1-6.html#direcciones_consecutivas",
+  "type": "Remark",
+  "number": "1.6.6",
+  "title": "",
+  "body": " Let and let and be two consecutive directions of . For any direction with , we have   "
+},
+{
+  "id": "direcciones_consecutivas_prime",
+  "level": "2",
+  "url": "sec-1-6.html#direcciones_consecutivas_prime",
+  "type": "Remark",
+  "number": "1.6.7",
+  "title": "",
+  "body": " If is an interval in , smaller than a closed half circle, which means there is no with , then, for , we have   "
+},
+{
+  "id": "pr_ell_por_automorfismos",
+  "level": "2",
+  "url": "sec-1-6.html#pr_ell_por_automorfismos",
+  "type": "Proposition",
+  "number": "1.6.8",
+  "title": "",
+  "body": "  For and , consider the automorphism of defined by and , and set . For all and each direction such that , we have Moreover , and so .   "
+},
+{
+  "id": "fig_15",
+  "level": "2",
+  "url": "sec-1-6.html#fig_15",
+  "type": "Figure",
+  "number": "1.6.9",
+  "title": "",
+  "body": " Illustration of   "
+},
+{
+  "id": "sec-1-6-11",
+  "level": "2",
+  "url": "sec-1-6.html#sec-1-6-11",
+  "type": "Proof",
+  "number": "1.6.1",
+  "title": "",
+  "body": " Since is -homogeneous (see ), for all , we have We next prove that . To begin note that, by , and so . Consequently, , which implies that where we use (1). We claim that In fact, let be a -homogeneous polynomial. Write , where the sum runs on the support of . By , Since, moreover, , by (2), we obtain . Now write Since, by  using again and (3), we obtain as desired. Now, since , it follows from the first and last equality in , that Thus, by the second equality in , we have , which concludes the proof.  "
+},
+{
+  "id": "de_pr_ell_por_automorfismos",
+  "level": "2",
+  "url": "sec-1-6.html#de_pr_ell_por_automorfismos",
+  "type": "Corollary",
+  "number": "1.6.10",
+  "title": "",
+  "body": "  For and , consider the automorphism , defined by and , and set . For all and each direction such that , we have Moreover , and so .   "
+},
+{
+  "id": "sec-1-6-13",
+  "level": "2",
+  "url": "sec-1-6.html#sec-1-6-13",
+  "type": "Proof",
+  "number": "1.6.2",
+  "title": "",
+  "body": " Let , where is as in . It is clear that and . Hence we can apply the previous proposition in order to obtain for all . Using , we obtain and that . For example We leave the remaining equalities as an exercise for the reader.  "
+},
+{
+  "id": "convencion_automorfismos",
+  "level": "2",
+  "url": "sec-1-6.html#convencion_automorfismos",
+  "type": "Remark",
+  "number": "1.6.11",
+  "title": "",
+  "body": " Let be an automorphism of . To streamline the exposition from this point onward, we will occasionally refer to the expression more informally. Instead of writing it explicitly each time, we may say that we apply to or we transform by . Furthermore, when the context is clear and no ambiguity arises, we may continue to denote the transformed polynomial simply as . This convention will be adopted throughout the remainder of the text.  "
+},
+{
+  "id": "casos_shaping",
+  "level": "2",
+  "url": "sec-1-6.html#casos_shaping",
+  "type": "Remark",
+  "number": "1.6.12",
+  "title": "",
+  "body": " When we apply of , we will sometimes say that  cuts , extends or erases the edge , or creates the edge . This has a precise meaning that we will explain. Write   Assume that . Since is algebraically closed, Note that, by the first equality in and the fact that , and Note also that and implies (we can extend in a unique way to an automorphism of , which contains ), and so We consider the following cases:    and , for some with . By equality applied to , we have Since , we say that  cuts the edge . cuts the edge   In , we illustrate this case with Thus We take (so and ). A direct computation, using that , gives and so and .   Case a     b)  , and or for some with . By equality applied to , we have Since , we say that extends the edge . extends the edge   In , we illustrate this case with Thus We take (so and ). A direct computation, using that , gives and so and .   Case b     c)  , and . By equalities and applied to , we have Hence erases the edge . erases the edge   In , we illustrate this case with Thus . We take (so and ). A direct computation, using that , gives and so and .   Case c     d)  , and . By equalities and applied to , we have Since is a monomial, we say that creates the edge . creates the edge   In , we illustrate this case with Thus , where . We take (so and ). A direct computation, using that , gives and so and .   Case d    "
 },
 {
   "id": "sec-1-7",
@@ -898,16 +1015,268 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.7",
   "title": "The shape of counterexamples and (m,n)-pairs",
-  "body": " The shape of counterexamples and (m,n)-pairs   Valuaciones para polinomios  ...   "
+  "body": " The shape of counterexamples and (m,n)-pairs  We will see that a (hypothetical) counterexample to the plane Jacobian conjecture can be transformed into a standard counterexample (see ).   By equality , one can readily verify that if is a Jacobian pair and is a monomial, then necessarily or . Consequently, by and version 2 of the Plane Jacobian conjecture, if is a counterexample to the Jacobian conjecture, then neither nor can be a monomial.   From now on the previous remark will be used without explicit mention.    Let be coprime with . A pair , of elements in , is called an -pair in  -pair in , if An -pair is called a standard -pair in  standard -pair in if .     If is a Jacobian pair, then or . In fact, by , we have Assume by contradiction that and . Then and becomes an equality. Hence, on one hand, by , we have ; while, on the other hand, from , it follows that , for , which leads to the contradiction .    Note that if , and with , then      Assume the Jacobian conjecture is false and let be a counterexample to it. If or , then there is a counterexample with      Assume for example that and write . By , we know that . Hence Then, by , we have . Since, moreover , by (2b), there exist and a -homogeneous polynomial , such that Hence and , for some . It follows that satisfies the inequality . Moreover, it is clear that and . Hence, by version 3 of the Jacobian conjecture, is also a counterexample. Now, we can construct successively , such that are counterexamples and , until does not divide . Then and so and satisfy the required conditions. When a similar argument gives the proof.     A counterexample , without divisibility relations of degrees or simply a counterexample , without divisibility  counterexample , without divisibility , is a counterexample to the Jacobian conjecture, such that and .      Assume that the Jacobian conjecture is false, let be a counterexample to it and let . Assume that there exist coprime , such that Then   ,  ,  ,  if and only if ,  .      To begin with note that is contained in a half circle, and so, by  and We next prove items 1--5 separately.   1. By equality , we have    2. Assume by contradiction that this is false. Then, by item 1, we have and . Hence, by , necessarily . Consequently , and so, by  which is impossible, since . This concludes the proof of item 2.   3. By , we must prove that We first assume that , and we consider the three cases:  a) ,  b) ,  c) .  In the case a), from we obtain directly as desired. In the case b), we note that, again by , we know that , and so there is a with . But then, since , we have and by the same argument . Hence, as desired. The case c) is similar (use that ).  Assume now that . We first note that there exists with . In fact, otherwise and , which is impossible by . If , then by , we have Combining this with item 2, we obtain that as desired. In the case , the same argument works.   4. and 5. By items 2 and 3, and by (2b), there exist coprime , and a -homogeneous polynomial , such that Clearly is a monomial if and only if is a monomial, and this happens if and only if is a monomial, which proves item 4. Now, by we have Consequently, , and so, and , by . Finally, the same remark yields which finishes the proof of item 5.     If is a counterexample to the plane Jacobian conjecture, then there exist coprime such that, for all , we have   ,  and ,  ,   and ,   .      Set and write We first consider the case . By , we have , which implies and . Hence, and so, by , we know that . Thus items 2 and 3 are satisfied, and so, by (2b), there exist coprime , and a -homogeneous polynomial such that Then, by , we have which yields . Similarly , which finishes the proof of item 4, for . Moreover, we also have which proves item 1 in this case. Assume inductively that and that items 1--4 hold for the direction . Then and yields items 1--4, for . Hence items 1--4 hold for all . Moreover, item 4 of guarantees that proving item 5. Finally take , and notice that for some , we have and, again by , we obtain items 1--4, for , concluding the proof.    Illustration of      Let be a Jacobian pair in , let and let be as in . Then the following cases arise:    If , then .    If , then for some , and .    If , then for some , and .    Moreover, if and if we write , where and , then has exactly one linear factor (which is different from , since , by ).     Note that if and only if , and if and only if is not a monomial. By (3) the -homogeneous polynomial is not a monomial, and will find the line containing . Since , we know that is the straight line going through with slope (see ). If , then clearly proving item 1. If , then the slope is in and intersects in more than one point only if , for some . In this case and then has degree , and . Finally, if , then the slope is in and intersects in more than one point only if , for some . In this case and then has degree , and .    Lines through that intersect in more than one point     Assume that is a Jacobian pair and let be the -homogeneous polynomial given in . Write where and are polynomials such that and . By (1), , and so by , the polynomial has at most two distinct linear factors.    If has zero linear factors, i.e., if is a constant, then is a monomial with support equal to , and we have the following three possibilities, which are illustrated in :   a) and ,  b) and ,  c) and .     If is a power of a linear factor, then has at least one linear factor, and so or . Since, by , we know that if and if , we have three possibilities, which are illustrated in :   a) and ,  b) and ,  c) and .     If has two different linear factors, then has also two different linear factors, and hence . Again by , necessarily and . This is also illustrated in .      Case 1     Case 2 and Case 3      Assume the Jacobian conjecture is false and let be a counterexample to it. Assume that and do not divide each other and that we are in one of the cases 1b), 1c) or 2a) of . Then there exists an automorphism of such that Consequently, .     If we are in the case 2a), then and so, by or (1), we are in the case c) of and we can erase the edge . By this and , we arrive at case 1b) without changing nor . Now, if we are in the case 1b), then we can apply the automorphism which exchanges and , and we arrive at case 1c) without changing nor . Thus, we can assume that we are in the case 1c). Then, by , So, by (2), we have , for some . Moreover, by (2), we know that . Let be as in and write where and are polynomials such that and . Again by , we also know that , for some , and so, using , we obtain that , for some . Moreover, since and we are in the case 1c), we know that . Hence We define by setting and , and set and . By  Hence, for each we have which, combined with the fact that , gives Since , the equality is only possible if and . But it is impossible that . In fact, since , if , then , which is false because . Consequently, , which is the second condition in . The first condition follows from the series of equalities where the first and the third one are true by (1); and the second one, by .     We will say that is subrectangular  subrectangular polynomial if there exists such that In this case we also will say that is subrectangular  subrectangular support . Finally, we will say that a pair is subrectangular if and are. subrectangular pair of polynomials     Note that is subrectangular if and only if , and either is a monomial or .    A counterexample to the Jacobian conjecture is called a standard counterexample  standard counterexample if and there exists such that is a standard -pair.     The pair in the previous definition is unique and coincides with the pair in .     For each counterexample such that and do not divide each other, there exists an automorphism of such that is a subrectangular counterexample to the Jacobian Conjecture, which is a standard -pair, for some . Moreover      By , applying an automorphism of if necessary, we can assume that we are not in any of the cases 1b), 1c) or 2a) of . Now, we will modify and without changing their degrees, either by using or by applying . Hence condition will be satisfied. If we are in case 3), then where for the last equality we have used (2). Applying the automorphism of , defined by and , we arrive at case 2c). If we are in case 2c), then we apply the automorphism which exchanges and , and we arrive at case 2b). In case 2b) we can erase the edge (see c)) and arrive at case 1a). Thus, we can and will assume that we are in case 1a), and so we have where we have used (5). If necessary, we apply to ensure that . Since (4) guarantees that , we conclude that . We claim that In fact, to justify the first inequality, suppose for contradiction that and let be as in . By (2) we know that with . Consequently and thus, by , we obtain This leads to a contradiction, and thus we conclude that , as claimed. Similarly one shows that . Consequently which implies that both and are subrectangular. Hence, where the last inequality follows from the fact that . Moreover, since and do not divide each other, it follows that , and therefore is an -pair. Let be as in corresponding to the direction . Since , we may write , where is a monic polynomial. Moreover, following , we write where are pairwise distinct, , and . If , then is a monomial. In this case we have , and therefore is a standard -pair. If and , then, as noted in (c), the edge can be erased. In this case, becomes a monomial, which implies that , and therefore becomes a standard -pair. Consequently, we can assume that , or and . We claim that where . By (2), to prove this bound it suffices to show that if , then . Assume for contradiction, that and . Then , and by , we would have which leads to a contradiction. Now observe that the bound in implies . Consequently, . Therefore, by , we have and thus . But then for some index we have ; otherwise, by we would derive the contradiction Let be the automorphism of defined by and . By , we have and therefore, by , it follows that . Now observe that is impossible; otherwise we would have , contradicting (4). Hence, which shows that is a standard -pair.    Factors of      For each counterexample such that and do not divide each other, there exists an automorphism of such that is a standard counterexample to the Jacobian Conjecture,      By , applying an automorphism of if necessary, we can assume that is a subrectangular counterexample to the Jacobian Conjecture, which is a standard -pair, for some . Write . If , then there is nothing to prove. Suppose instead that . By (2), we know that . Let be the -homogeneous polynomial provided by . Since , it follows that . We assert that . Indeed, if , then by , it must be that , which leads to a contradiction, as and . Since , (3) ensures that is not a monomial. Hence, by , we obtain and with . Consequently, by (4), we conclude that According to , this implies that . On the other hand, applying once again, we deduce that , and therefore . Let be the automorphism of , defined by and . By  for each . From this it follows that , that is a standard -pair and that is satisfied.    Exercises    Prove the last assertion in .     "
 },
 {
-  "id": "defino7_1",
+  "id": "remark_monomial_counterexample",
   "level": "2",
-  "url": "sec-1-7.html#defino7_1",
-  "type": "Definition",
+  "url": "sec-1-7.html#remark_monomial_counterexample",
+  "type": "Remark",
   "number": "1.7.1",
-  "title": "Valuaciones para polinomios.",
-  "body": " Valuaciones para polinomios  ...  "
+  "title": "",
+  "body": " By equality , one can readily verify that if is a Jacobian pair and is a monomial, then necessarily or . Consequently, by and version 2 of the Plane Jacobian conjecture, if is a counterexample to the Jacobian conjecture, then neither nor can be a monomial.  "
+},
+{
+  "id": "Smp",
+  "level": "2",
+  "url": "sec-1-7.html#Smp",
+  "type": "Definition",
+  "number": "1.7.2",
+  "title": "",
+  "body": "  Let be coprime with . A pair , of elements in , is called an -pair in  -pair in , if An -pair is called a standard -pair in  standard -pair in if .   "
+},
+{
+  "id": "imposible_que_P_y_Q_esten_encima_de_la_diagonal",
+  "level": "2",
+  "url": "sec-1-7.html#imposible_que_P_y_Q_esten_encima_de_la_diagonal",
+  "type": "Remark",
+  "number": "1.7.3",
+  "title": "",
+  "body": " If is a Jacobian pair, then or . In fact, by , we have Assume by contradiction that and . Then and becomes an equality. Hence, on one hand, by , we have ; while, on the other hand, from , it follows that , for , which leads to the contradiction .  "
+},
+{
+  "id": "ve_rho_sigma_es_mayor_que_el_de_F",
+  "level": "2",
+  "url": "sec-1-7.html#ve_rho_sigma_es_mayor_que_el_de_F",
+  "type": "Remark",
+  "number": "1.7.4",
+  "title": "",
+  "body": " Note that if , and with , then   "
+},
+{
+  "id": "no_se_dividen",
+  "level": "2",
+  "url": "sec-1-7.html#no_se_dividen",
+  "type": "Proposition",
+  "number": "1.7.5",
+  "title": "",
+  "body": "  Assume the Jacobian conjecture is false and let be a counterexample to it. If or , then there is a counterexample with    "
+},
+{
+  "id": "sec-1-7-9",
+  "level": "2",
+  "url": "sec-1-7.html#sec-1-7-9",
+  "type": "Proof",
+  "number": "1.7.1",
+  "title": "",
+  "body": " Assume for example that and write . By , we know that . Hence Then, by , we have . Since, moreover , by (2b), there exist and a -homogeneous polynomial , such that Hence and , for some . It follows that satisfies the inequality . Moreover, it is clear that and . Hence, by version 3 of the Jacobian conjecture, is also a counterexample. Now, we can construct successively , such that are counterexamples and , until does not divide . Then and so and satisfy the required conditions. When a similar argument gives the proof.  "
+},
+{
+  "id": "counterexample_sin_divisibilidad",
+  "level": "2",
+  "url": "sec-1-7.html#counterexample_sin_divisibilidad",
+  "type": "Definition",
+  "number": "1.7.6",
+  "title": "",
+  "body": "  A counterexample , without divisibility relations of degrees or simply a counterexample , without divisibility  counterexample , without divisibility , is a counterexample to the Jacobian conjecture, such that and .   "
+},
+{
+  "id": "lemma_PQ_similares_en_I",
+  "level": "2",
+  "url": "sec-1-7.html#lemma_PQ_similares_en_I",
+  "type": "Lemma",
+  "number": "1.7.7",
+  "title": "",
+  "body": "  Assume that the Jacobian conjecture is false, let be a counterexample to it and let . Assume that there exist coprime , such that Then   ,  ,  ,  if and only if ,  .    "
+},
+{
+  "id": "sec-1-7-12",
+  "level": "2",
+  "url": "sec-1-7.html#sec-1-7-12",
+  "type": "Proof",
+  "number": "1.7.2",
+  "title": "",
+  "body": " To begin with note that is contained in a half circle, and so, by  and We next prove items 1--5 separately.   1. By equality , we have    2. Assume by contradiction that this is false. Then, by item 1, we have and . Hence, by , necessarily . Consequently , and so, by  which is impossible, since . This concludes the proof of item 2.   3. By , we must prove that We first assume that , and we consider the three cases:  a) ,  b) ,  c) .  In the case a), from we obtain directly as desired. In the case b), we note that, again by , we know that , and so there is a with . But then, since , we have and by the same argument . Hence, as desired. The case c) is similar (use that ).  Assume now that . We first note that there exists with . In fact, otherwise and , which is impossible by . If , then by , we have Combining this with item 2, we obtain that as desired. In the case , the same argument works.   4. and 5. By items 2 and 3, and by (2b), there exist coprime , and a -homogeneous polynomial , such that Clearly is a monomial if and only if is a monomial, and this happens if and only if is a monomial, which proves item 4. Now, by we have Consequently, , and so, and , by . Finally, the same remark yields which finishes the proof of item 5.  "
+},
+{
+  "id": "star",
+  "level": "2",
+  "url": "sec-1-7.html#star",
+  "type": "Proposition",
+  "number": "1.7.8",
+  "title": "",
+  "body": "  If is a counterexample to the plane Jacobian conjecture, then there exist coprime such that, for all , we have   ,  and ,  ,   and ,   .    "
+},
+{
+  "id": "sec-1-7-14",
+  "level": "2",
+  "url": "sec-1-7.html#sec-1-7-14",
+  "type": "Proof",
+  "number": "1.7.3",
+  "title": "",
+  "body": " Set and write We first consider the case . By , we have , which implies and . Hence, and so, by , we know that . Thus items 2 and 3 are satisfied, and so, by (2b), there exist coprime , and a -homogeneous polynomial such that Then, by , we have which yields . Similarly , which finishes the proof of item 4, for . Moreover, we also have which proves item 1 in this case. Assume inductively that and that items 1--4 hold for the direction . Then and yields items 1--4, for . Hence items 1--4 hold for all . Moreover, item 4 of guarantees that proving item 5. Finally take , and notice that for some , we have and, again by , we obtain items 1--4, for , concluding the proof.  "
+},
+{
+  "id": "Ilustracion_de_star",
+  "level": "2",
+  "url": "sec-1-7.html#Ilustracion_de_star",
+  "type": "Figure",
+  "number": "1.7.9",
+  "title": "",
+  "body": " Illustration of   "
+},
+{
+  "id": "direcciones_1k",
+  "level": "2",
+  "url": "sec-1-7.html#direcciones_1k",
+  "type": "Proposition",
+  "number": "1.7.10",
+  "title": "",
+  "body": "  Let be a Jacobian pair in , let and let be as in . Then the following cases arise:    If , then .    If , then for some , and .    If , then for some , and .    Moreover, if and if we write , where and , then has exactly one linear factor (which is different from , since , by ).   "
+},
+{
+  "id": "sec-1-7-17",
+  "level": "2",
+  "url": "sec-1-7.html#sec-1-7-17",
+  "type": "Proof",
+  "number": "1.7.4",
+  "title": "",
+  "body": " Note that if and only if , and if and only if is not a monomial. By (3) the -homogeneous polynomial is not a monomial, and will find the line containing . Since , we know that is the straight line going through with slope (see ). If , then clearly proving item 1. If , then the slope is in and intersects in more than one point only if , for some . In this case and then has degree , and . Finally, if , then the slope is in and intersects in more than one point only if , for some . In this case and then has degree , and .  "
+},
+{
+  "id": "posibles_L",
+  "level": "2",
+  "url": "sec-1-7.html#posibles_L",
+  "type": "Figure",
+  "number": "1.7.11",
+  "title": "",
+  "body": " Lines through that intersect in more than one point   "
+},
+{
+  "id": "casos_soporte",
+  "level": "2",
+  "url": "sec-1-7.html#casos_soporte",
+  "type": "Remark",
+  "number": "1.7.12",
+  "title": "",
+  "body": " Assume that is a Jacobian pair and let be the -homogeneous polynomial given in . Write where and are polynomials such that and . By (1), , and so by , the polynomial has at most two distinct linear factors.    If has zero linear factors, i.e., if is a constant, then is a monomial with support equal to , and we have the following three possibilities, which are illustrated in :   a) and ,  b) and ,  c) and .     If is a power of a linear factor, then has at least one linear factor, and so or . Since, by , we know that if and if , we have three possibilities, which are illustrated in :   a) and ,  b) and ,  c) and .     If has two different linear factors, then has also two different linear factors, and hence . Again by , necessarily and . This is also illustrated in .    "
+},
+{
+  "id": "p_constante",
+  "level": "2",
+  "url": "sec-1-7.html#p_constante",
+  "type": "Figure",
+  "number": "1.7.13",
+  "title": "",
+  "body": " Case 1   "
+},
+{
+  "id": "p_de_con_un_factor",
+  "level": "2",
+  "url": "sec-1-7.html#p_de_con_un_factor",
+  "type": "Figure",
+  "number": "1.7.14",
+  "title": "",
+  "body": " Case 2 and Case 3   "
+},
+{
+  "id": "reduccion_con_un_factor",
+  "level": "2",
+  "url": "sec-1-7.html#reduccion_con_un_factor",
+  "type": "Proposition",
+  "number": "1.7.15",
+  "title": "",
+  "body": "  Assume the Jacobian conjecture is false and let be a counterexample to it. Assume that and do not divide each other and that we are in one of the cases 1b), 1c) or 2a) of . Then there exists an automorphism of such that Consequently, .   "
+},
+{
+  "id": "sec-1-7-23",
+  "level": "2",
+  "url": "sec-1-7.html#sec-1-7-23",
+  "type": "Proof",
+  "number": "1.7.5",
+  "title": "",
+  "body": " If we are in the case 2a), then and so, by or (1), we are in the case c) of and we can erase the edge . By this and , we arrive at case 1b) without changing nor . Now, if we are in the case 1b), then we can apply the automorphism which exchanges and , and we arrive at case 1c) without changing nor . Thus, we can assume that we are in the case 1c). Then, by , So, by (2), we have , for some . Moreover, by (2), we know that . Let be as in and write where and are polynomials such that and . Again by , we also know that , for some , and so, using , we obtain that , for some . Moreover, since and we are in the case 1c), we know that . Hence We define by setting and , and set and . By  Hence, for each we have which, combined with the fact that , gives Since , the equality is only possible if and . But it is impossible that . In fact, since , if , then , which is false because . Consequently, , which is the second condition in . The first condition follows from the series of equalities where the first and the third one are true by (1); and the second one, by .  "
+},
+{
+  "id": "subrectangular",
+  "level": "2",
+  "url": "sec-1-7.html#subrectangular",
+  "type": "Definition",
+  "number": "1.7.16",
+  "title": "",
+  "body": "  We will say that is subrectangular  subrectangular polynomial if there exists such that In this case we also will say that is subrectangular  subrectangular support . Finally, we will say that a pair is subrectangular if and are. subrectangular pair of polynomials    "
+},
+{
+  "id": "standard_counterexample",
+  "level": "2",
+  "url": "sec-1-7.html#standard_counterexample",
+  "type": "Definition",
+  "number": "1.7.17",
+  "title": "",
+  "body": "  A counterexample to the Jacobian conjecture is called a standard counterexample  standard counterexample if and there exists such that is a standard -pair.   "
+},
+{
+  "id": "sec-1-7-27",
+  "level": "2",
+  "url": "sec-1-7.html#sec-1-7-27",
+  "type": "Remark",
+  "number": "1.7.18",
+  "title": "",
+  "body": " The pair in the previous definition is unique and coincides with the pair in .  "
+},
+{
+  "id": "contraejemplo_da_standard_mn_par",
+  "level": "2",
+  "url": "sec-1-7.html#contraejemplo_da_standard_mn_par",
+  "type": "Proposition",
+  "number": "1.7.19",
+  "title": "",
+  "body": "  For each counterexample such that and do not divide each other, there exists an automorphism of such that is a subrectangular counterexample to the Jacobian Conjecture, which is a standard -pair, for some . Moreover    "
+},
+{
+  "id": "sec-1-7-29",
+  "level": "2",
+  "url": "sec-1-7.html#sec-1-7-29",
+  "type": "Proof",
+  "number": "1.7.6",
+  "title": "",
+  "body": " By , applying an automorphism of if necessary, we can assume that we are not in any of the cases 1b), 1c) or 2a) of . Now, we will modify and without changing their degrees, either by using or by applying . Hence condition will be satisfied. If we are in case 3), then where for the last equality we have used (2). Applying the automorphism of , defined by and , we arrive at case 2c). If we are in case 2c), then we apply the automorphism which exchanges and , and we arrive at case 2b). In case 2b) we can erase the edge (see c)) and arrive at case 1a). Thus, we can and will assume that we are in case 1a), and so we have where we have used (5). If necessary, we apply to ensure that . Since (4) guarantees that , we conclude that . We claim that In fact, to justify the first inequality, suppose for contradiction that and let be as in . By (2) we know that with . Consequently and thus, by , we obtain This leads to a contradiction, and thus we conclude that , as claimed. Similarly one shows that . Consequently which implies that both and are subrectangular. Hence, where the last inequality follows from the fact that . Moreover, since and do not divide each other, it follows that , and therefore is an -pair. Let be as in corresponding to the direction . Since , we may write , where is a monic polynomial. Moreover, following , we write where are pairwise distinct, , and . If , then is a monomial. In this case we have , and therefore is a standard -pair. If and , then, as noted in (c), the edge can be erased. In this case, becomes a monomial, which implies that , and therefore becomes a standard -pair. Consequently, we can assume that , or and . We claim that where . By (2), to prove this bound it suffices to show that if , then . Assume for contradiction, that and . Then , and by , we would have which leads to a contradiction. Now observe that the bound in implies . Consequently, . Therefore, by , we have and thus . But then for some index we have ; otherwise, by we would derive the contradiction Let be the automorphism of defined by and . By , we have and therefore, by , it follows that . Now observe that is impossible; otherwise we would have , contradicting (4). Hence, which shows that is a standard -pair.  "
+},
+{
+  "id": "factores_de_ell10",
+  "level": "2",
+  "url": "sec-1-7.html#factores_de_ell10",
+  "type": "Figure",
+  "number": "1.7.20",
+  "title": "",
+  "body": " Factors of   "
+},
+{
+  "id": "subrectangular_contraejemplo",
+  "level": "2",
+  "url": "sec-1-7.html#subrectangular_contraejemplo",
+  "type": "Proposition",
+  "number": "1.7.21",
+  "title": "",
+  "body": "  For each counterexample such that and do not divide each other, there exists an automorphism of such that is a standard counterexample to the Jacobian Conjecture,    "
+},
+{
+  "id": "sec-1-7-32",
+  "level": "2",
+  "url": "sec-1-7.html#sec-1-7-32",
+  "type": "Proof",
+  "number": "1.7.7",
+  "title": "",
+  "body": " By , applying an automorphism of if necessary, we can assume that is a subrectangular counterexample to the Jacobian Conjecture, which is a standard -pair, for some . Write . If , then there is nothing to prove. Suppose instead that . By (2), we know that . Let be the -homogeneous polynomial provided by . Since , it follows that . We assert that . Indeed, if , then by , it must be that , which leads to a contradiction, as and . Since , (3) ensures that is not a monomial. Hence, by , we obtain and with . Consequently, by (4), we conclude that According to , this implies that . On the other hand, applying once again, we deduce that , and therefore . Let be the automorphism of , defined by and . By  for each . From this it follows that , that is a standard -pair and that is satisfied.  "
+},
+{
+  "id": "ejercicio_ultima_assertion",
+  "level": "2",
+  "url": "sec-1-7.html#ejercicio_ultima_assertion",
+  "type": "Checkpoint",
+  "number": "1.7.22",
+  "title": "",
+  "body": "  Prove the last assertion in .   "
 },
 {
   "id": "sec-1-8",

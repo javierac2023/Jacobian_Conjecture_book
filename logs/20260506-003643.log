@@ -1,0 +1,13 @@
+INFO    : Building target web
+INFO    : XSL conversion of D:\DOCUMENTOS\JACOBIAN BOOK\new-pretext-project\source\main.ptx by C:\Users\Javier\.ptx\2.38.1\core\xsl\utilities\pretext-enhanced-source.xsl
+ERROR   : Error loading file:///D:/DOCUMENTOS/JACOBIAN%20BOOK/new-pretext-project/source/chapter1.ptx: xml:id : attribute value 180_grados is not an NCName, line 1998, column 28 (file:///D:/DOCUMENTOS/JACOBIAN%20BOOK/new-pretext-project/source/chapter1.ptx, line 1998)
+ERROR   : Error assembling source file: xml:id : attribute value 180_grados is not an NCName, line 1998, column 28 (file:///D:/DOCUMENTOS/JACOBIAN%20BOOK/new-pretext-project/source/chapter1.ptx, line 1998)
+CRITICAL: XML syntax for source file is invalid
+INFO    : ------------------------
+CRITICAL: Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------
