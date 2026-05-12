@@ -100,15 +100,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.5';
+eBookConfig.runestone_version = '8.0.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/prefix-runtime.ce7e0a2163cb330f.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.f4a2ffb04bb978bb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -159,7 +159,10 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5.html#ejercicios_capitulo5" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Exercises</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-1-6.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Order on directions and shaping the support</span></a></div></li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-1-7.html" class="internal"><span class="codenumber">1.7</span> <span class="title">The shape of counterexamples and (m,n)-pairs</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-1-7.html" class="internal"><span class="codenumber">1.7</span> <span class="title">The shape of counterexamples and (m,n)-pairs</span></a></div>
+<ul class="structural toc-item-list active"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7.html#ejercicios_capitulo_final" class="internal"><span class="codenumber">1.7.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-1-8.html" class="internal"><span class="codenumber">1.8</span> <span class="title">The elements R and F</span></a></div></li>
 </ul>
 </li>
@@ -182,13 +185,776 @@ eBookConfig.enable_chatcodes =  false;
 <h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The shape of counterexamples and (m,n)-pairs</span>
 </h2>
-<article class="definition definition-like" id="defino7_1"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Valuaciones para polinomios.</span>
-</h3>
-<div class="para" id="defino7_1-2">...<div class="autopermalink" data-description="Paragraph"><a href="#defino7_1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-1-7-2">We will see that a (hypothetical) counterexample to the plane Jacobian conjecture can be transformed into a standard counterexample (see <a href="sec-1-7.html#standard_counterexample" class="xref" data-knowl="./knowl/xref/standard_counterexample.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.7.17">Definition 1.7.17</a>).<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 1.7.1: Valuaciones para polinomios"><a href="#defino7_1" title="Copy heading and permalink for Definition 1.7.1: Valuaciones para polinomios" aria-label="Copy heading and permalink for Definition 1.7.1: Valuaciones para polinomios">🔗</a></div>
-</article><div class="autopermalink" data-description="Section 1.7: The shape of counterexamples and (m,n)-pairs"><a href="#sec-1-7" title="Copy heading and permalink for Section 1.7: The shape of counterexamples and (m,n)-pairs" aria-label="Copy heading and permalink for Section 1.7: The shape of counterexamples and (m,n)-pairs">🔗</a></div>
+<article class="remark remark-like" id="remark_monomial_counterexample"><h3 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="remark_monomial_counterexample-1">By equality <a href="sec-1-2.html#determinante" class="xref" data-knowl="./knowl/xref/determinante.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.2.2">(1.2.2)</a>, one can readily verify that if <span class="process-math">\((P,Q)\)</span> is a Jacobian pair and <span class="process-math">\(P\)</span> is a monomial, then necessarily <span class="process-math">\(P \sim x\)</span> or <span class="process-math">\(P \sim y\text{.}\)</span> Consequently, by <a href="sec-1-3.html#casos_pequenhos" class="xref" data-knowl="./knowl/xref/casos_pequenhos.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.3.10">Proposition 1.3.10</a> and version 2 of the Plane Jacobian conjecture, if <span class="process-math">\((P,Q)\)</span> is a counterexample to the Jacobian conjecture, then neither <span class="process-math">\(P\)</span> nor <span class="process-math">\(Q\)</span> can be a monomial.<div class="autopermalink" data-description="Paragraph"><a href="#remark_monomial_counterexample-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 1.7.1"><a href="#remark_monomial_counterexample" title="Copy heading and permalink for Remark 1.7.1" aria-label="Copy heading and permalink for Remark 1.7.1">🔗</a></div>
+</article>
+<div class="para" id="sec-1-7-4">From now on the previous remark will be used without explicit mention.<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-7-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="Smp"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="Smp-1-1">
+<div class="para">Let <span class="process-math">\(m,n \in \mathbb{N}\)</span> be coprime with <span class="process-math">\(n,m &gt; 1\text{.}\)</span> A pair <span class="process-math">\((P,Q)\text{,}\)</span> of elements in <span class="process-math">\(K[x,y]\text{,}\)</span> is called an <dfn class="terminology"><span class="process-math">\((m,n)\)</span>-pair in <span class="process-math">\(K[x,y]\)</span></dfn> , if</div>
+<div class="displaymath process-math" id="Smp-1-1-7">
+\begin{equation*}
+[P,Q] \in K^{\times}, \quad
+\frac{v_{11}(P)}{v_{11}(Q)} = \frac{v_{10}(P)}{v_{10}(Q)} = \frac{m}{n}
+\quad\text{and}\quad
+v_{1,-1}(\operatorname{en}_{10}(P)) &lt; 0.
+\end{equation*}
+</div>
+<div class="para">An <span class="process-math">\((m,n)\)</span>-pair <span class="process-math">\((P,Q)\)</span> is called <dfn class="terminology">a standard <span class="process-math">\((m,n)\)</span>-pair in <span class="process-math">\(K[x,y]\)</span></dfn>  if <span class="process-math">\(v_{1,-1}(\operatorname{stn}_{10}(P)) &lt; 0\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#Smp-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.7.2"><a href="#Smp" title="Copy heading and permalink for Definition 1.7.2" aria-label="Copy heading and permalink for Definition 1.7.2">🔗</a></div>
+</article>
+<article class="remark remark-like" id="imposible_que_P_y_Q_esten_encima_de_la_diagonal"><h3 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="imposible_que_P_y_Q_esten_encima_de_la_diagonal-1">
+<div class="para">If <span class="process-math">\((P,Q)\)</span> is a Jacobian pair, then <span class="process-math">\(v_{1,-1}(P) &gt; 0\)</span> or <span class="process-math">\(v_{1,-1}(Q) &gt; 0\text{.}\)</span> In fact, by <a href="sec-1-4.html#pr_v_de_un_conmutador" class="xref" data-knowl="./knowl/xref/pr_v_de_un_conmutador.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.4.10">Proposition 1.4.10</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/pr_v_de_un_conmutador.html ./knowl/xref/desigualdad_para_commutador_1_1.html ./knowl/xref/pr_v_de_un_conmutador.html" id="desigualdad_para_commutador_1_1">
+\begin{equation}
+v_{1,-1}(P) + v_{1,-1}(Q) - (1-1) \ge v_{1,-1}([P,Q]) = 0.\tag{1.7.1}
+\end{equation}
+</div>
+<div class="para">Assume by contradiction that <span class="process-math">\(v_{1,-1}(P) \le 0\)</span> and <span class="process-math">\(v_{1,-1}(Q) \le 0\text{.}\)</span> Then <span class="process-math">\(v_{1,-1}(P) = v_{1,-1}(Q) = 0\)</span> and <a href="sec-1-7.html#desigualdad_para_commutador_1_1" class="xref" data-knowl="./knowl/xref/desigualdad_para_commutador_1_1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.7.1">(1.7.1)</a> becomes an equality. Hence, on one hand, by <a href="sec-1-4.html#pr_v_de_un_conmutador" class="xref" data-knowl="./knowl/xref/pr_v_de_un_conmutador.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.4.10">Proposition 1.4.10</a>, we have <span class="process-math">\([\ell_{1,-1}(P), \ell_{1,-1}(Q)] \ne 0\text{;}\)</span> while, on the other hand, from <span class="process-math">\(v_{1,-1}(P) = v_{1,-1}(Q) = 0\text{,}\)</span> it follows that <span class="process-math">\(\ell_{1,-1}(P), \ell_{1,-1}(Q) \in K[z]\text{,}\)</span> for <span class="process-math">\(z = xy\text{,}\)</span> which leads to the contradiction <span class="process-math">\([\ell_{1,-1}(P), \ell_{1,-1}(Q)] = 0\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#imposible_que_P_y_Q_esten_encima_de_la_diagonal-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 1.7.3"><a href="#imposible_que_P_y_Q_esten_encima_de_la_diagonal" title="Copy heading and permalink for Remark 1.7.3" aria-label="Copy heading and permalink for Remark 1.7.3">🔗</a></div>
+</article>
+<article class="remark remark-like" id="ve_rho_sigma_es_mayor_que_el_de_F"><h3 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="ve_rho_sigma_es_mayor_que_el_de_F-1">
+<div class="para">Note that if <span class="process-math">\(\rho \ge -\sigma &gt; 0\text{,}\)</span> and <span class="process-math">\(i,j \in \mathbb{N}_0\)</span> with <span class="process-math">\(i &gt; j\text{,}\)</span> then</div>
+<div class="displaymath process-math" id="ve_rho_sigma_es_mayor_que_el_de_F-1-4">
+\begin{equation*}
+v_{\rho\sigma}(i,j) = \rho i + \sigma j &gt; \rho i + \sigma i = (\rho + \sigma) i \ge \rho + \sigma \ge 0.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ve_rho_sigma_es_mayor_que_el_de_F-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 1.7.4"><a href="#ve_rho_sigma_es_mayor_que_el_de_F" title="Copy heading and permalink for Remark 1.7.4" aria-label="Copy heading and permalink for Remark 1.7.4">🔗</a></div>
+</article>
+<article class="proposition theorem-like" id="no_se_dividen"><h3 class="heading">
+<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="no_se_dividen-1-1">
+<div class="para">Assume the Jacobian conjecture is false and let <span class="process-math">\((P,Q)\)</span> be a counterexample to it. If <span class="process-math">\(v_{11}(P) \mid v_{11}(Q)\)</span> or <span class="process-math">\(v_{11}(Q) \mid v_{11}(P)\text{,}\)</span> then there is a counterexample <span class="process-math">\((\tilde{P}, \tilde{Q})\)</span> with</div>
+<div class="displaymath process-math" id="no_se_dividen-1-1-5">
+\begin{equation*}
+\gcd(v_{11}(\tilde{P}), v_{11}(\tilde{Q})) &lt; \gcd(v_{11}(P), v_{11}(Q)).
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#no_se_dividen-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proposition 1.7.5"><a href="#no_se_dividen" title="Copy heading and permalink for Proposition 1.7.5" aria-label="Copy heading and permalink for Proposition 1.7.5">🔗</a></div>
+</article>
+<details id="sec-1-7-9" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
+<article class="hiddenproof knowl__content">
+<div class="para logical" id="sec-1-7-9-1">
+<div class="para">Assume for example that <span class="process-math">\(v_{11}(P) \mid v_{11}(Q)\)</span> and write <span class="process-math">\(v_{11}(Q) = k v_{11}(P)\text{.}\)</span> By <a href="sec-1-3.html#casos_pequenhos" class="xref" data-knowl="./knowl/xref/casos_pequenhos.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.3.10">Proposition 1.3.10</a>, we know that <span class="process-math">\(v_{11}(P) + v_{11}(Q) \ge 3\text{.}\)</span> Hence</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/casos_pequenhos.html ./knowl/xref/pr_v_de_un_conmutador.html ./knowl/xref/P_y_Q_alineados.html" id="sec-1-7-9-1-5">
+\begin{equation*}
+v_{11}(P) + v_{11}(Q) - v_{11}(1,1) \ge 3 - 2 &gt; 0 = v_{11}([P,Q]).
+\end{equation*}
+</div>
+<div class="para">Then, by <a href="sec-1-4.html#pr_v_de_un_conmutador" class="xref" data-knowl="./knowl/xref/pr_v_de_un_conmutador.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.4.10">Proposition 1.4.10</a>, we have <span class="process-math">\([\ell_{11}(P), \ell_{11}(Q)] = 0\text{.}\)</span> Since, moreover <span class="process-math">\(v_{11}(P) &gt; 0\text{,}\)</span> by <a href="sec-1-5.html#P_y_Q_alineados" class="xref" data-knowl="./knowl/xref/P_y_Q_alineados.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.5.1">Proposition 1.5.1</a>(2b), there exist <span class="process-math">\(m,n \in \mathbb{N}\)</span> and a <span class="process-math">\((1,1)\)</span>-homogeneous polynomial <span class="process-math">\(R\text{,}\)</span> such that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/casos_pequenhos.html ./knowl/xref/pr_v_de_un_conmutador.html ./knowl/xref/P_y_Q_alineados.html" id="sec-1-7-9-1-13">
+\begin{equation*}
+\ell_{11}(P) \sim R^m \qquad\text{and}\qquad \ell_{11}(Q) \sim R^n.
+\end{equation*}
+</div>
+<div class="para">Hence <span class="process-math">\(n = k m\)</span> and <span class="process-math">\(\ell_{11}(Q) = \lambda \ell_{11}(P^k)\text{,}\)</span> for some <span class="process-math">\(\lambda \in K^{\times}\text{.}\)</span> It follows that <span class="process-math">\(Q_1 := Q - \lambda P^k\)</span> satisfies the inequality <span class="process-math">\(v_{11}(Q_1) &lt; v_{11}(Q)\text{.}\)</span> Moreover, it is clear that <span class="process-math">\([P, Q_1] = [P,Q] \sim 1\)</span> and <span class="process-math">\(K[P, Q_1] = K[P,Q]\text{.}\)</span> Hence, by version 3 of the Jacobian conjecture, <span class="process-math">\((P, Q_1)\)</span> is also a counterexample. Now, we can construct successively <span class="process-math">\(Q_2, Q_3, \dots\text{,}\)</span> such that <span class="process-math">\((P, Q_j)\)</span> are counterexamples and <span class="process-math">\(v_{11}(Q_j) &lt; v_{11}(Q_{j-1})\text{,}\)</span> until <span class="process-math">\(v_{11}(P)\)</span> does not divide <span class="process-math">\(v_{11}(Q_j)\text{.}\)</span> Then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/casos_pequenhos.html ./knowl/xref/pr_v_de_un_conmutador.html ./knowl/xref/P_y_Q_alineados.html" id="sec-1-7-9-1-27">
+\begin{equation*}
+\gcd(v_{11}(P), v_{11}(Q_j)) &lt; v_{11}(P) = \gcd(v_{11}(P), v_{11}(Q)),
+\end{equation*}
+</div>
+<div class="para">and so <span class="process-math">\(\tilde{Q} := Q_j\)</span> and <span class="process-math">\(\tilde{P} = P\)</span> satisfy the required conditions. When <span class="process-math">\(v_{11}(Q) \mid v_{11}(P)\)</span> a similar argument gives the proof.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-7-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 1.7.1"><a href="#sec-1-7-9" title="Copy heading and permalink for Proof 1.7.1" aria-label="Copy heading and permalink for Proof 1.7.1">🔗</a></div>
+</article></details>
+<article class="definition definition-like" id="counterexample_sin_divisibilidad"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="counterexample_sin_divisibilidad-1-1">A <dfn class="terminology">counterexample <span class="process-math">\((P,Q)\text{,}\)</span> without divisibility relations of degrees</dfn> or simply a <dfn class="terminology">counterexample <span class="process-math">\((P,Q)\text{,}\)</span> without divisibility</dfn> , is a counterexample to the Jacobian conjecture, such that <span class="process-math">\(v_{11}(P) \nmid v_{11}(Q)\)</span> and <span class="process-math">\(v_{11}(Q) \nmid v_{11}(P)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#counterexample_sin_divisibilidad-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.7.6"><a href="#counterexample_sin_divisibilidad" title="Copy heading and permalink for Definition 1.7.6" aria-label="Copy heading and permalink for Definition 1.7.6">🔗</a></div>
+</article>
+<article class="lemma theorem-like" id="lemma_PQ_similares_en_I"><h3 class="heading">
+<span class="type">Lemma</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="lemma_PQ_similares_en_I-1-1">
+<div class="para">Assume that the Jacobian conjecture is false, let <span class="process-math">\((P,Q)\)</span> be a counterexample to it and let <span class="process-math">\((\rho,\sigma) \in [(1,-1),(0,1)] \subseteq \mathfrak{V}\text{.}\)</span> Assume that there exist coprime <span class="process-math">\(m,n \in \mathbb{N}\text{,}\)</span> such that</div>
+<div class="displaymath process-math" id="condicion1">
+\begin{equation}
+\operatorname{en}_{\rho\sigma}(Q) = \frac{n}{m} \operatorname{en}_{\rho\sigma}(P).\tag{1.7.2}
+\end{equation}
+</div>
+<div class="para">Then</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#lemma_PQ_similares_en_I-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="decimal" id="lemma_PQ_similares_en_I-1-2">
+<li id="lemma_PQ_similares_en_I-1-2-1">
+<div class="para" id="p-derived-lemma_PQ_similares_en_I-1-2-1"><span class="process-math">\(v_{\rho\sigma}(Q) = \frac{n}{m} v_{\rho\sigma}(P)\text{,}\)</span></div>
+<div class="autopermalink" data-description="Item 1"><a href="#lemma_PQ_similares_en_I-1-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="lemma_PQ_similares_en_I-1-2-2">
+<div class="para" id="p-derived-lemma_PQ_similares_en_I-1-2-2"><span class="process-math">\(v_{\rho\sigma}(P), v_{\rho\sigma}(Q) &gt; 0\text{,}\)</span></div>
+<div class="autopermalink" data-description="Item 2"><a href="#lemma_PQ_similares_en_I-1-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="lemma_PQ_similares_en_I-1-2-3">
+<div class="para" id="p-derived-lemma_PQ_similares_en_I-1-2-3"><span class="process-math">\([\ell_{\rho\sigma}(P), \ell_{\rho\sigma}(Q)] = 0\text{,}\)</span></div>
+<div class="autopermalink" data-description="Item 3"><a href="#lemma_PQ_similares_en_I-1-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="lemma_PQ_similares_en_I-1-2-4">
+<div class="para" id="p-derived-lemma_PQ_similares_en_I-1-2-4">
+<span class="process-math">\((\rho,\sigma) \in \operatorname{Dir}(P)\)</span> if and only if <span class="process-math">\((\rho,\sigma) \in \operatorname{Dir}(Q)\text{,}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#lemma_PQ_similares_en_I-1-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="lemma_PQ_similares_en_I-1-2-5">
+<div class="para" id="p-derived-lemma_PQ_similares_en_I-1-2-5"><span class="process-math">\(\operatorname{stn}_{\rho\sigma}(Q) = \frac{n}{m} \operatorname{stn}_{\rho\sigma}(P)\text{.}\)</span></div>
+<div class="autopermalink" data-description="Item 5"><a href="#lemma_PQ_similares_en_I-1-2-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Lemma 1.7.7"><a href="#lemma_PQ_similares_en_I" title="Copy heading and permalink for Lemma 1.7.7" aria-label="Copy heading and permalink for Lemma 1.7.7">🔗</a></div>
+</article>
+<details id="sec-1-7-12" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
+<article class="hiddenproof knowl__content">
+<div class="para logical" id="sec-1-7-12-1">
+<div class="para">To begin with note that <span class="process-math">\([(1,-1),(0,1)]\)</span> is contained in a half circle, and so, by <a href="sec-1-6.html#direcciones_consecutivas_prime" class="xref" data-knowl="./knowl/xref/direcciones_consecutivas_prime.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 1.6.7">Remark 1.6.7</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/direcciones_consecutivas_prime.html" id="sec-1-7-12-1-3">
+\begin{equation*}
+(1,-1) &lt; (\rho,\sigma) \Leftrightarrow (1,-1) \times (\rho,\sigma) &gt; 0 \Leftrightarrow \rho + \sigma &gt; 0,
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/direcciones_consecutivas_prime.html" id="sec-1-7-12-1-4">
+\begin{equation*}
+(\rho,\sigma) \le (0,1) \Leftrightarrow (\rho,\sigma) \times (0,1) \ge 0 \Leftrightarrow \rho \ge 0.
+\end{equation*}
+</div>
+<div class="para">We next prove items 1--5 separately.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-7-12-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-1-7-12-2">
+<div class="para">1. By equality <a href="sec-1-7.html#condicion1" class="xref" data-knowl="./knowl/xref/condicion1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.7.2">(1.7.2)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/condicion1.html" id="sec-1-7-12-2-3">
+\begin{equation*}
+v_{\rho\sigma}(Q) = v_{\rho\sigma}(\operatorname{en}_{\rho\sigma}(Q))
+= v_{\rho\sigma}\left(\frac{n}{m} \operatorname{en}_{\rho\sigma}(P)\right)
+= \frac{n}{m} v_{\rho\sigma}(P).
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-7-12-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-1-7-12-3">
+<div class="para">2. Assume by contradiction that this is false. Then, by item 1, we have <span class="process-math">\(v_{\rho\sigma}(P) \le 0\)</span> and <span class="process-math">\(v_{\rho\sigma}(Q) \le 0\text{.}\)</span> Hence, by <a href="sec-1-7.html#imposible_que_P_y_Q_esten_encima_de_la_diagonal" class="xref" data-knowl="./knowl/xref/imposible_que_P_y_Q_esten_encima_de_la_diagonal.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 1.7.3">Remark 1.7.3</a>, necessarily <span class="process-math">\((\rho,\sigma) \ne (1,-1)\text{.}\)</span> Consequently <span class="process-math">\(\rho + \sigma &gt; 0\text{,}\)</span> and so, by <a href="sec-1-4.html#dfpvc" class="xref" data-knowl="./knowl/xref/dfpvc.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation">()</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/imposible_que_P_y_Q_esten_encima_de_la_diagonal.html ./knowl/xref/dfpvc.html" id="sec-1-7-12-3-8">
+\begin{equation*}
+v_{\rho\sigma}([P,Q]) \le v_{\rho\sigma}(P) + v_{\rho\sigma}(Q) - (\rho + \sigma) \le -(\rho + \sigma) &lt; 0,
+\end{equation*}
+</div>
+<div class="para">which is impossible, since <span class="process-math">\(v_{\rho\sigma}([P,Q]) = 0\text{.}\)</span> This concludes the proof of item 2.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-7-12-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-1-7-12-4">
+<div class="para">3. By <a href="sec-1-4.html#pr_v_de_un_conmutador" class="xref" data-knowl="./knowl/xref/pr_v_de_un_conmutador.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.4.10">Proposition 1.4.10</a>, we must prove that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/pr_v_de_un_conmutador.html ./knowl/xref/casos_pequenhos.html ./knowl/xref/casos_pequenhos.html" id="sec-1-7-12-4-3">
+\begin{equation*}
+v_{\rho\sigma}(P) + v_{\rho\sigma}(Q) - (\rho + \sigma) &gt; 0.
+\end{equation*}
+</div>
+<div class="para">We first assume that <span class="process-math">\(\sigma \ge 0\text{,}\)</span> and we consider the three cases:</div>
+<ol class="decimal" id="sec-1-7-12-4-5">
+<li id="sec-1-7-12-4-5-1">
+<div class="para" id="p-derived-sec-1-7-12-4-5-1">a) <span class="process-math">\(\rho = \sigma = 1\text{,}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-1-7-12-4-5-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-1-7-12-4-5-2">
+<div class="para" id="p-derived-sec-1-7-12-4-5-2">b) <span class="process-math">\(\rho &gt; \sigma\text{,}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-1-7-12-4-5-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec-1-7-12-4-5-3">
+<div class="para" id="p-derived-sec-1-7-12-4-5-3">c) <span class="process-math">\(\rho &lt; \sigma\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sec-1-7-12-4-5-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="para">In the case a), from <a href="sec-1-3.html#casos_pequenhos" class="xref" data-knowl="./knowl/xref/casos_pequenhos.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.3.10">Proposition 1.3.10</a> we obtain directly</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/pr_v_de_un_conmutador.html ./knowl/xref/casos_pequenhos.html ./knowl/xref/casos_pequenhos.html" id="sec-1-7-12-4-7">
+\begin{equation*}
+v_{11}(P) + v_{11}(Q) - (1+1) = \deg(P) + \deg(Q) - 2 &gt; 0,
+\end{equation*}
+</div>
+<div class="para">as desired. In the case b), we note that, again by <a href="sec-1-3.html#casos_pequenhos" class="xref" data-knowl="./knowl/xref/casos_pequenhos.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.3.10">Proposition 1.3.10</a>, we know that <span class="process-math">\(P \notin K[y]\text{,}\)</span> and so there is a <span class="process-math">\((i,j) \in \operatorname{Supp}(P)\)</span> with <span class="process-math">\(i \ge 1\text{.}\)</span> But then, since <span class="process-math">\(j\sigma \ge 0\text{,}\)</span> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/pr_v_de_un_conmutador.html ./knowl/xref/casos_pequenhos.html ./knowl/xref/casos_pequenhos.html" id="sec-1-7-12-4-13">
+\begin{equation*}
+v_{\rho\sigma}(P) \ge v_{\rho\sigma}(i,j) = i\rho + j\sigma \ge i\rho \ge \rho,
+\end{equation*}
+</div>
+<div class="para">and by the same argument <span class="process-math">\(v_{\rho\sigma}(Q) \ge \rho\text{.}\)</span> Hence,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/pr_v_de_un_conmutador.html ./knowl/xref/casos_pequenhos.html ./knowl/xref/casos_pequenhos.html" id="sec-1-7-12-4-15">
+\begin{equation*}
+v_{\rho\sigma}(P) + v_{\rho\sigma}(Q) - (\rho + \sigma) \ge \rho - \sigma &gt; 0,
+\end{equation*}
+</div>
+<div class="para">as desired. The case c) is similar (use that <span class="process-math">\(\rho \ge 0\)</span>).</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-7-12-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-1-7-12-5">
+<div class="para">Assume now that <span class="process-math">\(\sigma &lt; 0\text{.}\)</span> We first note that there exists <span class="process-math">\((i,j) \in \operatorname{Supp}(P) \cup \operatorname{Supp}(Q)\)</span> with <span class="process-math">\(i &gt; j\text{.}\)</span> In fact, otherwise <span class="process-math">\(v_{1,-1}(P) \le 0\)</span> and <span class="process-math">\(v_{1,-1}(Q) \le 0\text{,}\)</span> which is impossible by <a href="sec-1-7.html#imposible_que_P_y_Q_esten_encima_de_la_diagonal" class="xref" data-knowl="./knowl/xref/imposible_que_P_y_Q_esten_encima_de_la_diagonal.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 1.7.3">Remark 1.7.3</a>. If <span class="process-math">\((i,j) \in \operatorname{Supp}(P)\text{,}\)</span> then by <a href="sec-1-7.html#ve_rho_sigma_es_mayor_que_el_de_F" class="xref" data-knowl="./knowl/xref/ve_rho_sigma_es_mayor_que_el_de_F.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 1.7.4">Remark 1.7.4</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/imposible_que_P_y_Q_esten_encima_de_la_diagonal.html ./knowl/xref/ve_rho_sigma_es_mayor_que_el_de_F.html" id="sec-1-7-12-5-9">
+\begin{equation*}
+v_{\rho\sigma}(P) \ge v_{\rho\sigma}(i,j) &gt; \rho + \sigma.
+\end{equation*}
+</div>
+<div class="para">Combining this with item 2, we obtain that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/imposible_que_P_y_Q_esten_encima_de_la_diagonal.html ./knowl/xref/ve_rho_sigma_es_mayor_que_el_de_F.html" id="sec-1-7-12-5-10">
+\begin{equation*}
+v_{\rho\sigma}(P) + v_{\rho\sigma}(Q) - (\rho + \sigma) &gt; v_{\rho\sigma}(Q) &gt; 0,
+\end{equation*}
+</div>
+<div class="para">as desired. In the case <span class="process-math">\((i,j) \in \operatorname{Supp}(Q)\text{,}\)</span> the same argument works.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-7-12-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-1-7-12-6">
+<div class="para">4. and 5. By items 2 and 3, and by <a href="sec-1-5.html#P_y_Q_alineados" class="xref" data-knowl="./knowl/xref/P_y_Q_alineados.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.5.1">Proposition 1.5.1</a>(2b), there exist coprime <span class="process-math">\(n_1, m_1 \in \mathbb{N}\text{,}\)</span> and a <span class="process-math">\((\rho,\sigma)\)</span>-homogeneous polynomial <span class="process-math">\(R\text{,}\)</span> such that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/P_y_Q_alineados.html ./knowl/xref/st_y_en.html ./knowl/xref/condicion1.html" id="sec-1-7-12-6-6">
+\begin{equation*}
+\ell_{\rho\sigma}(P) \sim R^{m_1} \quad\text{and}\quad \ell_{\rho\sigma}(Q) \sim R^{n_1}.
+\end{equation*}
+</div>
+<div class="para">Clearly <span class="process-math">\(\ell_{\rho\sigma}(P)\)</span> is a monomial if and only if <span class="process-math">\(R\)</span> is a monomial, and this happens if and only if <span class="process-math">\(\ell_{\rho\sigma}(Q)\)</span> is a monomial, which proves item 4. Now, by <a href="sec-1-4.html#st_y_en" class="xref" data-knowl="./knowl/xref/st_y_en.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 1.4.12">Remark 1.4.12</a> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/P_y_Q_alineados.html ./knowl/xref/st_y_en.html ./knowl/xref/condicion1.html" id="sec-1-7-12-6-11">
+\begin{equation*}
+\operatorname{en}_{\rho\sigma}(P) = m_1 \operatorname{en}_{\rho\sigma}(R)
+\quad\text{and}\quad
+\operatorname{en}_{\rho\sigma}(Q) = n_1 \operatorname{en}_{\rho\sigma}(R).
+\end{equation*}
+</div>
+<div class="para">Consequently, <span class="process-math">\(\operatorname{en}_{\rho\sigma}(Q) = \frac{n_1}{m_1} \operatorname{en}_{\rho\sigma}(P)\text{,}\)</span> and so, <span class="process-math">\(m_1 = m\)</span> and <span class="process-math">\(n_1 = n\text{,}\)</span> by <a href="sec-1-7.html#condicion1" class="xref" data-knowl="./knowl/xref/condicion1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.7.2">(1.7.2)</a>. Finally, the same remark yields</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/P_y_Q_alineados.html ./knowl/xref/st_y_en.html ./knowl/xref/condicion1.html" id="sec-1-7-12-6-16">
+\begin{equation*}
+\operatorname{stn}_{\rho\sigma}(P) = m \operatorname{stn}_{\rho\sigma}(R)
+\quad\text{and}\quad
+\operatorname{stn}_{\rho\sigma}(Q) = n \operatorname{stn}_{\rho\sigma}(R),
+\end{equation*}
+</div>
+<div class="para">which finishes the proof of item 5.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-7-12-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 1.7.2"><a href="#sec-1-7-12" title="Copy heading and permalink for Proof 1.7.2" aria-label="Copy heading and permalink for Proof 1.7.2">🔗</a></div>
+</article></details>
+<article class="proposition theorem-like" id="star"><h3 class="heading">
+<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="star-1-1">If <span class="process-math">\((P,Q)\)</span> is a counterexample to the plane Jacobian conjecture, then there exist coprime <span class="process-math">\(m,n \in \mathbb{N}\)</span> such that, for all <span class="process-math">\((\rho,\sigma) \in [(1,-1),(0,1)]\text{,}\)</span> we have<div class="autopermalink" data-description="Paragraph"><a href="#star-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="decimal" id="star-1-2">
+<li id="star-1-2-1">
+<div class="para" id="p-derived-star-1-2-1"><span class="process-math">\(v_{\rho\sigma}(Q) = \frac{n}{m} v_{\rho\sigma}(P)\text{,}\)</span></div>
+<div class="autopermalink" data-description="Item 1"><a href="#star-1-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="star-1-2-2">
+<div class="para" id="p-derived-star-1-2-2">
+<span class="process-math">\(v_{\rho\sigma}(P) &gt; 0\)</span> and <span class="process-math">\(v_{\rho\sigma}(Q) &gt; 0\text{,}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#star-1-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="star-1-2-3">
+<div class="para" id="p-derived-star-1-2-3"><span class="process-math">\([\ell_{\rho\sigma}(P), \ell_{\rho\sigma}(Q)] = 0\text{,}\)</span></div>
+<div class="autopermalink" data-description="Item 3"><a href="#star-1-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="star-1-2-4">
+<div class="para" id="p-derived-star-1-2-4">
+<span class="process-math">\(\operatorname{stn}_{\rho\sigma}(Q) = \frac{n}{m} \operatorname{stn}_{\rho\sigma}(P)\)</span> and <span class="process-math">\(\operatorname{en}_{\rho\sigma}(Q) = \frac{n}{m} \operatorname{en}_{\rho\sigma}(P)\text{,}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#star-1-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="star-1-2-5">
+<div class="para" id="p-derived-star-1-2-5"><span class="process-math">\(\operatorname{Dir}(P) \cap [(1,-1),(0,1)] = \operatorname{Dir}(Q) \cap [(1,-1),(0,1)]\text{.}\)</span></div>
+<div class="autopermalink" data-description="Item 5"><a href="#star-1-2-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Proposition 1.7.8"><a href="#star" title="Copy heading and permalink for Proposition 1.7.8" aria-label="Copy heading and permalink for Proposition 1.7.8">🔗</a></div>
+</article>
+<details id="sec-1-7-14" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
+<article class="hiddenproof knowl__content">
+<div class="para logical" id="sec-1-7-14-1">
+<div class="para">Set <span class="process-math">\(\mathcal{D} := \bigl(\operatorname{Dir}(P) \cup \operatorname{Dir}(Q)\bigr) \cap [(1,-1),(0,1)[\)</span> and write</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/casos_pequenhos.html ./knowl/xref/pr_v_de_un_conmutador.html ./knowl/xref/P_y_Q_alineados.html ./knowl/xref/st_y_en.html ./knowl/xref/lemma_PQ_similares_en_I.html ./knowl/xref/lemma_PQ_similares_en_I.html ./knowl/xref/lemma_PQ_similares_en_I.html" id="sec-1-7-14-1-2">
+\begin{equation*}
+\mathcal{D} \cup \{(0,1)\} = \{(\rho_0,\sigma_0), \dots, (\rho_k,\sigma_k)\}
+\quad\text{with } (\rho_j,\sigma_j) &lt; (\rho_{j+1},\sigma_{j+1}), \text{ for all } j = 0,\dots,k-1.
+\end{equation*}
+</div>
+<div class="para">We first consider the case <span class="process-math">\((\rho,\sigma) = (\rho_k,\sigma_k) = (0,1)\text{.}\)</span> By <a href="sec-1-3.html#casos_pequenhos" class="xref" data-knowl="./knowl/xref/casos_pequenhos.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.3.10">Proposition 1.3.10</a>, we have <span class="process-math">\(P,Q \in K[x,y]\setminus K[x]\text{,}\)</span> which implies <span class="process-math">\(v_{01}(P) \ge 1\)</span> and <span class="process-math">\(v_{01}(Q) \ge 1\text{.}\)</span> Hence,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/casos_pequenhos.html ./knowl/xref/pr_v_de_un_conmutador.html ./knowl/xref/P_y_Q_alineados.html ./knowl/xref/st_y_en.html ./knowl/xref/lemma_PQ_similares_en_I.html ./knowl/xref/lemma_PQ_similares_en_I.html ./knowl/xref/lemma_PQ_similares_en_I.html" id="sec-1-7-14-1-8">
+\begin{equation*}
+v_{01}(P) + v_{01}(Q) - (0+1) \ge 1 &gt; 0 = v_{01}([P,Q]),
+\end{equation*}
+</div>
+<div class="para">and so, by <a href="sec-1-4.html#pr_v_de_un_conmutador" class="xref" data-knowl="./knowl/xref/pr_v_de_un_conmutador.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.4.10">Proposition 1.4.10</a>, we know that <span class="process-math">\([\ell_{01}(P), \ell_{01}(Q)] = 0\text{.}\)</span> Thus items 2 and 3 are satisfied, and so, by <a href="sec-1-5.html#P_y_Q_alineados" class="xref" data-knowl="./knowl/xref/P_y_Q_alineados.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.5.1">Proposition 1.5.1</a>(2b), there exist coprime <span class="process-math">\(n,m \in \mathbb{N}\text{,}\)</span> and a <span class="process-math">\((0,1)\)</span>-homogeneous polynomial <span class="process-math">\(R\)</span> such that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/casos_pequenhos.html ./knowl/xref/pr_v_de_un_conmutador.html ./knowl/xref/P_y_Q_alineados.html ./knowl/xref/st_y_en.html ./knowl/xref/lemma_PQ_similares_en_I.html ./knowl/xref/lemma_PQ_similares_en_I.html ./knowl/xref/lemma_PQ_similares_en_I.html" id="sec-1-7-14-1-15">
+\begin{equation*}
+\ell_{01}(P) \sim R^m \quad\text{and}\quad \ell_{01}(Q) \sim R^n.
+\end{equation*}
+</div>
+<div class="para">Then, by <a href="sec-1-4.html#st_y_en" class="xref" data-knowl="./knowl/xref/st_y_en.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 1.4.12">Remark 1.4.12</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/casos_pequenhos.html ./knowl/xref/pr_v_de_un_conmutador.html ./knowl/xref/P_y_Q_alineados.html ./knowl/xref/st_y_en.html ./knowl/xref/lemma_PQ_similares_en_I.html ./knowl/xref/lemma_PQ_similares_en_I.html ./knowl/xref/lemma_PQ_similares_en_I.html" id="sec-1-7-14-1-17">
+\begin{equation*}
+\operatorname{stn}_{01}(P) = m \operatorname{stn}_{01}(R) \qquad\text{and}\qquad 
+\operatorname{stn}_{01}(Q) = n \operatorname{stn}_{01}(R),
+\end{equation*}
+</div>
+<div class="para">which yields <span class="process-math">\(\operatorname{stn}_{01}(Q) = \frac{n}{m} \operatorname{stn}_{01}(P)\text{.}\)</span> Similarly <span class="process-math">\(\operatorname{en}_{01}(Q) = \frac{n}{m} \operatorname{en}_{01}(P)\text{,}\)</span> which finishes the proof of item 4, for <span class="process-math">\((\rho,\sigma) = (0,1)\text{.}\)</span> Moreover, we also have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/casos_pequenhos.html ./knowl/xref/pr_v_de_un_conmutador.html ./knowl/xref/P_y_Q_alineados.html ./knowl/xref/st_y_en.html ./knowl/xref/lemma_PQ_similares_en_I.html ./knowl/xref/lemma_PQ_similares_en_I.html ./knowl/xref/lemma_PQ_similares_en_I.html" id="sec-1-7-14-1-21">
+\begin{equation*}
+v_{01}(P) = v_{01}(\operatorname{stn}_{01}(P)) = v_{01}\left(\frac{m}{n} \operatorname{stn}_{01}(Q)\right)
+= \frac{m}{n} v_{01}(Q),
+\end{equation*}
+</div>
+<div class="para">which proves item 1 in this case. Assume inductively that <span class="process-math">\(0 \le j &lt; k\)</span> and that items 1--4 hold for the direction <span class="process-math">\((\rho_{j+1},\sigma_{j+1})\text{.}\)</span> Then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/casos_pequenhos.html ./knowl/xref/pr_v_de_un_conmutador.html ./knowl/xref/P_y_Q_alineados.html ./knowl/xref/st_y_en.html ./knowl/xref/lemma_PQ_similares_en_I.html ./knowl/xref/lemma_PQ_similares_en_I.html ./knowl/xref/lemma_PQ_similares_en_I.html" id="sec-1-7-14-1-24">
+\begin{equation*}
+\operatorname{en}_{\rho_j,\sigma_j}(Q) = \operatorname{stn}_{\rho_{j+1},\sigma_{j+1}}(Q)
+= \frac{n}{m} \operatorname{stn}_{\rho_{j+1},\sigma_{j+1}}(P)
+= \frac{n}{m} \operatorname{en}_{\rho_j,\sigma_j}(P),
+\end{equation*}
+</div>
+<div class="para">and <a href="sec-1-7.html#lemma_PQ_similares_en_I" class="xref" data-knowl="./knowl/xref/lemma_PQ_similares_en_I.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 1.7.7">Lemma 1.7.7</a> yields items 1--4, for <span class="process-math">\((\rho_j,\sigma_j)\text{.}\)</span> Hence items 1--4 hold for all <span class="process-math">\((\rho_i,\sigma_i)\text{.}\)</span> Moreover, item 4 of <a href="sec-1-7.html#lemma_PQ_similares_en_I" class="xref" data-knowl="./knowl/xref/lemma_PQ_similares_en_I.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 1.7.7">Lemma 1.7.7</a> guarantees that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/casos_pequenhos.html ./knowl/xref/pr_v_de_un_conmutador.html ./knowl/xref/P_y_Q_alineados.html ./knowl/xref/st_y_en.html ./knowl/xref/lemma_PQ_similares_en_I.html ./knowl/xref/lemma_PQ_similares_en_I.html ./knowl/xref/lemma_PQ_similares_en_I.html" id="sec-1-7-14-1-29">
+\begin{equation*}
+\operatorname{Dir}(P) \cap [(1,-1),(0,1)] = \operatorname{Dir}(Q) \cap [(1,-1),(0,1)],
+\end{equation*}
+</div>
+<div class="para">proving item 5. Finally take <span class="process-math">\((\rho,\sigma) \in [(1,-1),(0,1)[\text{,}\)</span> and notice that for some <span class="process-math">\(j\text{,}\)</span> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/casos_pequenhos.html ./knowl/xref/pr_v_de_un_conmutador.html ./knowl/xref/P_y_Q_alineados.html ./knowl/xref/st_y_en.html ./knowl/xref/lemma_PQ_similares_en_I.html ./knowl/xref/lemma_PQ_similares_en_I.html ./knowl/xref/lemma_PQ_similares_en_I.html" id="sec-1-7-14-1-32">
+\begin{equation*}
+\operatorname{en}_{\rho\sigma}(Q) = \operatorname{stn}_{\rho_j,\sigma_j}(Q)
+= \frac{n}{m} \operatorname{stn}_{\rho_j,\sigma_j}(P)
+= \frac{n}{m} \operatorname{en}_{\rho\sigma}(P),
+\end{equation*}
+</div>
+<div class="para">and, again by <a href="sec-1-7.html#lemma_PQ_similares_en_I" class="xref" data-knowl="./knowl/xref/lemma_PQ_similares_en_I.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 1.7.7">Lemma 1.7.7</a>, we obtain items 1--4, for <span class="process-math">\((\rho,\sigma)\text{,}\)</span> concluding the proof.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-7-14-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 1.7.3"><a href="#sec-1-7-14" title="Copy heading and permalink for Proof 1.7.3" aria-label="Copy heading and permalink for Proof 1.7.3">🔗</a></div>
+</article></details>
+<figure class="figure figure-like" id="Ilustracion_de_star"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/img/img20.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Illustration of <a href="sec-1-7.html#star" class="xref" data-knowl="./knowl/xref/star.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.7.8">Proposition 1.7.8</a><div class="autopermalink" data-description="Figure 1.7.9"><a href="#Ilustracion_de_star" title="Copy heading and permalink for Figure 1.7.9" aria-label="Copy heading and permalink for Figure 1.7.9">🔗</a></div></figcaption>
+</figure>
+<article class="proposition theorem-like" id="direcciones_1k"><h3 class="heading">
+<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="direcciones_1k-1-1">Let <span class="process-math">\((P,Q)\)</span> be a Jacobian pair in <span class="process-math">\(K[x,y]\text{,}\)</span> let <span class="process-math">\((\rho,\sigma) \in ](1,0),(0,1)[ \cap \operatorname{Dir}(P)\)</span> and let <span class="process-math">\(F\)</span> be as in <a href="sec-1-5.html#central" class="xref" data-knowl="./knowl/xref/central.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.5.6">Theorem 1.5.6</a>. Then the following cases arise:<div class="autopermalink" data-description="Paragraph"><a href="#direcciones_1k-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="decimal" id="direcciones_1k-1-2">
+<li id="direcciones_1k-1-2-1">
+<div class="para" id="direcciones_1k-1-2-1-1">If <span class="process-math">\((\rho,\sigma) = (1,1)\text{,}\)</span> then <span class="process-math">\(\operatorname{Supp}(F) \subseteq \{(0,2),(1,1),(2,0)\}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#direcciones_1k-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#direcciones_1k-1-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="direcciones_1k-1-2-2">
+<div class="para" id="direcciones_1k-1-2-2-1">If <span class="process-math">\((1,1) &lt; (\rho,\sigma) &lt; (0,1)\text{,}\)</span> then <span class="process-math">\((\rho,\sigma) = (1,k)\)</span> for some <span class="process-math">\(k &gt; 1\text{,}\)</span> <span class="process-math">\(\operatorname{stn}_{\rho\sigma}(F) = (k+1,0)\)</span> and <span class="process-math">\(\operatorname{en}_{\rho\sigma}(F) = (1,1)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#direcciones_1k-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#direcciones_1k-1-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="direcciones_1k-1-2-3">
+<div class="para" id="direcciones_1k-1-2-3-1">If <span class="process-math">\((1,0) &lt; (\rho,\sigma) &lt; (1,1)\text{,}\)</span> then <span class="process-math">\((\rho,\sigma) = (k,1)\)</span> for some <span class="process-math">\(k &gt; 1\text{,}\)</span> <span class="process-math">\(\operatorname{en}_{\rho\sigma}(F) = (0,k+1)\)</span> and <span class="process-math">\(\operatorname{stn}_{\rho\sigma}(F) = (1,1)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#direcciones_1k-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#direcciones_1k-1-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol> 
+<div class="para" id="direcciones_1k-1-3">Moreover, if <span class="process-math">\((\rho,\sigma) \ne (1,1)\)</span> and if we write <span class="process-math">\(F = x^u y^v f(z)\text{,}\)</span> where <span class="process-math">\(z = x^{-\sigma} y^{\rho}\)</span> and <span class="process-math">\((u,v) = \operatorname{stn}_{\rho,\sigma}(F)\text{,}\)</span> then <span class="process-math">\(f(z)\)</span> has exactly one linear factor (which is different from <span class="process-math">\(z\text{,}\)</span> since <span class="process-math">\(f(0) \ne 0\text{,}\)</span> by <a href="sec-1-4.html#polinomio_asociado_f" class="xref" data-knowl="./knowl/xref/polinomio_asociado_f.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 1.4.16">Remark 1.4.16</a>).<div class="autopermalink" data-description="Paragraph"><a href="#direcciones_1k-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proposition 1.7.10"><a href="#direcciones_1k" title="Copy heading and permalink for Proposition 1.7.10" aria-label="Copy heading and permalink for Proposition 1.7.10">🔗</a></div>
+</article>
+<details id="sec-1-7-17" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
+<article class="hiddenproof knowl__content">
+<div class="para logical" id="sec-1-7-17-1">
+<div class="para">Note that <span class="process-math">\((1,0) &lt; (\rho,\sigma) &lt; (0,1)\)</span> if and only if <span class="process-math">\(\rho,\sigma &gt; 0\text{,}\)</span> and <span class="process-math">\((\rho,\sigma) \in \operatorname{Dir}(P)\)</span> if and only if <span class="process-math">\(\ell_{\rho\sigma}(P)\)</span> is not a monomial. By <a href="sec-1-5.html#central_2" class="xref" data-knowl="./knowl/xref/central_2.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.5.5">Proposition 1.5.5</a>(3) the <span class="process-math">\((\rho,\sigma)\)</span>-homogeneous polynomial <span class="process-math">\(F\)</span> is not a monomial, and will find the line <span class="process-math">\(L\)</span> containing <span class="process-math">\(\operatorname{Supp}(F)\text{.}\)</span> Since <span class="process-math">\(v_{\rho\sigma}(F) = \rho + \sigma\text{,}\)</span> we know that <span class="process-math">\(L\)</span> is the straight line going through <span class="process-math">\((1,1)\)</span> with slope <span class="process-math">\(a = -\frac{\rho}{\sigma}\)</span> (see <a href="sec-1-7.html#posibles_L" class="xref" data-knowl="./knowl/xref/posibles_L.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.7.11">Figure 1.7.11</a>). If <span class="process-math">\((\rho,\sigma) = (1,1)\text{,}\)</span> then clearly</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/central_2.html ./knowl/xref/posibles_L.html" id="sec-1-7-17-1-16">
+\begin{equation*}
+\operatorname{Supp}(F) \subseteq \{(0,2),(1,1),(2,0)\},
+\end{equation*}
+</div>
+<div class="para">proving item 1. If <span class="process-math">\((1,1) &lt; (\rho,\sigma) &lt; (0,1)\text{,}\)</span> then the slope <span class="process-math">\(a\)</span> is in <span class="process-math">\(]-1,0[\)</span> and <span class="process-math">\(L\)</span> intersects <span class="process-math">\(\mathbb{N}_0 \times \mathbb{N}_0\)</span> in more than one point only if <span class="process-math">\((\rho,\sigma) = (1,k)\text{,}\)</span> for some <span class="process-math">\(k \in \mathbb{N}\text{.}\)</span> In this case</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/central_2.html ./knowl/xref/posibles_L.html" id="sec-1-7-17-1-24">
+\begin{equation*}
+\operatorname{Supp}(F) = \{(1,1), (k+1,0)\},
+\end{equation*}
+</div>
+<div class="para">and then <span class="process-math">\(f(z)\)</span> has degree <span class="process-math">\(1\text{,}\)</span> <span class="process-math">\(\operatorname{stn}_{\rho\sigma}(F) = (k+1,0)\)</span> and <span class="process-math">\(\operatorname{en}_{\rho\sigma}(F) = (1,1)\text{.}\)</span> Finally, if <span class="process-math">\((1,0) &lt; (\rho,\sigma) &lt; (1,1)\text{,}\)</span> then the slope <span class="process-math">\(a\)</span> is in <span class="process-math">\(]-\infty,-1[\)</span> and <span class="process-math">\(L\)</span> intersects <span class="process-math">\(\mathbb{N}_0 \times \mathbb{N}_0\)</span> in more than one point only if <span class="process-math">\((\rho,\sigma) = (k,1)\text{,}\)</span> for some <span class="process-math">\(k \in \mathbb{N}\text{.}\)</span> In this case</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/central_2.html ./knowl/xref/posibles_L.html" id="sec-1-7-17-1-36">
+\begin{equation*}
+\operatorname{Supp}(F) = \{(1,1), (0,k+1)\},
+\end{equation*}
+</div>
+<div class="para">and then <span class="process-math">\(f(z)\)</span> has degree <span class="process-math">\(1\text{,}\)</span> <span class="process-math">\(\operatorname{en}_{\rho\sigma}(F) = (0,k+1)\)</span> and <span class="process-math">\(\operatorname{stn}_{\rho\sigma}(F) = (1,1)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-7-17-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 1.7.4"><a href="#sec-1-7-17" title="Copy heading and permalink for Proof 1.7.4" aria-label="Copy heading and permalink for Proof 1.7.4">🔗</a></div>
+</article></details>
+<figure class="figure figure-like" id="posibles_L"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/img/img21.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Lines <span class="process-math">\(L\)</span> through <span class="process-math">\((1,1)\)</span> that intersect <span class="process-math">\(\mathbb{N}_0 \times \mathbb{N}_0\)</span> in more than one point<div class="autopermalink" data-description="Figure 1.7.11"><a href="#posibles_L" title="Copy heading and permalink for Figure 1.7.11" aria-label="Copy heading and permalink for Figure 1.7.11">🔗</a></div></figcaption>
+</figure>
+<article class="remark remark-like" id="casos_soporte"><h3 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="casos_soporte-1">
+<div class="para">Assume that <span class="process-math">\((P,Q)\)</span> is a Jacobian pair and let <span class="process-math">\(F\)</span> be the <span class="process-math">\((1,1)\)</span>-homogeneous polynomial given in <a href="sec-1-5.html#central" class="xref" data-knowl="./knowl/xref/central.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.5.6">Theorem 1.5.6</a>. Write</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/central.html ./knowl/xref/direcciones_1k.html ./knowl/xref/central_2.html" id="casos_soporte-1-5">
+\begin{equation*}
+\ell_{11}(P) = x^i y^j p(z) \quad\text{and}\quad F = x^u y^v f(z),
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(z := x^{-1} y\)</span> and <span class="process-math">\(p,f \in K[z]\)</span> are polynomials such that <span class="process-math">\(p(0) \ne 0\)</span> and <span class="process-math">\(f(0) \ne 0\text{.}\)</span> By <a href="sec-1-7.html#direcciones_1k" class="xref" data-knowl="./knowl/xref/direcciones_1k.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.7.10">Proposition 1.7.10</a>(1), <span class="process-math">\(\operatorname{Supp}(F) \subseteq \{(0,2),(1,1),(2,0)\}\text{,}\)</span> and so by <a href="sec-1-5.html#central_2" class="xref" data-knowl="./knowl/xref/central_2.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.5.5">Proposition 1.5.5</a>, the polynomial <span class="process-math">\(p(z)\)</span> has at most two distinct linear factors.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#casos_soporte-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="casos_soporte-2">
+<li id="casos_soporte-2-1">
+<div class="para" id="casos_soporte-2-1-1">If <span class="process-math">\(p(z)\)</span> has zero linear factors, i.e., if <span class="process-math">\(p(z)\)</span> is a constant, then <span class="process-math">\(\ell_{11}(P)\)</span> is a monomial with support equal to <span class="process-math">\(\{(i,j)\}\text{,}\)</span> and we have the following three possibilities, which are illustrated in <a href="sec-1-7.html#p_constante" class="xref" data-knowl="./knowl/xref/p_constante.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.7.13">Figure 1.7.13</a>:<div class="autopermalink" data-description="Paragraph"><a href="#casos_soporte-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="casos_soporte-2-1-2">
+<li id="casos_soporte-2-1-2-1">
+<div class="para" id="p-derived-casos_soporte-2-1-2-1">a) <span class="process-math">\(i \ge 1\)</span> and <span class="process-math">\(j \ge 1\text{,}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#casos_soporte-2-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="casos_soporte-2-1-2-2">
+<div class="para" id="p-derived-casos_soporte-2-1-2-2">b) <span class="process-math">\(i = 0\)</span> and <span class="process-math">\(j &gt; 0\text{,}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#casos_soporte-2-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="casos_soporte-2-1-2-3">
+<div class="para" id="p-derived-casos_soporte-2-1-2-3">c) <span class="process-math">\(i &gt; 0\)</span> and <span class="process-math">\(j = 0\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#casos_soporte-2-1-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Item 1"><a href="#casos_soporte-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="casos_soporte-2-2">
+<div class="para" id="casos_soporte-2-2-1">If <span class="process-math">\(p(z)\)</span> is a power of a linear factor, then <span class="process-math">\(f\)</span> has at least one linear factor, and so <span class="process-math">\((0,2) \in \operatorname{Supp}(F)\)</span> or <span class="process-math">\((2,0) \in \operatorname{Supp}(F)\text{.}\)</span> Since, by <a href="sec-1-5.html#sobre_central" class="xref" data-knowl="./knowl/xref/sobre_central.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 1.5.7">Remark 1.5.7</a>, we know that <span class="process-math">\(\operatorname{en}_{11}(P) \sim \operatorname{en}_{11}(F)\)</span> if <span class="process-math">\(\operatorname{en}_{11}(F) \ne (1,1)\)</span> and <span class="process-math">\(\operatorname{stn}_{11}(P) \sim \operatorname{stn}_{11}(F)\)</span> if <span class="process-math">\(\operatorname{stn}_{11}(F) \ne (1,1)\text{,}\)</span> we have three possibilities, which are illustrated in <a href="sec-1-7.html#p_de_con_un_factor" class="xref" data-knowl="./knowl/xref/p_de_con_un_factor.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.7.14">Figure 1.7.14</a>:<div class="autopermalink" data-description="Paragraph"><a href="#casos_soporte-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="casos_soporte-2-2-2">
+<li id="casos_soporte-2-2-2-1">
+<div class="para" id="p-derived-casos_soporte-2-2-2-1">a) <span class="process-math">\(\operatorname{stn}_{11}(P) \sim (2,0)\)</span> and <span class="process-math">\(\operatorname{en}_{11}(P) \sim (0,2)\text{,}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#casos_soporte-2-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="casos_soporte-2-2-2-2">
+<div class="para" id="p-derived-casos_soporte-2-2-2-2">b) <span class="process-math">\(\operatorname{stn}_{11}(P) \sim (2,0)\)</span> and <span class="process-math">\(\operatorname{en}_{11}(P) \nsim (0,2)\text{,}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#casos_soporte-2-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="casos_soporte-2-2-2-3">
+<div class="para" id="p-derived-casos_soporte-2-2-2-3">c) <span class="process-math">\(\operatorname{stn}_{11}(P) \nsim (2,0)\)</span> and <span class="process-math">\(\operatorname{en}_{11}(P) \sim (0,2)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#casos_soporte-2-2-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Item 2"><a href="#casos_soporte-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="casos_soporte-2-3">
+<div class="para" id="casos_soporte-2-3-1">If <span class="process-math">\(p(z)\)</span> has two different linear factors, then <span class="process-math">\(f\)</span> has also two different linear factors, and hence <span class="process-math">\((0,2),(2,0) \in \operatorname{Supp}(F)\text{.}\)</span> Again by <a href="sec-1-5.html#sobre_central" class="xref" data-knowl="./knowl/xref/sobre_central.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 1.5.7">Remark 1.5.7</a>, necessarily <span class="process-math">\(\operatorname{stn}_{11}(P) \sim (2,0)\)</span> and <span class="process-math">\(\operatorname{en}_{11}(P) \sim (0,2)\text{.}\)</span> This is also illustrated in <a href="sec-1-7.html#p_de_con_un_factor" class="xref" data-knowl="./knowl/xref/p_de_con_un_factor.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.7.14">Figure 1.7.14</a>.<div class="autopermalink" data-description="Paragraph"><a href="#casos_soporte-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#casos_soporte-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Remark 1.7.12"><a href="#casos_soporte" title="Copy heading and permalink for Remark 1.7.12" aria-label="Copy heading and permalink for Remark 1.7.12">🔗</a></div>
+</article>
+<figure class="figure figure-like" id="p_constante"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/img/img22.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Case 1<div class="autopermalink" data-description="Figure 1.7.13"><a href="#p_constante" title="Copy heading and permalink for Figure 1.7.13" aria-label="Copy heading and permalink for Figure 1.7.13">🔗</a></div></figcaption>
+</figure>
+<figure class="figure figure-like" id="p_de_con_un_factor"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/img/img23.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Case 2 and Case 3<div class="autopermalink" data-description="Figure 1.7.14"><a href="#p_de_con_un_factor" title="Copy heading and permalink for Figure 1.7.14" aria-label="Copy heading and permalink for Figure 1.7.14">🔗</a></div></figcaption>
+</figure>
+<article class="proposition theorem-like" id="reduccion_con_un_factor"><h3 class="heading">
+<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="reduccion_con_un_factor-1-1">
+<div class="para">Assume the Jacobian conjecture is false and let <span class="process-math">\((P,Q)\)</span> be a counterexample to it. Assume that <span class="process-math">\(v_{11}(P)\)</span> and <span class="process-math">\(v_{11}(Q)\)</span> do not divide each other and that we are in one of the cases 1b), 1c) or 2a) of <a href="sec-1-7.html#casos_soporte" class="xref" data-knowl="./knowl/xref/casos_soporte.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 1.7.12">Remark 1.7.12</a>. Then there exists an automorphism <span class="process-math">\(\varphi\)</span> of <span class="process-math">\(K[x,y]\)</span> such that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/casos_soporte.html" id="faltaba">
+\begin{equation}
+\frac{v_{11}(\varphi(P))}{v_{11}(\varphi(Q))} = \frac{v_{11}(P)}{v_{11}(Q)}
+\quad\text{and}\quad
+v_{11}(\varphi(P)) &lt; v_{11}(P).\tag{1.7.3}
+\end{equation}
+</div>
+<div class="para">Consequently, <span class="process-math">\(\gcd(\deg(\varphi(P)), \deg(\varphi(Q))) &lt; \gcd(\deg(P), \deg(Q))\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#reduccion_con_un_factor-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proposition 1.7.15"><a href="#reduccion_con_un_factor" title="Copy heading and permalink for Proposition 1.7.15" aria-label="Copy heading and permalink for Proposition 1.7.15">🔗</a></div>
+</article>
+<details id="sec-1-7-23" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
+<article class="hiddenproof knowl__content">
+<div class="para logical" id="sec-1-7-23-1">
+<div class="para">If we are in the case 2a), then <span class="process-math">\(\operatorname{stn}_{11}(P) \sim (2,0)\)</span> and so, by <a href="sec-1-4.html#calculo_de_st_y_en" class="xref" data-knowl="./knowl/xref/calculo_de_st_y_en.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.4.3">(1.4.3)</a> or (1), we are in the case c) of <a href="sec-1-6.html#casos_shaping" class="xref" data-knowl="./knowl/xref/casos_shaping.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 1.6.12">Remark 1.6.12</a> and we can erase the edge <span class="process-math">\(\ell_{11}(P)\text{.}\)</span> By this and <a href="sec-1-4.html#ejemplo_de_auto_homo" class="xref" data-knowl="./knowl/xref/ejemplo_de_auto_homo.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.4.24">Example 1.4.24</a>, we arrive at case 1b) without changing <span class="process-math">\(v_{11}(P)\)</span> nor <span class="process-math">\(v_{11}(Q)\text{.}\)</span> Now, if we are in the case 1b), then we can apply the automorphism which exchanges <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span> and we arrive at case 1c) without changing <span class="process-math">\(v_{11}(P)\)</span> nor <span class="process-math">\(v_{11}(Q)\text{.}\)</span> Thus, we can assume that we are in the case 1c). Then, by <a href="sec-1-3.html#casos_pequenhos" class="xref" data-knowl="./knowl/xref/casos_pequenhos.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.3.10">Proposition 1.3.10</a>,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/casos_shaping.html ./knowl/xref/ejemplo_de_auto_homo.html ./knowl/xref/casos_pequenhos.html ./knowl/xref/direcciones_1k.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/direcciones_1k.html ./knowl/xref/central_2.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/faltaba.html ./knowl/xref/star.html ./knowl/xref/pr_ell_por_automorfismos.html" id="sec-1-7-23-1-13">
+\begin{equation*}
+(\rho,\sigma) := \operatorname{Succ}_P(1,1) \in ](1,1),(0,1)[.
+\end{equation*}
+</div>
+<div class="para">So, by <a href="sec-1-7.html#direcciones_1k" class="xref" data-knowl="./knowl/xref/direcciones_1k.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.7.10">Proposition 1.7.10</a>(2), we have <span class="process-math">\((\rho,\sigma) = (1,k)\text{,}\)</span> for some <span class="process-math">\(k \ge 2\text{.}\)</span> Moreover, by <a href="sec-1-7.html#star" class="xref" data-knowl="./knowl/xref/star.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.7.8">Proposition 1.7.8</a>(2), we know that <span class="process-math">\(v_{1k}(P) &gt; 0\text{.}\)</span> Let <span class="process-math">\(F\)</span> be as in <a href="sec-1-5.html#central" class="xref" data-knowl="./knowl/xref/central.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.5.6">Theorem 1.5.6</a> and write</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/casos_shaping.html ./knowl/xref/ejemplo_de_auto_homo.html ./knowl/xref/casos_pequenhos.html ./knowl/xref/direcciones_1k.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/direcciones_1k.html ./knowl/xref/central_2.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/faltaba.html ./knowl/xref/star.html ./knowl/xref/pr_ell_por_automorfismos.html" id="sec-1-7-23-1-21">
+\begin{equation*}
+\ell_{1k}(P) = x^r y^s p(z) \quad\text{and}\quad F = x^u y^v f(z),
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(z := x^{-k} y\)</span> and <span class="process-math">\(p,f \in K[z]\)</span> are polynomials such that <span class="process-math">\(p(0) \ne 0\)</span> and <span class="process-math">\(f(0) \ne 0\text{.}\)</span> Again by <a href="sec-1-7.html#direcciones_1k" class="xref" data-knowl="./knowl/xref/direcciones_1k.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.7.10">Proposition 1.7.10</a>, we also know that <span class="process-math">\(f(z) \sim (z - \lambda)\text{,}\)</span> for some <span class="process-math">\(\lambda \in K^{\times}\text{,}\)</span> and so, using <a href="sec-1-5.html#central_2" class="xref" data-knowl="./knowl/xref/central_2.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.5.5">Proposition 1.5.5</a>, we obtain that <span class="process-math">\(p(z) \sim (z - \lambda)^t\text{,}\)</span> for some <span class="process-math">\(t &gt; 0\text{.}\)</span> Moreover, since <span class="process-math">\((r,s) = \operatorname{stn}_{1k}(P) = \operatorname{en}_{11}(P)\)</span> and we are in the case 1c), we know that <span class="process-math">\(s = 0\text{.}\)</span> Hence</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/casos_shaping.html ./knowl/xref/ejemplo_de_auto_homo.html ./knowl/xref/casos_pequenhos.html ./knowl/xref/direcciones_1k.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/direcciones_1k.html ./knowl/xref/central_2.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/faltaba.html ./knowl/xref/star.html ./knowl/xref/pr_ell_por_automorfismos.html" id="para_despues1">
+\begin{equation}
+v_{11}(P) = v_{11}(\operatorname{en}_{11}(P)) = v_{11}(r,0) = r
+\quad\text{and}\quad
+\ell_{1k}(P) = \mu x^r (z - \lambda)^t = \mu x^{r - tk} (y - \lambda x^k)^t.\tag{1.7.4}
+\end{equation}
+</div>
+<div class="para">We define <span class="process-math">\(\varphi\)</span> by setting <span class="process-math">\(\varphi(x) := x\)</span> and <span class="process-math">\(\varphi(y) := y + \lambda x^k\text{,}\)</span> and set <span class="process-math">\(P_1 := \varphi(P)\)</span> and <span class="process-math">\(Q_1 := \varphi(Q)\text{.}\)</span> By <a href="sec-1-6.html#pr_ell_por_automorfismos" class="xref" data-knowl="./knowl/xref/pr_ell_por_automorfismos.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.6.8">Proposition 1.6.8</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/casos_shaping.html ./knowl/xref/ejemplo_de_auto_homo.html ./knowl/xref/casos_pequenhos.html ./knowl/xref/direcciones_1k.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/direcciones_1k.html ./knowl/xref/central_2.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/faltaba.html ./knowl/xref/star.html ./knowl/xref/pr_ell_por_automorfismos.html" id="para_despues2">
+\begin{equation}
+\ell_{1k}(P_1) = \varphi\bigl(\ell_{1k}(P)\bigr) = \mu x^{r - tk} y^t
+\qquad\text{and}\qquad
+v_{1k}(P_1) = v_{1k}(P).\tag{1.7.5}
+\end{equation}
+</div>
+<div class="para">Hence, for each <span class="process-math">\((i,j) \in \operatorname{Supp}(P_1)\)</span> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/casos_shaping.html ./knowl/xref/ejemplo_de_auto_homo.html ./knowl/xref/casos_pequenhos.html ./knowl/xref/direcciones_1k.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/direcciones_1k.html ./knowl/xref/central_2.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/faltaba.html ./knowl/xref/star.html ./knowl/xref/pr_ell_por_automorfismos.html" id="sec-1-7-23-1-43">
+\begin{equation*}
+v_{1k}(i,j) = i + jk \le v_{1k}(P_1) = v_{1k}(P) = r,
+\end{equation*}
+</div>
+<div class="para">which, combined with the fact that <span class="process-math">\(k \ge 1\text{,}\)</span> gives</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/casos_shaping.html ./knowl/xref/ejemplo_de_auto_homo.html ./knowl/xref/casos_pequenhos.html ./knowl/xref/direcciones_1k.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/direcciones_1k.html ./knowl/xref/central_2.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/faltaba.html ./knowl/xref/star.html ./knowl/xref/pr_ell_por_automorfismos.html" id="sec-1-7-23-1-45">
+\begin{equation*}
+v_{11}(i,j) = i + j \le i + jk \le r = v_{11}(P).
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(k &gt; 1\text{,}\)</span> the equality is only possible if <span class="process-math">\(j = 0\)</span> and <span class="process-math">\(i = r\text{.}\)</span> But it is impossible that <span class="process-math">\((r,0) \in \operatorname{Supp}(P_1)\text{.}\)</span> In fact, since <span class="process-math">\(v_{1k}(r,0) = r = v_{1k}(P_1)\text{,}\)</span> if <span class="process-math">\((r,0) \in \operatorname{Supp}(P_1)\text{,}\)</span> then <span class="process-math">\((r,0) \in \operatorname{Supp}(\ell_{1k}(P_1))\text{,}\)</span> which is false because <span class="process-math">\(t &gt; 0\text{.}\)</span> Consequently, <span class="process-math">\(v_{11}(P_1) &lt; v_{11}(P)\text{,}\)</span> which is the second condition in <a href="sec-1-7.html#faltaba" class="xref" data-knowl="./knowl/xref/faltaba.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.7.3">(1.7.3)</a>. The first condition follows from the series of equalities</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/casos_shaping.html ./knowl/xref/ejemplo_de_auto_homo.html ./knowl/xref/casos_pequenhos.html ./knowl/xref/direcciones_1k.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/direcciones_1k.html ./knowl/xref/central_2.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/faltaba.html ./knowl/xref/star.html ./knowl/xref/pr_ell_por_automorfismos.html" id="sec-1-7-23-1-56">
+\begin{equation*}
+\frac{v_{11}(P_1)}{v_{11}(Q_1)} = \frac{v_{1k}(P_1)}{v_{1k}(Q_1)}
+= \frac{v_{1k}(P)}{v_{1k}(Q)} = \frac{v_{11}(P)}{v_{11}(Q)},
+\end{equation*}
+</div>
+<div class="para">where the first and the third one are true by <a href="sec-1-7.html#star" class="xref" data-knowl="./knowl/xref/star.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.7.8">Proposition 1.7.8</a>(1); and the second one, by <a href="sec-1-6.html#pr_ell_por_automorfismos" class="xref" data-knowl="./knowl/xref/pr_ell_por_automorfismos.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.6.8">Proposition 1.6.8</a>.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-7-23-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 1.7.5"><a href="#sec-1-7-23" title="Copy heading and permalink for Proof 1.7.5" aria-label="Copy heading and permalink for Proof 1.7.5">🔗</a></div>
+</article></details>
+<article class="definition definition-like" id="subrectangular"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="subrectangular-1-1">
+<div class="para">We will say that <span class="process-math">\(P \in K[x,y]\)</span> is <dfn class="terminology">subrectangular</dfn>  if there exists <span class="process-math">\(a,b \in \mathbb{N}\)</span> such that</div>
+<div class="displaymath process-math" id="subrectangular-1-1-5">
+\begin{equation*}
+(a,b) \in \operatorname{Supp}(P) \subseteq \{(i,j) : 0 \le i \le a \text{ and } 0 \le j \le b\}.
+\end{equation*}
+</div>
+<div class="para">In this case we also will say that <span class="process-math">\(\operatorname{Supp}(P)\)</span> is <dfn class="terminology">subrectangular</dfn> . Finally, we will say that a pair <span class="process-math">\((P,Q)\)</span> is subrectangular if <span class="process-math">\(P\)</span> and <span class="process-math">\(Q\)</span> are. </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subrectangular-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.7.16"><a href="#subrectangular" title="Copy heading and permalink for Definition 1.7.16" aria-label="Copy heading and permalink for Definition 1.7.16">🔗</a></div>
+</article>
+<div class="para" id="sec-1-7-25">Note that <span class="process-math">\(P \in K[x,y]\)</span> is subrectangular if and only if <span class="process-math">\(P \notin K[x] \cup K[y]\text{,}\)</span> and either <span class="process-math">\(P\)</span> is a monomial or <span class="process-math">\(\operatorname{Succ}_P(1,0) \ge (0,1)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-1-7-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="standard_counterexample"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="standard_counterexample-1-1">A counterexample <span class="process-math">\((P,Q)\)</span> to the Jacobian conjecture is called a <dfn class="terminology">standard counterexample</dfn>  if <span class="process-math">\(\operatorname{Succ}_P(1,0) &gt; (0,1)\)</span> and there exists <span class="process-math">\(m,n \in \mathbb{N}\)</span> such that <span class="process-math">\((P,Q)\)</span> is a standard <span class="process-math">\((m,n)\)</span>-pair.<div class="autopermalink" data-description="Paragraph"><a href="#standard_counterexample-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.7.17"><a href="#standard_counterexample" title="Copy heading and permalink for Definition 1.7.17" aria-label="Copy heading and permalink for Definition 1.7.17">🔗</a></div>
+</article>
+<article class="remark remark-like" id="sec-1-7-27"><h3 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec-1-7-27-1">The pair <span class="process-math">\((m,n)\)</span> in the previous definition is unique and coincides with the pair <span class="process-math">\((m,n)\)</span> in <a href="sec-1-7.html#star" class="xref" data-knowl="./knowl/xref/star.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.7.8">Proposition 1.7.8</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-7-27-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 1.7.18"><a href="#sec-1-7-27" title="Copy heading and permalink for Remark 1.7.18" aria-label="Copy heading and permalink for Remark 1.7.18">🔗</a></div>
+</article>
+<article class="proposition theorem-like" id="contraejemplo_da_standard_mn_par"><h3 class="heading">
+<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="contraejemplo_da_standard_mn_par-1-1">
+<div class="para">For each counterexample <span class="process-math">\((P,Q)\)</span> such that <span class="process-math">\(v_{11}(P)\)</span> and <span class="process-math">\(v_{11}(Q)\)</span> do not divide each other, there exists an automorphism <span class="process-math">\(\varphi\)</span> of <span class="process-math">\(K[x,y]\)</span> such that <span class="process-math">\((\varphi(P),\varphi(Q))\)</span> is a subrectangular counterexample to the Jacobian Conjecture, which is a standard <span class="process-math">\((m,n)\)</span>-pair, for some <span class="process-math">\(m,n \in \mathbb{N}\text{.}\)</span> Moreover</div>
+<div class="displaymath process-math" id="preserva_cociente_y_no_sube_grado">
+\begin{equation}
+\frac{v_{11}(\varphi(P))}{v_{11}(\varphi(Q))} = \frac{v_{11}(P)}{v_{11}(Q)}
+\quad\text{and}\quad
+v_{11}(\varphi(P)) \le v_{11}(P).\tag{1.7.6}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#contraejemplo_da_standard_mn_par-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proposition 1.7.19"><a href="#contraejemplo_da_standard_mn_par" title="Copy heading and permalink for Proposition 1.7.19" aria-label="Copy heading and permalink for Proposition 1.7.19">🔗</a></div>
+</article>
+<details id="sec-1-7-29" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
+<article class="hiddenproof knowl__content">
+<div class="para logical" id="sec-1-7-29-1">
+<div class="para">By <a href="sec-1-7.html#reduccion_con_un_factor" class="xref" data-knowl="./knowl/xref/reduccion_con_un_factor.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.7.15">Proposition 1.7.15</a>, applying an automorphism of <span class="process-math">\(K[x,y]\)</span> if necessary, we can assume that we are not in any of the cases 1b), 1c) or 2a) of <a href="sec-1-7.html#casos_soporte" class="xref" data-knowl="./knowl/xref/casos_soporte.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 1.7.12">Remark 1.7.12</a>. Now, we will modify <span class="process-math">\(P\)</span> and <span class="process-math">\(Q\)</span> without changing their degrees, either by using <a href="sec-1-6.html#pr_ell_por_automorfismos" class="xref" data-knowl="./knowl/xref/pr_ell_por_automorfismos.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.6.8">Proposition 1.6.8</a> or by applying <span class="process-math">\(\varphi_{y,x}\text{.}\)</span> Hence condition <a href="sec-1-7.html#preserva_cociente_y_no_sube_grado" class="xref" data-knowl="./knowl/xref/preserva_cociente_y_no_sube_grado.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.7.6">(1.7.6)</a> will be satisfied. If we are in case 3), then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/reduccion_con_un_factor.html ./knowl/xref/casos_soporte.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/preserva_cociente_y_no_sube_grado.html ./knowl/xref/casos_shaping.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/central.html ./knowl/xref/direcciones_1k.html ./knowl/xref/sobre_central.html ./knowl/xref/central.html ./knowl/xref/casos_shaping.html ./knowl/xref/casos_shaping.html ./knowl/xref/central_2.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/central.html" id="sec-1-7-29-1-9">
+\begin{equation*}
+\ell_{11}(P) = x^n (z - \lambda_1)^{n_1} (z - \lambda_2)^{n_2}
+\quad \text{with } z := x^{-1} y,\; \lambda_1,\lambda_2 \in K^{\times},\; \lambda_1 \ne \lambda_2,\; n_1,n_2 &gt; 0
+\text{ and } n_1 + n_2 = n,
+\end{equation*}
+</div>
+<div class="para">where for the last equality we have used (2). Applying the automorphism <span class="process-math">\(\varphi\)</span> of <span class="process-math">\(K[x,y]\text{,}\)</span> defined by <span class="process-math">\(\varphi(x) := x\)</span> and <span class="process-math">\(\varphi(y) := y + \lambda_1 x\text{,}\)</span> we arrive at case 2c). If we are in case 2c), then we apply the automorphism which exchanges <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span> and we arrive at case 2b). In case 2b) we can erase the edge <span class="process-math">\(\ell_{11}(P)\)</span> (see <a href="sec-1-6.html#casos_shaping" class="xref" data-knowl="./knowl/xref/casos_shaping.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 1.6.12">Remark 1.6.12</a> c)) and arrive at case 1a). Thus, we can and will assume that we are in case 1a), and so we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/reduccion_con_un_factor.html ./knowl/xref/casos_soporte.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/preserva_cociente_y_no_sube_grado.html ./knowl/xref/casos_shaping.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/central.html ./knowl/xref/direcciones_1k.html ./knowl/xref/sobre_central.html ./knowl/xref/central.html ./knowl/xref/casos_shaping.html ./knowl/xref/casos_shaping.html ./knowl/xref/central_2.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/central.html" id="sec-1-7-29-1-18">
+\begin{equation*}
+\ell_{11}(P) \sim x^{ma} y^{mb} \quad\text{and}\quad \ell_{11}(Q) \sim x^{na} y^{nb}
+\quad \text{with } a,b,n,m \in \mathbb{N} \text{ and } m,n \text{ coprime},
+\end{equation*}
+</div>
+<div class="para">where we have used <a href="sec-1-7.html#star" class="xref" data-knowl="./knowl/xref/star.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.7.8">Proposition 1.7.8</a>(5). If necessary, we apply <span class="process-math">\(\varphi_{y,x}\)</span> to ensure that <span class="process-math">\(a \le b\text{.}\)</span> Since <a href="sec-1-5.html#central" class="xref" data-knowl="./knowl/xref/central.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.5.6">Theorem 1.5.6</a>(4) guarantees that <span class="process-math">\(a \ne b\text{,}\)</span> we conclude that <span class="process-math">\(a &lt; b\text{.}\)</span> We claim that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/reduccion_con_un_factor.html ./knowl/xref/casos_soporte.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/preserva_cociente_y_no_sube_grado.html ./knowl/xref/casos_shaping.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/central.html ./knowl/xref/direcciones_1k.html ./knowl/xref/sobre_central.html ./knowl/xref/central.html ./knowl/xref/casos_shaping.html ./knowl/xref/casos_shaping.html ./knowl/xref/central_2.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/central.html" id="sec-1-7-29-1-25">
+\begin{equation*}
+\operatorname{Pred}_{11}(P) \le (1,0) \quad\text{and}\quad \operatorname{Succ}_{11}(P) \ge (0,1).
+\end{equation*}
+</div>
+<div class="para">In fact, to justify the first inequality, suppose for contradiction that <span class="process-math">\((\rho,\sigma) = \operatorname{Pred}_{11}(P) \in ](1,0),(1,1)[\)</span> and let <span class="process-math">\(F\)</span> be as in <a href="sec-1-5.html#central" class="xref" data-knowl="./knowl/xref/central.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.5.6">Theorem 1.5.6</a>. By <a href="sec-1-7.html#direcciones_1k" class="xref" data-knowl="./knowl/xref/direcciones_1k.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.7.10">Proposition 1.7.10</a>(2) we know that <span class="process-math">\(\operatorname{en}_{\rho\sigma}(F) = (0,k+1)\)</span> with <span class="process-math">\(k &gt; 1\text{.}\)</span> Consequently <span class="process-math">\(\operatorname{en}_{\rho\sigma}(F) \ne (1,1)\)</span> and thus, by <a href="sec-1-5.html#sobre_central" class="xref" data-knowl="./knowl/xref/sobre_central.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 1.5.7">Remark 1.5.7</a>, we obtain</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/reduccion_con_un_factor.html ./knowl/xref/casos_soporte.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/preserva_cociente_y_no_sube_grado.html ./knowl/xref/casos_shaping.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/central.html ./knowl/xref/direcciones_1k.html ./knowl/xref/sobre_central.html ./knowl/xref/central.html ./knowl/xref/casos_shaping.html ./knowl/xref/casos_shaping.html ./knowl/xref/central_2.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/central.html" id="sec-1-7-29-1-34">
+\begin{equation*}
+(0,k+1) = \operatorname{en}_{\rho\sigma}(F) \sim \operatorname{en}_{\rho\sigma}(P) = \operatorname{stn}_{11}(P) = (ma,mb).
+\end{equation*}
+</div>
+<div class="para">This leads to a contradiction, and thus we conclude that <span class="process-math">\(\operatorname{Pred}_{11}(P) \le (1,0)\text{,}\)</span> as claimed. Similarly one shows that <span class="process-math">\(\operatorname{Succ}_{11}(P) \ge (0,1)\text{.}\)</span> Consequently</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/reduccion_con_un_factor.html ./knowl/xref/casos_soporte.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/preserva_cociente_y_no_sube_grado.html ./knowl/xref/casos_shaping.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/central.html ./knowl/xref/direcciones_1k.html ./knowl/xref/sobre_central.html ./knowl/xref/central.html ./knowl/xref/casos_shaping.html ./knowl/xref/casos_shaping.html ./knowl/xref/central_2.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/central.html" id="sec-1-7-29-1-37">
+\begin{equation*}
+(ma,mb) = \operatorname{stn}_{01}(P) = \operatorname{en}_{10}(P),
+\end{equation*}
+</div>
+<div class="para">which implies that both <span class="process-math">\(P\)</span> and <span class="process-math">\(Q\)</span> are subrectangular. Hence,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/reduccion_con_un_factor.html ./knowl/xref/casos_soporte.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/preserva_cociente_y_no_sube_grado.html ./knowl/xref/casos_shaping.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/central.html ./knowl/xref/direcciones_1k.html ./knowl/xref/sobre_central.html ./knowl/xref/central.html ./knowl/xref/casos_shaping.html ./knowl/xref/casos_shaping.html ./knowl/xref/central_2.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/central.html" id="sec-1-7-29-1-40">
+\begin{equation*}
+[P,Q] \in K^{\times},\quad \frac{v_{10}(P)}{v_{10}(Q)} = \frac{v_{11}(P)}{v_{11}(Q)} = \frac{m}{n}
+\quad\text{and}\quad v_{1,-1}(\operatorname{en}_{10}(P)) &lt; 0,
+\end{equation*}
+</div>
+<div class="para">where the last inequality follows from the fact that <span class="process-math">\(a &lt; b\text{.}\)</span> Moreover, since <span class="process-math">\(v_{11}(P)\)</span> and <span class="process-math">\(v_{11}(Q)\)</span> do not divide each other, it follows that <span class="process-math">\(m,n &gt; 1\text{,}\)</span> and therefore <span class="process-math">\((P,Q)\)</span> is an <span class="process-math">\((m,n)\)</span>-pair. Let <span class="process-math">\(F\)</span> be as in <a href="sec-1-5.html#central" class="xref" data-knowl="./knowl/xref/central.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.5.6">Theorem 1.5.6</a> corresponding to the direction <span class="process-math">\((1,0)\text{.}\)</span> Since <span class="process-math">\(v_{10}(F) = 1\text{,}\)</span> we may write <span class="process-math">\(F \sim x f(y)\text{,}\)</span> where <span class="process-math">\(f\)</span> is a monic polynomial. Moreover, following <a href="sec-1-6.html#casos_shaping" class="xref" data-knowl="./knowl/xref/casos_shaping.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 1.6.12">Remark 1.6.12</a>, we write</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/reduccion_con_un_factor.html ./knowl/xref/casos_soporte.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/preserva_cociente_y_no_sube_grado.html ./knowl/xref/casos_shaping.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/central.html ./knowl/xref/direcciones_1k.html ./knowl/xref/sobre_central.html ./knowl/xref/central.html ./knowl/xref/casos_shaping.html ./knowl/xref/casos_shaping.html ./knowl/xref/central_2.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/central.html" id="sec-1-7-29-1-54">
+\begin{equation*}
+\ell_{10}(P) \sim x^{ma} y^{m_0} \prod_{i=1}^r (y - \lambda_i)^{m_i},
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\lambda_1,\dots,\lambda_r \in K^{\times}\)</span> are pairwise distinct, <span class="process-math">\(m_0 \in \mathbb{N}_0\text{,}\)</span> <span class="process-math">\(m_1,\dots,m_r \in \mathbb{N}\)</span> and <span class="process-math">\(\sum_{i=0}^r m_i = mb\text{.}\)</span> If <span class="process-math">\(m_0 = mb\text{,}\)</span> then <span class="process-math">\(\ell_{10}(P)\)</span> is a monomial. In this case we have <span class="process-math">\(v_{1,-1}(\operatorname{stn}_{10}(P)) = v_{1,-1}(\operatorname{en}_{10}(P)) &lt; 0\text{,}\)</span> and therefore <span class="process-math">\((P,Q)\)</span> is a standard <span class="process-math">\((m,n)\)</span>-pair. If <span class="process-math">\(r = 1\)</span> and <span class="process-math">\(m_1 = mb\text{,}\)</span> then, as noted in <a href="sec-1-6.html#casos_shaping" class="xref" data-knowl="./knowl/xref/casos_shaping.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 1.6.12">Remark 1.6.12</a>(c), the edge <span class="process-math">\(\ell_{10}(P)\)</span> can be erased. In this case, <span class="process-math">\(\ell_{10}(P)\)</span> becomes a monomial, which implies that <span class="process-math">\(v_{1,-1}(\operatorname{stn}_{10}(P)) &lt; 0\text{,}\)</span> and therefore <span class="process-math">\((P,Q)\)</span> becomes a standard <span class="process-math">\((m,n)\)</span>-pair. Consequently, we can assume that <span class="process-math">\(r &gt; 1\text{,}\)</span> or <span class="process-math">\(r = 1\)</span> and <span class="process-math">\(m_0 &gt; 0\text{.}\)</span> We claim that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/reduccion_con_un_factor.html ./knowl/xref/casos_soporte.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/preserva_cociente_y_no_sube_grado.html ./knowl/xref/casos_shaping.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/central.html ./knowl/xref/direcciones_1k.html ./knowl/xref/sobre_central.html ./knowl/xref/central.html ./knowl/xref/casos_shaping.html ./knowl/xref/casos_shaping.html ./knowl/xref/central_2.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/central.html" id="pepe5">
+\begin{equation}
+r \le \begin{cases} c &amp; \text{if } m_0 = 0,\\ c-1 &amp; \text{if } m_0 &gt; 0, \end{cases}\tag{1.7.7}
+\end{equation}
+</div>
+<div class="para">where <span class="process-math">\(c := \deg f\text{.}\)</span> By <a href="sec-1-5.html#central_2" class="xref" data-knowl="./knowl/xref/central_2.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.5.5">Proposition 1.5.5</a>(2), to prove this bound it suffices to show that if <span class="process-math">\(m_0 &gt; 0\text{,}\)</span> then <span class="process-math">\(f(0) = 0\text{.}\)</span> Assume for contradiction, that <span class="process-math">\(m_0 &gt; 0\)</span> and <span class="process-math">\(f(0) \ne 0\text{.}\)</span> Then <span class="process-math">\(\operatorname{stn}_{10}(F) = (1,0) \ne (1,1)\text{,}\)</span> and by <a href="sec-1-5.html#sobre_central" class="xref" data-knowl="./knowl/xref/sobre_central.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 1.5.7">Remark 1.5.7</a>, we would have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/reduccion_con_un_factor.html ./knowl/xref/casos_soporte.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/preserva_cociente_y_no_sube_grado.html ./knowl/xref/casos_shaping.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/central.html ./knowl/xref/direcciones_1k.html ./knowl/xref/sobre_central.html ./knowl/xref/central.html ./knowl/xref/casos_shaping.html ./knowl/xref/casos_shaping.html ./knowl/xref/central_2.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/central.html" id="sec-1-7-29-1-84">
+\begin{equation*}
+(1,0) = \operatorname{stn}_{10}(F) \sim \operatorname{stn}_{10}(P) = (ma,m_0),
+\end{equation*}
+</div>
+<div class="para">which leads to a contradiction. Now observe that the bound in <a href="sec-1-7.html#pepe5" class="xref" data-knowl="./knowl/xref/pepe5.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.7.7">(1.7.7)</a> implies <span class="process-math">\(c &gt; 1\text{.}\)</span> Consequently, <span class="process-math">\(\operatorname{en}_{10}(F) = (1,c) \ne (1,1)\text{.}\)</span> Therefore, by <a href="sec-1-5.html#sobre_central" class="xref" data-knowl="./knowl/xref/sobre_central.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 1.5.7">Remark 1.5.7</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/reduccion_con_un_factor.html ./knowl/xref/casos_soporte.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/preserva_cociente_y_no_sube_grado.html ./knowl/xref/casos_shaping.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/central.html ./knowl/xref/direcciones_1k.html ./knowl/xref/sobre_central.html ./knowl/xref/central.html ./knowl/xref/casos_shaping.html ./knowl/xref/casos_shaping.html ./knowl/xref/central_2.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/central.html" id="sec-1-7-29-1-89">
+\begin{equation*}
+(ma,mb) = \operatorname{en}_{10}(P) \sim \operatorname{en}_{10}(F) = (1,c),
+\end{equation*}
+</div>
+<div class="para">and thus <span class="process-math">\(b = ac\text{.}\)</span> But then for some index <span class="process-math">\(j\)</span> we have <span class="process-math">\(m_j \ge ma\text{;}\)</span> otherwise, by <a href="sec-1-7.html#pepe5" class="xref" data-knowl="./knowl/xref/pepe5.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.7.7">(1.7.7)</a> we would derive the contradiction</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/reduccion_con_un_factor.html ./knowl/xref/casos_soporte.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/preserva_cociente_y_no_sube_grado.html ./knowl/xref/casos_shaping.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/central.html ./knowl/xref/direcciones_1k.html ./knowl/xref/sobre_central.html ./knowl/xref/central.html ./knowl/xref/casos_shaping.html ./knowl/xref/casos_shaping.html ./knowl/xref/central_2.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/central.html" id="sec-1-7-29-1-94">
+\begin{equation*}
+mb = \sum_{i=0}^r m_i &lt; c ma = mb.
+\end{equation*}
+</div>
+<div class="para">Let <span class="process-math">\(\varphi\)</span> be the automorphism of <span class="process-math">\(K[x,y]\)</span> defined by <span class="process-math">\(\varphi(x) := x\)</span> and <span class="process-math">\(\varphi(y) := y - \lambda_j\text{.}\)</span> By <a href="sec-1-6.html#pr_ell_por_automorfismos" class="xref" data-knowl="./knowl/xref/pr_ell_por_automorfismos.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.6.8">Proposition 1.6.8</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/reduccion_con_un_factor.html ./knowl/xref/casos_soporte.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/preserva_cociente_y_no_sube_grado.html ./knowl/xref/casos_shaping.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/central.html ./knowl/xref/direcciones_1k.html ./knowl/xref/sobre_central.html ./knowl/xref/central.html ./knowl/xref/casos_shaping.html ./knowl/xref/casos_shaping.html ./knowl/xref/central_2.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/central.html" id="sec-1-7-29-1-100">
+\begin{equation*}
+\ell_{10}(\varphi(P)) = \varphi(\ell_{10}(P)) \sim x^{ma} y^{m_j} \prod_{i \ne j} (y - \lambda_i + \lambda_j)^{m_i},
+\end{equation*}
+</div>
+<div class="para">and therefore, by <a href="sec-1-4.html#calculo_de_st_y_en" class="xref" data-knowl="./knowl/xref/calculo_de_st_y_en.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.4.3">(1.4.3)</a>, it follows that <span class="process-math">\(\operatorname{stn}_{10}(\varphi(P)) = (ma, m_j)\text{.}\)</span> Now observe that <span class="process-math">\(m_j = ma\)</span> is impossible; otherwise we would have <span class="process-math">\(\operatorname{stn}_{10}(\varphi(P)) = (ma,ma) \sim (1,1)\text{,}\)</span> contradicting <a href="sec-1-5.html#central" class="xref" data-knowl="./knowl/xref/central.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.5.6">Theorem 1.5.6</a>(4). Hence,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/reduccion_con_un_factor.html ./knowl/xref/casos_soporte.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/preserva_cociente_y_no_sube_grado.html ./knowl/xref/casos_shaping.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/central.html ./knowl/xref/direcciones_1k.html ./knowl/xref/sobre_central.html ./knowl/xref/central.html ./knowl/xref/casos_shaping.html ./knowl/xref/casos_shaping.html ./knowl/xref/central_2.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/sobre_central.html ./knowl/xref/pepe5.html ./knowl/xref/pr_ell_por_automorfismos.html ./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/central.html" id="sec-1-7-29-1-106">
+\begin{equation*}
+v_{1,-1}(\operatorname{stn}_{10}(\varphi(P))) = ma - m_j &lt; 0,
+\end{equation*}
+</div>
+<div class="para">which shows that <span class="process-math">\((\varphi(P),\varphi(Q))\)</span> is a standard <span class="process-math">\((m,n)\)</span>-pair.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-7-29-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 1.7.6"><a href="#sec-1-7-29" title="Copy heading and permalink for Proof 1.7.6" aria-label="Copy heading and permalink for Proof 1.7.6">🔗</a></div>
+</article></details>
+<figure class="figure figure-like" id="factores_de_ell10"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/img/img24.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Factors of <span class="process-math">\(\ell_{10}(P)\)</span><div class="autopermalink" data-description="Figure 1.7.20"><a href="#factores_de_ell10" title="Copy heading and permalink for Figure 1.7.20" aria-label="Copy heading and permalink for Figure 1.7.20">🔗</a></div></figcaption>
+</figure>
+<article class="proposition theorem-like" id="subrectangular_contraejemplo"><h3 class="heading">
+<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.21</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="subrectangular_contraejemplo-1-1">
+<div class="para">For each counterexample <span class="process-math">\((P,Q)\)</span> such that <span class="process-math">\(v_{11}(P)\)</span> and <span class="process-math">\(v_{11}(Q)\)</span> do not divide each other, there exists an automorphism <span class="process-math">\(\phi\)</span> of <span class="process-math">\(K[x,y]\)</span> such that <span class="process-math">\((\phi(P),\phi(Q))\)</span> is a standard counterexample to the Jacobian Conjecture,</div>
+<div class="displaymath process-math" id="preserva_cociente_y_no_sube_grado_prime">
+\begin{equation}
+\frac{v_{11}(\phi(P))}{v_{11}(\phi(Q))} = \frac{v_{11}(P)}{v_{11}(Q)}
+\quad\text{and}\quad
+v_{11}(\phi(P)) \le v_{11}(P).\tag{1.7.8}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subrectangular_contraejemplo-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proposition 1.7.21"><a href="#subrectangular_contraejemplo" title="Copy heading and permalink for Proposition 1.7.21" aria-label="Copy heading and permalink for Proposition 1.7.21">🔗</a></div>
+</article>
+<details id="sec-1-7-32" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
+<article class="hiddenproof knowl__content">
+<div class="para logical" id="sec-1-7-32-1">
+<div class="para">By <a href="sec-1-7.html#contraejemplo_da_standard_mn_par" class="xref" data-knowl="./knowl/xref/contraejemplo_da_standard_mn_par.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.7.19">Proposition 1.7.19</a>, applying an automorphism of <span class="process-math">\(K[x,y]\)</span> if necessary, we can assume that <span class="process-math">\((P,Q)\)</span> is a subrectangular counterexample to the Jacobian Conjecture, which is a standard <span class="process-math">\((m,n)\)</span>-pair, for some <span class="process-math">\(m,n \in \mathbb{N}\text{.}\)</span> Write <span class="process-math">\((ma,mb) := \operatorname{stn}_{01}(P)\text{.}\)</span> If <span class="process-math">\(\operatorname{Succ}_P(1,0) &gt; (0,1)\text{,}\)</span> then there is nothing to prove. Suppose instead that <span class="process-math">\(\operatorname{Succ}_P(1,0) = (0,1)\text{.}\)</span> By <a href="sec-1-7.html#star" class="xref" data-knowl="./knowl/xref/star.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.7.8">Proposition 1.7.8</a>(2), we know that <span class="process-math">\(v_{01}(P) &gt; 0\text{.}\)</span> Let <span class="process-math">\(F\)</span> be the <span class="process-math">\((0,1)\)</span>-homogeneous polynomial provided by <a href="sec-1-5.html#central" class="xref" data-knowl="./knowl/xref/central.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.5.6">Theorem 1.5.6</a>. Since <span class="process-math">\(v_{01}(F) = 1\text{,}\)</span> it follows that <span class="process-math">\(\operatorname{stn}_{01}(F) = (u,1)\text{.}\)</span> We assert that <span class="process-math">\(u = 1\text{.}\)</span> Indeed, if <span class="process-math">\(u \ne 1\text{,}\)</span> then by <a href="sec-1-5.html#sobre_central" class="xref" data-knowl="./knowl/xref/sobre_central.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 1.5.7">Remark 1.5.7</a>, it must be that <span class="process-math">\((u,1) \sim (ma,mb)\text{,}\)</span> which leads to a contradiction, as <span class="process-math">\(0 &lt; a &lt; b\)</span> and <span class="process-math">\(u \in \mathbb{N}_0\text{.}\)</span> Since <span class="process-math">\((0,1) \in \operatorname{Dir}(P)\text{,}\)</span> <a href="sec-1-5.html#central_2" class="xref" data-knowl="./knowl/xref/central_2.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.5.5">Proposition 1.5.5</a>(3) ensures that <span class="process-math">\(F\)</span> is not a monomial. Hence, by <a href="sec-1-4.html#calculo_de_st_y_en" class="xref" data-knowl="./knowl/xref/calculo_de_st_y_en.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.4.3">(1.4.3)</a>, we obtain <span class="process-math">\(\operatorname{en}_{01}(F) = (0,1)\)</span> and <span class="process-math">\(F \sim xy(x^{-1} - \lambda)\)</span> with <span class="process-math">\(\lambda \in K^{\times}\text{.}\)</span> Consequently, by <a href="sec-1-5.html#central_2" class="xref" data-knowl="./knowl/xref/central_2.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.5.5">Proposition 1.5.5</a>(4), we conclude that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/contraejemplo_da_standard_mn_par.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/sobre_central.html ./knowl/xref/central_2.html ./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/central_2.html ./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/sobre_central.html ./knowl/xref/de_pr_ell_por_automorfismos.html ./knowl/xref/preserva_cociente_y_no_sube_grado_prime.html" id="sec-1-7-32-1-30">
+\begin{equation*}
+\ell_{01}(P) \sim x^{ma} y^{mb} (x^{-1} - \lambda)^{\ell}, \quad \text{for some } \ell \in \mathbb{N}.
+\end{equation*}
+</div>
+<div class="para">According to <a href="sec-1-4.html#calculo_de_st_y_en" class="xref" data-knowl="./knowl/xref/calculo_de_st_y_en.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.4.3">(1.4.3)</a>, this implies that <span class="process-math">\(\operatorname{en}_{01}(P) = (ma - \ell, mb)\text{.}\)</span> On the other hand, applying <a href="sec-1-5.html#sobre_central" class="xref" data-knowl="./knowl/xref/sobre_central.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 1.5.7">Remark 1.5.7</a> once again, we deduce that <span class="process-math">\((ma - \ell, mb) = \operatorname{en}_{01}(P) \sim (0,1)\text{,}\)</span> and therefore <span class="process-math">\(\ell = ma\text{.}\)</span> Let <span class="process-math">\(\phi\)</span> be the automorphism of <span class="process-math">\(K[x,y]\text{,}\)</span> defined by <span class="process-math">\(\phi(x) := x + \lambda^{-1}\)</span> and <span class="process-math">\(\phi(y) := y\text{.}\)</span> By <a href="sec-1-6.html#de_pr_ell_por_automorfismos" class="xref" data-knowl="./knowl/xref/de_pr_ell_por_automorfismos.html" data-reveal-label="Reveal" data-close-label="Close" title="Corollary 1.6.10">Corollary 1.6.10</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/contraejemplo_da_standard_mn_par.html ./knowl/xref/star.html ./knowl/xref/central.html ./knowl/xref/sobre_central.html ./knowl/xref/central_2.html ./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/central_2.html ./knowl/xref/calculo_de_st_y_en.html ./knowl/xref/sobre_central.html ./knowl/xref/de_pr_ell_por_automorfismos.html ./knowl/xref/preserva_cociente_y_no_sube_grado_prime.html" id="sec-1-7-32-1-41">
+\begin{equation*}
+\ell_{01}(\phi(P)) = \phi(\ell_{01}(P)) \sim x^{ma} y^{mb}, \quad
+\ell_{\rho_1,\sigma_1}(\phi(P)) = \ell_{\rho_1,\sigma_1}(P) \quad\text{and}\quad
+\ell_{\rho_1,\sigma_1}(\phi(Q)) = \ell_{\rho_1,\sigma_1}(Q),
+\end{equation*}
+</div>
+<div class="para">for each <span class="process-math">\((0,-1) &lt; (\rho_1,\sigma_1) &lt; (0,1)\text{.}\)</span> From this it follows that <span class="process-math">\(\operatorname{Succ}_{\phi(P)}(1,0) &gt; (0,1)\text{,}\)</span> that <span class="process-math">\((\phi(P),\phi(Q))\)</span> is a standard <span class="process-math">\((m,n)\)</span>-pair and that <a href="sec-1-7.html#preserva_cociente_y_no_sube_grado_prime" class="xref" data-knowl="./knowl/xref/preserva_cociente_y_no_sube_grado_prime.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.7.8">(1.7.8)</a> is satisfied.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-7-32-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 1.7.7"><a href="#sec-1-7-32" title="Copy heading and permalink for Proof 1.7.7" aria-label="Copy heading and permalink for Proof 1.7.7">🔗</a></div>
+</article></details>
+<section class="subsection" id="ejercicios_capitulo_final">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h3>
+<details id="ejercicio_ultima_assertion" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.22</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="ejercicio_ultima_assertion-1-1">Prove the last assertion in <a href="sec-1-7.html#reduccion_con_un_factor" class="xref" data-knowl="./knowl/xref/reduccion_con_un_factor.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.7.15">Proposition 1.7.15</a>.<div class="autopermalink" data-description="Paragraph"><a href="#ejercicio_ultima_assertion-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 1.7.22"><a href="#ejercicio_ultima_assertion" title="Copy heading and permalink for Checkpoint 1.7.22" aria-label="Copy heading and permalink for Checkpoint 1.7.22">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 1.7.1: Exercises"><a href="#ejercicios_capitulo_final" title="Copy heading and permalink for Subsection 1.7.1: Exercises" aria-label="Copy heading and permalink for Subsection 1.7.1: Exercises">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 1.7: The shape of counterexamples and (m,n)-pairs"><a href="#sec-1-7" title="Copy heading and permalink for Section 1.7: The shape of counterexamples and (m,n)-pairs" aria-label="Copy heading and permalink for Section 1.7: The shape of counterexamples and (m,n)-pairs">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">

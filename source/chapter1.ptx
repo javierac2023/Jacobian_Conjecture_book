@@ -53,7 +53,7 @@
     </me>
 
     <figure xml:id="img1-2">
-      <image width="30%" source="img/img2.png"/>   //width="400px"   height="300px"
+      <image width="100%" source="img/img2.png"/>   //width="400px"   height="300px"
       <caption>Support of P</caption>
     </figure>
 
@@ -90,24 +90,13 @@
     and so <m>\operatorname{Supp}(PQ) = \operatorname{Supp}(P)+\operatorname{Supp}(Q)</m>. The supports of <m>P</m>, 
     <m>Q</m> and <m>PQ</m> are shown in <xref ref="fig_3"/>.
     </p>
-  
   <figure xml:id="fig_3">
-    <caption>Example of Supports of <m>P</m>, <m>Q</m> and <m>PQ</m>, with <m>Q</m> a monomial</caption>
-    <group>
-      <figure xml:id="fig_3_subfig_1">
-        <image width="30%" source="img/img2.png"/>
-        <caption><m>\operatorname{Supp}(P)</m></caption>
+        <image width="100%" source="img/img3.png"/>
+       <caption>Example of Supports of <m>P</m>, <m>Q</m> and <m>PQ</m>, with <m>Q</m> a monomial</caption>
       </figure>
-      <figure xml:id="fig_3_subfig_2">
-        <image width="30%" source="img/img2.png"/>
-        <caption><m>\operatorname{Supp}(Q)</m></caption>
-      </figure>
-      <figure xml:id="fig_3_subfig_3">
-        <image width="30%" source="img/img2.png"/>
-        <caption><m>\operatorname{Supp}(PQ)=\operatorname{Supp}(P)+\operatorname{Supp}(Q)</m></caption>
-      </figure>
-    </group>
-  </figure>
+
+      
+ 
 
   <p>
     In general, we only have
@@ -139,28 +128,12 @@
     </me>,
     which shows that <m>\operatorname{Supp}(PQ)\ne \operatorname{Supp}(P)+\operatorname{Supp}(Q)</m> (see <xref ref="newton_contenido"/>).
   </p>
+<figure xml:id="newton_contenido">
+        <image width="100%" source="img/img4.png"/>
+       <caption>A case in which <m>\operatorname{Supp}(PQ)\subsetneq \operatorname{Supp}(P)+\operatorname{Supp}(Q)</m></caption>
+   
+      </figure>
 
-  <figure xml:id="newton_contenido">
-    <caption>A case in which <m>\operatorname{Supp}(PQ)\subsetneq \operatorname{Supp}(P)+\operatorname{Supp}(Q)</m></caption>
-    <group>
-      <figure xml:id="fig_4_subfig_1">
-        <image width="30%" source="img/img2.png"/>
-        <caption><m>\operatorname{Supp}(P)</m></caption>
-      </figure>
-      <figure xml:id="fig_4_subfig_2">
-        <image width="30%" source="img/img2.png"/>
-        <caption><m>\operatorname{Supp}(Q)</m></caption>
-      </figure>
-      <figure xml:id="fig_4_subfig_3">
-        <image width="30%" source="img/img2.png"/>
-        <caption><m>\operatorname{Supp}(PQ)</m></caption>
-      </figure>
-      <figure xml:id="fig_4_subfig_4">
-        <image width="30%" source="img/img2.png"/>
-        <caption><m>\operatorname{Supp}(P)+\operatorname{Supp}(Q)</m></caption>
-      </figure>
-    </group>
-  </figure>
 
     <definition xml:id="poligono_de_Newton">
       <title>Newton Polygon</title>
@@ -177,23 +150,11 @@
       <xref ref="fig_5"/>, where <m>P</m> and <m>Q</m> are as in <xref ref="ejemplo1"/>.
     </p>
 
-    <figure xml:id="fig_5">
-      <caption>Newton polygon of the product of two polynomials</caption>
-      <group>
-        <figure xml:id="fig_5_subfig_1">
-          <image width="30%" source="img/img2.png"/>
-          <caption><m>\operatorname{HN}(P)</m></caption>
+<figure xml:id="fig_5">
+          <image width="80%" source="img/img5.png"/>
+          <caption>Newton polygon of the product of two polynomials</caption>
         </figure>
-        <figure xml:id="fig_5_subfig_2">
-          <image width="30%" source="img/img2.png"/>
-          <caption><m>\operatorname{HN}(Q)</m></caption>
-        </figure>
-        <figure xml:id="fig_5_subfig_3">
-          <image width="30%" source="img/img2.png"/>
-          <caption><m>\operatorname{HN}(PQ) = \operatorname{HN}(P) + \operatorname{HN}(Q)</m></caption>
-        </figure>
-      </group>
-    </figure>
+
 
   </section>
 
@@ -225,7 +186,7 @@
 
   <figure xml:id="fig_6">
     <caption><m>\operatorname{Supp}(x^3y)</m> and <m>\operatorname{Supp}(\partial_x(x^3y))</m></caption>
-    <image width="40%" source="img/img2.png"/>
+    <image width="40%" source="img/img6.png"/>
   </figure>
 
   <p>
@@ -269,23 +230,13 @@
     We show the supports of <m>P</m>, <m>P_x</m> and <m>P_y</m> in <xref ref="fig_7"/>.
   </p>
 
-  <figure xml:id="fig_7">
-    <caption>Supports of a polynomial and its partial derivatives</caption>
-    <group>
-      <figure xml:id="fig_7_subfig_1">
-        <image width="30%" source="img/img2.png"/>
-        <caption><m>\operatorname{Supp}(P)</m></caption>
+<figure xml:id="fig_7">
+        <image width="85%" source="img/img7.png"/>
+        <caption>Supports of a polynomial and its partial derivatives</caption>
       </figure>
-      <figure xml:id="fig_7_subfig_2">
-        <image width="30%" source="img/img2.png"/>
-        <caption><m>\operatorname{Supp}(P_x)</m></caption>
-      </figure>
-      <figure xml:id="fig_7_subfig_3">
-        <image width="30%" source="img/img2.png"/>
-        <caption><m>\operatorname{Supp}(P_y)</m></caption>
-      </figure>
-    </group>
-  </figure>
+
+
+ 
 
   <definition xml:id="aplicaciones_polinomiales">
     <title>Polynomial Maps</title>
@@ -367,19 +318,13 @@
     <xref ref="inclusion_de_supp_P_Q"/> is strict.
   </p>
 
-  <figure xml:id="fig_8">
-    <caption>A case in which the inclusion <xref ref="inclusion_de_supp_P_Q"/> is strict</caption>
-    <group>
-      <figure xml:id="fig_8_subfig_1">
-        <image width="40%" source="img/img2.png"/>
-        <caption><m>\operatorname{Supp}([P,Q])</m></caption>
+<figure xml:id="fig_8">
+        <image width="80%" source="img/img8.png"/>
+         <caption>A case in which the inclusion <xref ref="inclusion_de_supp_P_Q"/> is strict</caption>
       </figure>
-      <figure xml:id="fig_8_subfig_2">
-        <image width="40%" source="img/img2.png"/>
-        <caption><m>\operatorname{Supp}(P) + \operatorname{Supp}(Q) - (1,1)</m></caption>
-      </figure>
-    </group>
-  </figure>
+
+
+
 
   <proposition xml:id="H_P_Q_subset_H_P_plus_H_Q_minus_1">
     <p>
@@ -408,20 +353,14 @@
     <xref ref="H_P_Q_subset_H_P_plus_H_Q_minus_1"/> is strict.
   </p>
 
-  <figure xml:id="fig_9">
-    <caption>A case in which the inclusion in 
+
+<figure xml:id="fig_9">
+        <image width="80%" source="img/img9.png"/>
+        <caption>A case in which the inclusion in 
       <xref ref="H_P_Q_subset_H_P_plus_H_Q_minus_1"/> is strict</caption>
-    <group>
-      <figure xml:id="fig_9_subfig_1">
-        <image width="40%" source="img/img2.png"/>
-        <caption><m>\operatorname{HN}([P,Q])</m></caption>
       </figure>
-      <figure xml:id="fig_9_subfig_2">
-        <image width="40%" source="img/img2.png"/>
-        <caption><m>\operatorname{HN}(P) + \operatorname{HN}(Q) - (1,1)</m></caption>
-      </figure>
-    </group>
-  </figure>
+
+
 
   <lemma xml:id="propiedades_basicas_del_jacobiano">
   <title>Basic Properties of the Jacobian</title>
@@ -725,7 +664,7 @@
 
   <figure xml:id="fig_10">
     <caption>Reduction of the support of <m>P</m> and <m>Q</m> by <m>\varphi_1</m></caption>
-    <image width="60%" source="img/img2.png"/>
+    <image width="90%" source="img/img10.png"/>
   </figure>
   <p>
   Then, we apply the elementary automorphism <m>\varphi_2 := \varphi_{x-y^2,y}</m>. Clearly
@@ -838,19 +777,12 @@
     <xref ref="pr_v_de_un_producto1"/> (1).
   </p>
 
-  <figure xml:id="fig_11">
-    <caption>Examples of <m>\ell_{\rho\sigma}</m></caption>
-    <group>
-      <figure xml:id="fig_11_subfig_1">
-        <image width="45%" source="img/img2.png"/>
-        <caption><m>\ell_{-1,1}(P)</m>, <m>\ell_{-1,1}(Q)</m> and <m>\ell_{-1,1}(PQ)</m></caption>
-      </figure>
-      <figure xml:id="fig_11_subfig_2">
-        <image width="45%" source="img/img2.png"/>
-        <caption><m>\ell_{01}(P)</m>, <m>\ell_{01}(Q)</m> and <m>\ell_{01}(PQ)</m></caption>
-      </figure>
-    </group>
+<figure xml:id="fig_11">
+        <image width="100%" source="img/img11.png"/>
+       <caption>Examples of <m>\ell_{\rho\sigma}</m></caption>
   </figure>
+
+
 
   <definition xml:id="elementos_rho_sigma_homogeneos">
     <statement>
@@ -1020,7 +952,7 @@
 
 <figure xml:id="fig_12">
   <caption>The starting and end point of <m>\ell_{\rho\sigma}(P)</m></caption>
-  <image width="60%" source="img/img2.png"/>
+  <image width="75%" source="img/img12.png"/>
 </figure>
 
 <remark xml:id="acerca_del_flip">
@@ -1930,7 +1862,7 @@
 
   <figure xml:id="fig_13">
     <caption>Hint for <xref ref="ejercicio_5_2"/></caption>
-    <image width="60%" source="img/img2.png"/>
+    <image width="60%" source="img/img13.png"/>
   </figure>
 
 </subsection>
@@ -1980,7 +1912,7 @@
 
 <figure xml:id="fig_14">
   <caption>An example of <m>\operatorname{Dir}(P)</m></caption>
-  <image width="60%" source="img/img2.png"/>
+  <image width="100%" source="img/img14.png"/>
 </figure>
 
 <definition xml:id="Sucesor_y_predecesor">
@@ -2050,7 +1982,7 @@
 
 <figure xml:id="fig_15">
   <caption>Illustration of <xref ref="pr_ell_por_automorfismos"/></caption>
-  <image width="80%" source="img/img2.png"/>
+  <image width="100%" source="img/img15.png"/>
 </figure>
 
 <proof>
@@ -2232,7 +2164,7 @@
 
   <figure xml:id="caso_a">
     <caption>Case a</caption>
-    <image width="60%" source="img/img2.png"/>
+    <image width="90%" source="img/img16.png"/>
   </figure>
 
   <p>
@@ -2272,7 +2204,7 @@
 
   <figure xml:id="caso_b">
     <caption>Case b</caption>
-    <image width="60%" source="img/img2.png"/>
+    <image width="90%" source="img/img17.png"/>
   </figure>
 
   <p>
@@ -2302,7 +2234,7 @@
 
   <figure xml:id="caso_c">
     <caption>Case c</caption>
-    <image width="60%" source="img/img2.png"/>
+    <image width="90%" source="img/img18.png"/>
   </figure>
 
   <p>
@@ -2333,7 +2265,7 @@
 
   <figure xml:id="caso_d">
     <caption>Case d</caption>
-    <image width="60%" source="img/img2.png"/>
+    <image width="90%" source="img/img19.png"/>
   </figure>
 
 </remark>
@@ -2645,7 +2577,7 @@
 
   <figure xml:id="Ilustracion_de_star">
   <caption>Illustration of <xref ref="star"/></caption>
-  <image width="60%" source="img/img2.png"/>
+  <image width="60%" source="img/img20.png"/>
 </figure>
 
 <proposition xml:id="direcciones_1k">
@@ -2710,7 +2642,7 @@
 
 <figure xml:id="posibles_L">
   <caption>Lines <m>L</m> through <m>(1,1)</m> that intersect <m>\mathbb{N}_0 \times \mathbb{N}_0</m> in more than one point</caption>
-  <image width="60%" source="img/img2.png"/>
+  <image width="60%" source="img/img21.png"/>
 </figure>
 
 <remark xml:id="casos_soporte">
@@ -2766,12 +2698,12 @@
 
 <figure xml:id="p_constante">
   <caption>Case 1</caption>
-  <image width="80%" source="img/img2.png"/>
+  <image width="80%" source="img/img22.png"/>
 </figure>
 
 <figure xml:id="p_de_con_un_factor">
   <caption>Case 2 and Case 3</caption>
-  <image width="80%" source="img/img2.png"/>
+  <image width="80%" source="img/img23.png"/>
 </figure>
 
 <proposition xml:id="reduccion_con_un_factor">
@@ -2994,7 +2926,7 @@
 </proof>
     <figure xml:id="factores_de_ell10">
   <caption>Factors of <m>\ell_{10}(P)</m></caption>
-  <image width="60%" source="img/img2.png"/>
+  <image width="90%" source="img/img24.png"/>
 </figure>
 
 <proposition xml:id="subrectangular_contraejemplo">

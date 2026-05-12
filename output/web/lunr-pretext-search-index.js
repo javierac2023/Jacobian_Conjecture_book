@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Polynomials in two variables and their support",
-  "body": " Polynomials in two variables and their support  Polynomials in two variables over a field are expressions of the form   For example:   The support of a polynomial is defined as:    \/\/width=\"400px\" height=\"300px\" Support of P   The algebra has basis .   on elements of the basis, and then extended by bilinearity to arbitrary polynomials. If one of or is a monomial, then the support of the product is the sum of the supports. Here we define the sum and the difference of two subsets and of , by   respectively. For example, if   then  , and so . The supports of , and are shown in .   Example of Supports of , and , with a monomial                 In general, we only have . For example, take . Then and so But , and so , which shows that (see ).   A case in which                      Newton Polygon  The Newton polygon  Newton polygon  , of a polynomial , is the convex hull of the support of .   Since is a convex set, from it follows that . We will see in that the equality holds, as it is illustrated in , where and are as in .   Newton polygon of the product of two polynomials                 "
+  "body": " Polynomials in two variables and their support  Polynomials in two variables over a field are expressions of the form   For example:   The support of a polynomial is defined as:    \/\/width=\"400px\" height=\"300px\" Support of P   The algebra has basis .   on elements of the basis, and then extended by bilinearity to arbitrary polynomials. If one of or is a monomial, then the support of the product is the sum of the supports. Here we define the sum and the difference of two subsets and of , by   respectively. For example, if   then  , and so . The supports of , and are shown in .    Example of Supports of , and , with a monomial   In general, we only have . For example, take . Then and so But , and so , which shows that (see ).    A case in which    Newton Polygon  The Newton polygon  Newton polygon  , of a polynomial , is the convex hull of the support of .   Since is a convex set, from it follows that . We will see in that the equality holds, as it is illustrated in , where and are as in .    Newton polygon of the product of two polynomials   "
 },
 {
   "id": "sec-1-1-6",
@@ -43,23 +43,23 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "1.1.2",
   "title": "",
-  "body": " Example of Supports of , and , with a monomial                "
+  "body": "  Example of Supports of , and , with a monomial  "
 },
 {
   "id": "newton_contenido",
   "level": "2",
   "url": "sec-1-1.html#newton_contenido",
   "type": "Figure",
-  "number": "1.1.6",
+  "number": "1.1.3",
   "title": "",
-  "body": " A case in which                    "
+  "body": "  A case in which  "
 },
 {
   "id": "poligono_de_Newton",
   "level": "2",
   "url": "sec-1-1.html#poligono_de_Newton",
   "type": "Definition",
-  "number": "1.1.11",
+  "number": "1.1.4",
   "title": "Newton Polygon.",
   "body": " Newton Polygon  The Newton polygon  Newton polygon  , of a polynomial , is the convex hull of the support of .  "
 },
@@ -68,9 +68,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-1.html#fig_5",
   "type": "Figure",
-  "number": "1.1.12",
+  "number": "1.1.5",
   "title": "",
-  "body": " Newton polygon of the product of two polynomials                "
+  "body": "  Newton polygon of the product of two polynomials  "
 },
 {
   "id": "sec-1-2",
@@ -79,7 +79,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "The Jacobian determinant and its support",
-  "body": " The Jacobian determinant and its support   The (formal) partial derivative of with respect to  partial derivative with respect to is    For example , and so (see ).   and    We suspect that . But, we have , and so, The correct formula is    The partial derivative of with respect to  partial derivative with respect to is    A similar discussion as above shows that the support of is given by For example, if , then and We show the supports of , and in .   Supports of a polynomial and its partial derivatives                  Polynomial Maps  A map is called a polynomial map  polynomial map if there exist such that , for all . From now on we will name the polynomial map .    Jacobian Matrix  The Jacobian matrix  Jacobian matrix of is We write and call it the Jacobian determinant or simply the Jacobian  Jacobian of . Moreover, for , we set and Note that and .   Since and , we have and similarly   So, Note that one could also use that in order to obtain the same conclusion. For example, if then So, and As it is shown in , in this example the inclusion is strict.   A case in which the inclusion is strict              For each , we have .    By identity and the fact that and , we know that The result follows immediately from this fact, since is a convex set.   In , we show that for and as in , the inclusion in is strict.   A case in which the inclusion in is strict              Basic Properties of the Jacobian   For each the following facts hold:   is a -bilinear and alternate form.  .  , for all .  .  , for all .      Item 1 is straightforward. Items 4 and 5 follow from items 1, 2 and 3. By the Leibniz rule for the partial derivative of a product, we have   which proves that item 2 is true. Item 3 follows by straightforward induction using item 2.     Let and in . From items 1 and 5 of Lemma it follow that   Hence, by item 4 of Lemma ,   Using this it follows easily that if , then the set is -linearly independent.   From now on we will use Lemma without explicit mention.   Let and . Then   A straightforward computation shows that . We can verify this equality faster, if we note that for , we have and . Then, . In general, if there exist , and , such that and , then . Under certain conditions the reciprocal is true, as we will see in Proposition .  \/\/ P_y_Q_alineados   Prove that if , then and are algebraically independent, or equivalently, that the set is -linearly independent.    "
+  "body": " The Jacobian determinant and its support   The (formal) partial derivative of with respect to  partial derivative with respect to is    For example , and so (see ).   and    We suspect that . But, we have , and so, The correct formula is    The partial derivative of with respect to  partial derivative with respect to is    A similar discussion as above shows that the support of is given by For example, if , then and We show the supports of , and in .    Supports of a polynomial and its partial derivatives    Polynomial Maps  A map is called a polynomial map  polynomial map if there exist such that , for all . From now on we will name the polynomial map .    Jacobian Matrix  The Jacobian matrix  Jacobian matrix of is We write and call it the Jacobian determinant or simply the Jacobian  Jacobian of . Moreover, for , we set and Note that and .   Since and , we have and similarly   So, Note that one could also use that in order to obtain the same conclusion. For example, if then So, and As it is shown in , in this example the inclusion is strict.    A case in which the inclusion is strict    For each , we have .    By identity and the fact that and , we know that The result follows immediately from this fact, since is a convex set.   In , we show that for and as in , the inclusion in is strict.    A case in which the inclusion in is strict    Basic Properties of the Jacobian   For each the following facts hold:   is a -bilinear and alternate form.  .  , for all .  .  , for all .      Item 1 is straightforward. Items 4 and 5 follow from items 1, 2 and 3. By the Leibniz rule for the partial derivative of a product, we have   which proves that item 2 is true. Item 3 follows by straightforward induction using item 2.     Let and in . From items 1 and 5 of Lemma it follow that   Hence, by item 4 of Lemma ,   Using this it follows easily that if , then the set is -linearly independent.   From now on we will use Lemma without explicit mention.   Let and . Then   A straightforward computation shows that . We can verify this equality faster, if we note that for , we have and . Then, . In general, if there exist , and , such that and , then . Under certain conditions the reciprocal is true, as we will see in Proposition .  \/\/ P_y_Q_alineados   Prove that if , then and are algebraically independent, or equivalently, that the set is -linearly independent.    "
 },
 {
   "id": "derivada_parcial_respecto_de_x",
@@ -115,14 +115,14 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "1.2.4",
   "title": "",
-  "body": " Supports of a polynomial and its partial derivatives                "
+  "body": "  Supports of a polynomial and its partial derivatives  "
 },
 {
   "id": "aplicaciones_polinomiales",
   "level": "2",
   "url": "sec-1-2.html#aplicaciones_polinomiales",
   "type": "Definition",
-  "number": "1.2.8",
+  "number": "1.2.5",
   "title": "Polynomial Maps.",
   "body": " Polynomial Maps  A map is called a polynomial map  polynomial map if there exist such that , for all . From now on we will name the polynomial map .  "
 },
@@ -131,7 +131,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-2.html#matriz_jacobiana",
   "type": "Definition",
-  "number": "1.2.9",
+  "number": "1.2.6",
   "title": "Jacobian Matrix.",
   "body": " Jacobian Matrix  The Jacobian matrix  Jacobian matrix of is We write and call it the Jacobian determinant or simply the Jacobian  Jacobian of . Moreover, for , we set and Note that and .  "
 },
@@ -140,16 +140,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-2.html#fig_8",
   "type": "Figure",
-  "number": "1.2.10",
+  "number": "1.2.7",
   "title": "",
-  "body": " A case in which the inclusion is strict            "
+  "body": "  A case in which the inclusion is strict  "
 },
 {
   "id": "H_P_Q_subset_H_P_plus_H_Q_minus_1",
   "level": "2",
   "url": "sec-1-2.html#H_P_Q_subset_H_P_plus_H_Q_minus_1",
   "type": "Proposition",
-  "number": "1.2.13",
+  "number": "1.2.8",
   "title": "",
   "body": " For each , we have .  "
 },
@@ -167,16 +167,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-2.html#fig_9",
   "type": "Figure",
-  "number": "1.2.14",
+  "number": "1.2.9",
   "title": "",
-  "body": " A case in which the inclusion in is strict            "
+  "body": "  A case in which the inclusion in is strict  "
 },
 {
   "id": "propiedades_basicas_del_jacobiano",
   "level": "2",
   "url": "sec-1-2.html#propiedades_basicas_del_jacobiano",
   "type": "Lemma",
-  "number": "1.2.17",
+  "number": "1.2.10",
   "title": "Basic Properties of the Jacobian.",
   "body": " Basic Properties of the Jacobian   For each the following facts hold:   is a -bilinear and alternate form.  .  , for all .  .  , for all .    "
 },
@@ -194,7 +194,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-2.html#P_Pm_Qn",
   "type": "Remark",
-  "number": "1.2.18",
+  "number": "1.2.11",
   "title": ".",
   "body": "  Let and in . From items 1 and 5 of Lemma it follow that   Hence, by item 4 of Lemma ,   Using this it follows easily that if , then the set is -linearly independent.  "
 },
@@ -203,7 +203,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-2.html#sec-1-2-22",
   "type": "Example",
-  "number": "1.2.19",
+  "number": "1.2.12",
   "title": "",
   "body": " Let and . Then   A straightforward computation shows that . We can verify this equality faster, if we note that for , we have and . Then, . In general, if there exist , and , such that and , then . Under certain conditions the reciprocal is true, as we will see in Proposition .  "
 },
@@ -403,7 +403,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.4",
   "title": "Directions, leading terms, starting points and end points",
-  "body": " Directions, leading terms, starting points and end points  We denote by the set of all directions  directions in , which by definition is the set of all such that . We also denote by and , the sets of non negative  directions!non negative and positive  directions!positive directions, respectively.     Valuation of a monomial. For all and , we write .       Valuation of a polynomial. Let . For , we define:    The -degree  -degree of as .    The -leading term  -leading term of as .    Note that the usual total degree  total degree of is .     To abbreviate expressions we set and , for all .   In are drawn , and for some directions and The representation of illustrates (1).   Examples of     , and     , and        -homogeneous polynomial. We say that is -homogeneous  -homogeneous if .     Since a polynomial is -homogeneous with if and only if .   For all , each one of the edges of is the convex hull of the support of , where is orthogonal to the given edge and points outside of .   Let and . The following assertions hold:   .   Let . If there exists such that , for all , and , then     If and , then .   .  .   Frequently, we will use these facts throughout the book without explicit mention.      Newton polygon of a product. The identity holds for each .     For each direction , let . By the discussion below , we know that . The opposite inclusion follows from the fact that and by (4).   Let and let . We say that is the -homogeneous decomposition of  -homogeneous decomposition if , for all .   Let and let . We have:    If and are -homogeneous, then is also. Moreover, if , then     If and are the -homogeneous decompositions of and , then the -homogeneous decomposition is given by     If , then .        Valuation of the Jacobian. Let . Then for each . Moreover, and, in this case, .     It follows directly from the decomposition .    Let arbitrary and let . We let and denote the first and the last point that we find on when we run counterclockwise along the boundary of . The identities in can be taken as a formal definition of the starting point  starting point and the end point  end point of . Note that these points coincide if and only if is a monomial.    The identities hold for each and . Moreover, we have as is illustrated in .    The starting and end point of     Let , and let be the automorphism of that interchanges and . A direct computation shows that . From this and equalities it follows that and , where denotes the flip of .   The cross product  cross product of two vectors and in is .   If is not a monomial, then .    Let and . Set and write where with and . Since , by we have       Aligned vectors. For two vectors in any -vector space, we write , if there exists such that . In this case we say that and  are aligned  aligned vectors .     Note that, for , So,     If , then means that , and so is a Jacobian pair.      Extremal points of aligned Jacobian. Let and . If , then      Write and . By identities there exist such that Hence, by (3), Thus, . A similar argument shows that .      Non-aligned extremal points. Let and let be such that The following assertions hold:     if and only if .     if and only if .       We only prove item 1, since item 2 is similar. By replacing , and by , and respectively, we can assume that , and are -homogeneous, and we do it. Let , and . By identity there exist such that Clearly and hence, Consequently, by , if , then which implies that as desired. Conversely, if the last equality holds, then, by the first identity in , and so, again by , which by implies that .      -homogeneous endomorphism. Let be an injective endomorphism of and let . We say that is -homogeneous  -homogeneous injective endomorphism if, for all -homogeneous polynomial ,      By , an injective endomorphism of is -homogeneous if and only if and are -homogeneous, and . From this it follows immediately that is -homogeneous if and only if it is -homogeneous.    For all and , the elementary automorphism is -homogeneous.    Exercises    Prove .      Prove .      Prove .      Prove .     "
+  "body": " Directions, leading terms, starting points and end points  We denote by the set of all directions  directions in , which by definition is the set of all such that . We also denote by and , the sets of non negative  directions!non negative and positive  directions!positive directions, respectively.     Valuation of a monomial. For all and , we write .       Valuation of a polynomial. Let . For , we define:    The -degree  -degree of as .    The -leading term  -leading term of as .    Note that the usual total degree  total degree of is .     To abbreviate expressions we set and , for all .   In are drawn , and for some directions and The representation of illustrates (1).    Examples of      -homogeneous polynomial. We say that is -homogeneous  -homogeneous if .     Since a polynomial is -homogeneous with if and only if .   For all , each one of the edges of is the convex hull of the support of , where is orthogonal to the given edge and points outside of .   Let and . The following assertions hold:   .   Let . If there exists such that , for all , and , then     If and , then .   .  .   Frequently, we will use these facts throughout the book without explicit mention.      Newton polygon of a product. The identity holds for each .     For each direction , let . By the discussion below , we know that . The opposite inclusion follows from the fact that and by (4).   Let and let . We say that is the -homogeneous decomposition of  -homogeneous decomposition if , for all .   Let and let . We have:    If and are -homogeneous, then is also. Moreover, if , then     If and are the -homogeneous decompositions of and , then the -homogeneous decomposition is given by     If , then .        Valuation of the Jacobian. Let . Then for each . Moreover, and, in this case, .     It follows directly from the decomposition .    Let arbitrary and let . We let and denote the first and the last point that we find on when we run counterclockwise along the boundary of . The identities in can be taken as a formal definition of the starting point  starting point and the end point  end point of . Note that these points coincide if and only if is a monomial.    The identities hold for each and . Moreover, we have as is illustrated in .    The starting and end point of     Let , and let be the automorphism of that interchanges and . A direct computation shows that . From this and equalities it follows that and , where denotes the flip of .   The cross product  cross product of two vectors and in is .   If is not a monomial, then .    Let and . Set and write where with and . Since , by we have       Aligned vectors. For two vectors in any -vector space, we write , if there exists such that . In this case we say that and  are aligned  aligned vectors .     Note that, for , So,     If , then means that , and so is a Jacobian pair.      Extremal points of aligned Jacobian. Let and . If , then      Write and . By identities there exist such that Hence, by (3), Thus, . A similar argument shows that .      Non-aligned extremal points. Let and let be such that The following assertions hold:     if and only if .     if and only if .       We only prove item 1, since item 2 is similar. By replacing , and by , and respectively, we can assume that , and are -homogeneous, and we do it. Let , and . By identity there exist such that Clearly and hence, Consequently, by , if , then which implies that as desired. Conversely, if the last equality holds, then, by the first identity in , and so, again by , which by implies that .      -homogeneous endomorphism. Let be an injective endomorphism of and let . We say that is -homogeneous  -homogeneous injective endomorphism if, for all -homogeneous polynomial ,      By , an injective endomorphism of is -homogeneous if and only if and are -homogeneous, and . From this it follows immediately that is -homogeneous if and only if it is -homogeneous.    For all and , the elementary automorphism is -homogeneous.    Exercises    Prove .      Prove .      Prove .      Prove .     "
 },
 {
   "id": "sec-1-4-2",
@@ -448,14 +448,14 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "1.4.4",
   "title": "",
-  "body": " Examples of     , and     , and    "
+  "body": "  Examples of  "
 },
 {
   "id": "elementos_rho_sigma_homogeneos",
   "level": "2",
   "url": "sec-1-4.html#elementos_rho_sigma_homogeneos",
   "type": "Definition",
-  "number": "1.4.7",
+  "number": "1.4.5",
   "title": "",
   "body": "   -homogeneous polynomial. We say that is -homogeneous  -homogeneous if .   "
 },
@@ -464,7 +464,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#euler",
   "type": "Remark",
-  "number": "1.4.8",
+  "number": "1.4.6",
   "title": "",
   "body": " Since a polynomial is -homogeneous with if and only if .  "
 },
@@ -473,7 +473,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#pr_v_de_un_producto1",
   "type": "Remark",
-  "number": "1.4.9",
+  "number": "1.4.7",
   "title": "",
   "body": " Let and . The following assertions hold:   .   Let . If there exists such that , for all , and , then     If and , then .   .  .   Frequently, we will use these facts throughout the book without explicit mention.  "
 },
@@ -482,7 +482,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#suma_de_Hs",
   "type": "Proposition",
-  "number": "1.4.10",
+  "number": "1.4.8",
   "title": "",
   "body": "   Newton polygon of a product. The identity holds for each .   "
 },
@@ -509,7 +509,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#re_v_de_un_conmutador",
   "type": "Remark",
-  "number": "1.4.11",
+  "number": "1.4.9",
   "title": "",
   "body": " Let and let . We have:    If and are -homogeneous, then is also. Moreover, if , then     If and are the -homogeneous decompositions of and , then the -homogeneous decomposition is given by     If , then .    "
 },
@@ -518,7 +518,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#pr_v_de_un_conmutador",
   "type": "Proposition",
-  "number": "1.4.12",
+  "number": "1.4.10",
   "title": "",
   "body": "   Valuation of the Jacobian. Let . Then for each . Moreover, and, in this case, .   "
 },
@@ -536,7 +536,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#Comienzo_y_Fin_de_un_elemento_de_W",
   "type": "Note",
-  "number": "1.4.13",
+  "number": "1.4.11",
   "title": "",
   "body": " Let arbitrary and let . We let and denote the first and the last point that we find on when we run counterclockwise along the boundary of . The identities in can be taken as a formal definition of the starting point  starting point and the end point  end point of . Note that these points coincide if and only if is a monomial.  "
 },
@@ -545,7 +545,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#st_y_en",
   "type": "Remark",
-  "number": "1.4.14",
+  "number": "1.4.12",
   "title": "",
   "body": " The identities hold for each and . Moreover, we have as is illustrated in .  "
 },
@@ -554,7 +554,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#fig_12",
   "type": "Figure",
-  "number": "1.4.15",
+  "number": "1.4.13",
   "title": "",
   "body": " The starting and end point of   "
 },
@@ -563,7 +563,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#acerca_del_flip",
   "type": "Remark",
-  "number": "1.4.16",
+  "number": "1.4.14",
   "title": "",
   "body": " Let , and let be the automorphism of that interchanges and . A direct computation shows that . From this and equalities it follows that and , where denotes the flip of .  "
 },
@@ -581,7 +581,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#starting_and_end_with_cross",
   "type": "Remark",
-  "number": "1.4.17",
+  "number": "1.4.15",
   "title": "",
   "body": " If is not a monomial, then .  "
 },
@@ -590,7 +590,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#polinomio_asociado_f",
   "type": "Remark",
-  "number": "1.4.18",
+  "number": "1.4.16",
   "title": "",
   "body": " Let and . Set and write where with and . Since , by we have   "
 },
@@ -599,7 +599,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#def_vectors_alineados",
   "type": "Definition",
-  "number": "1.4.19",
+  "number": "1.4.17",
   "title": "",
   "body": "   Aligned vectors. For two vectors in any -vector space, we write , if there exists such that . In this case we say that and  are aligned  aligned vectors .   "
 },
@@ -608,7 +608,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#sec-1-4-26",
   "type": "Remark",
-  "number": "1.4.20",
+  "number": "1.4.18",
   "title": "",
   "body": " Note that, for , So,   "
 },
@@ -617,7 +617,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#Jacobian_pair_como_alineados",
   "type": "Remark",
-  "number": "1.4.21",
+  "number": "1.4.19",
   "title": "",
   "body": " If , then means that , and so is a Jacobian pair.  "
 },
@@ -626,7 +626,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#extremos_alineados",
   "type": "Proposition",
-  "number": "1.4.22",
+  "number": "1.4.20",
   "title": "",
   "body": "   Extremal points of aligned Jacobian. Let and . If , then    "
 },
@@ -644,7 +644,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#extremos_no_alineados",
   "type": "Proposition",
-  "number": "1.4.23",
+  "number": "1.4.21",
   "title": "",
   "body": "   Non-aligned extremal points. Let and let be such that The following assertions hold:     if and only if .     if and only if .     "
 },
@@ -662,7 +662,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#homogeneous_endomorphism",
   "type": "Definition",
-  "number": "1.4.24",
+  "number": "1.4.22",
   "title": "",
   "body": "   -homogeneous endomorphism. Let be an injective endomorphism of and let . We say that is -homogeneous  -homogeneous injective endomorphism if, for all -homogeneous polynomial ,    "
 },
@@ -671,7 +671,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#sec-1-4-33",
   "type": "Remark",
-  "number": "1.4.25",
+  "number": "1.4.23",
   "title": "",
   "body": " By , an injective endomorphism of is -homogeneous if and only if and are -homogeneous, and . From this it follows immediately that is -homogeneous if and only if it is -homogeneous.  "
 },
@@ -680,7 +680,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#ejemplo_de_auto_homo",
   "type": "Example",
-  "number": "1.4.26",
+  "number": "1.4.24",
   "title": "",
   "body": " For all and , the elementary automorphism is -homogeneous.  "
 },
@@ -689,7 +689,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#ejercicio_pr_v_de_un_producto1",
   "type": "Checkpoint",
-  "number": "1.4.27",
+  "number": "1.4.25",
   "title": "",
   "body": "  Prove .   "
 },
@@ -698,7 +698,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#ejercicio_re_v_de_un_conmutador",
   "type": "Checkpoint",
-  "number": "1.4.28",
+  "number": "1.4.26",
   "title": "",
   "body": "  Prove .   "
 },
@@ -707,7 +707,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#ejercicio_st_y_en",
   "type": "Checkpoint",
-  "number": "1.4.29",
+  "number": "1.4.27",
   "title": "",
   "body": "  Prove .   "
 },
@@ -716,7 +716,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-1-4.html#ejercicio_starting_and_end_with_cross",
   "type": "Checkpoint",
-  "number": "1.4.30",
+  "number": "1.4.28",
   "title": "",
   "body": "  Prove .   "
 },
